@@ -1,0 +1,104 @@
+\documentclass{article}
+\usepackage{tikz}
+\usetikzlibrary{calc, shapes.geometric, decorations.pathreplacing, arrows}
+\usepackage[nomessages]{fp}
+
+
+\newcommand{\acc}{1}
+\FPeval{\acctwo}{\acc/2}
+\FPeval{\aonex}{\acc/2*3}
+\FPeval{\aoney}{\acc/2*3^{0.5}}
+\FPeval{\atwox}{\acc/2*3}
+\FPeval{\atwoy}{(-1)*\acc/2*3^{0.5}}
+\FPeval{\atwoytwo}{(-2)*\acc/2*3^{0.5}}
+\FPeval{\aonexmult}{4.3*\acc/2*3}
+\FPeval{\aoneymult}{4.3*\acc/2*3^{0.5}}
+\FPeval{\ainc}{\aonex-\acc}
+\FPeval{\startpointbasis}{3.5*\acc}
+
+\begin{document}
+\begin{figure}
+		\begin{tikzpicture}
+			\coordinate (Origin)   at (0,0);
+			\coordinate (XAxisMin) at (-1,0);
+			\coordinate (XAxisMax) at (2,0);
+			\coordinate (YAxisMin) at (0,-1);
+			\coordinate (YAxisMax) at (0,2);
+			\draw [thin, gray,-latex] (XAxisMin) -- (XAxisMax);% Draw x axis
+			\draw [thin, gray,-latex] (YAxisMin) -- (YAxisMax);% Draw y axis
+			\node at (XAxisMax) [anchor=south]{$x$};
+			\node at (YAxisMax) [anchor=west]{$y$};			
+			\draw [thick, black, decorate, decoration={brace,amplitude=10pt,mirror}](-\ainc, \aoney) -- (-\aonex, \aoney) node[black,midway,yshift=0.6cm] {\footnotesize $a_{C-C}$};			
+
+			\foreach \i in {-1,...,1} \foreach \j in {-1,...,1} {
+  				\foreach \a in {0,120,-120} 
+					\draw (3*\i,2*sin{60}*\j) -- +(\a:1);
+  			
+				\foreach \a in {0,120,-120} 
+					\draw (3*\i+3*cos{60},2*sin{60}*\j+sin{60}) -- +(\a:1);
+			}
+			
+
+			    \clip (-3,-2) rectangle (10cm,10cm); % Clips the picture...
+
+			    \coordinate (Bone) at (\aonex,\aoney);
+			    \coordinate (Btwo) at (\atwox,\atwoy);
+
+			    \draw [ultra thick,-latex,black] (Origin)
+				-- (Bone) node [above left] {$\textbf{a}_1$};
+			    \draw [ultra thick,-latex,black] (Origin)
+				-- (Btwo) node [below left] {$\textbf{a}_2$};
+			    
+
+				\node at (\startpointbasis,0) [draw, yscale=\aoneymult, xscale=\aonexmult, diamond, fill=black!80, opacity=0.3]{}; 
+				\node at (\startpointbasis,0.1)[scale=0.8]{Primitive Unit Cell};
+
+
+		\end{tikzpicture}
+  		\caption{Real Space Primitive Unit Cell}
+  		\label{fig:RealSpace}
+\end{figure}
+
+\begin{figure}
+		\begin{tikzpicture}
+\begin{scope}[shift={(-\acc,0)},rotate=30]
+			\coordinate (Origin)   at (-\acc,0);
+			\coordinate (XAxisMin) at (-\acc,0);
+			\coordinate (XAxisMax) at (\acc,\atwoytwo);
+			\coordinate (YAxisMin) at (0,-1);
+			\coordinate (YAxisMax) at (0,2);
+			%\draw [thin, gray,-latex] (XAxisMin) -- (XAxisMax);% Draw x axis
+			%\draw [thin, gray,-latex] (YAxisMin) -- (YAxisMax);% Draw y axis
+			%\node at (XAxisMax) [anchor=south]{$x$};
+			%\node at (YAxisMax) [anchor=west]{$y$};			
+		
+			
+			\foreach \i in {-1,...,0} \foreach \j in {-2,...,1} {
+  				\foreach \a in {0,120,-120} 
+					\draw (3*\i,2*sin{60}*\j) -- +(\a:1);
+  			
+				\foreach \a in {0,120,-120} 
+					\draw (3*\i+3*cos{60},2*sin{60}*\j+sin{60}) -- +(\a:1);
+			}
+			
+
+			    \clip (-3,-2) rectangle (10cm,10cm); % Clips the picture...
+
+			    \coordinate (Bone) at (\acctwo,\aoney);
+			    \coordinate (Btwo) at (-\acc,\atwoytwo);
+
+			    \draw [ultra thick,-latex,black] (Origin)
+				-- (Bone) node [above left] {$\textbf{b}_1$};
+			    \draw [ultra thick,-latex,black] (Origin)
+				-- (Btwo) node [below left] {$\textbf{b}_2$};
+			    
+
+				%\node at (\startpointbasis,0) [draw, yscale=\acc, xscale=\acc, diamond, fill=black!80, opacity=0.3]{}; 
+				%\node at (\startpointbasis,0.1)[scale=0.8]{Brillouin Zone};
+
+\end{scope}
+		\end{tikzpicture}
+  		\caption{Brillouin Zone}
+  		\label{fig:BZs}
+\end{figure}
+\end{document}
