@@ -1,0 +1,90 @@
+\documentclass[english, 11pt]{article}
+
+\input{lecture_notes_headers.tex}
+
+\begin{document}
+\tikzstyle{every picture}==[remember picture]
+	\thispagestyle{empty}
+	\notefront
+	% Table of Contents and List of Figures
+	\tocandfigures		
+
+	
+	\section{2015-01-09: Chapter 1 - About Condensed Matter Physics}
+		\subsection{Syllabus}
+		\underline{Read Chapters 1 and 2 before next lecture} \\
+		Graduate Student $\rightarrow 15\%$ of the grade is HW. \\
+		2 Midterms: Wednesday nights ($\sim$ 4 hours are given to do them). \\
+		The Final counts for $\sim 25\%$ of grade for Graduate and Undergraduate Students. \\
+		\mbox{Get the other books required for class $\rightarrow$ they are important!} \\
+		Graduate Studnet difference $\rightarrow$ potentially a physics simulation will be required. \\
+
+ 		\begin{center}
+			\line(1,0){425}
+		\end{center} 
+		\subsection{Class Notes}
+
+		\begin{center} 
+			\framebox{
+				\tikz\node[na](word1){
+					\thiscoursename
+				};
+			} \\
+			(Condensed Matter Physics)
+		\end{center} 
+
+		
+		\tikz\node[na](word2){Physics}; of complexity $\rightarrow$ statistical physics (thermodynamics)
+
+		\begin{tikzpicture}[overlay]
+			\path[->, black, thick](word1) edge [out=180, in=180] (word2);
+		\end{tikzpicture}
+
+		\begin{description}
+			\item Collections of atoms
+				\begin{description} 
+					\item{Somewhat under atomic physics field}
+					\item{Solids, liquids, and polymers}
+				\end{description}
+		\end{description}
+		
+		Hamiltonian:
+		\begin{equation*}
+				\hat{H} = \underbrace{\frac{\mathbf{p_n}^2}{2 M_n}}_{\substack{momentum\\of\\ions}} + 
+							\underbrace{\frac{\mathbf{p_e}^2}{2 M_e}}_{\substack{momentum\\of\\electrons}} +
+							\underbrace{\frac{e^2}{r_{i1}-r_{j1}}}_{\substack{repulsion\\between\\ions}}  + 
+							\underbrace{\frac{e^2}{r_{i2}-r_{j2}}}_{\substack{repulsion\\between\\electrons}}  -
+							\underbrace{\frac{e^2}{r_{i1}-r_{j2}}}_{\substack{attraction\\between\\electrons\ and\ ions}}
+		\end{equation*}
+		
+		At the moment only $\sim$100 atoms can be solved (using supercomputer) $\rightarrow$ very difficult! \\
+		\begin{description}
+			\item Emergent phenomenon is common
+			\begin{description}
+				\item Superconductivity is emergent from collection of atoms
+			\end{description}
+		\end{description}
+	
+		\pagebreak
+
+
+	\pagebreak
+	
+
+
+	\section{2015-02-20: Chapter 1 (Kittel) - Crystal Structure}
+		Test on Everything but Crystal Structure.
+		Closed book but will provide equations.
+		\subsection{Primitive Cells}
+			Crystal Structure handout.
+			\begin{description}
+				\item[(100)]  \ 
+					plane of atoms.
+				\item[$\{$100$\}$] \
+					family of planes.
+				\item[\ [100] ] \
+					direction.
+			\end{description}
+
+\end{document}
+

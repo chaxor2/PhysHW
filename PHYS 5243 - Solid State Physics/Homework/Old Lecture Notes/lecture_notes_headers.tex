@@ -1,0 +1,61 @@
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\usepackage{url}
+\usepackage{amsthm}
+\usepackage{mathrsfs}
+\usepackage{makeidx}
+\usepackage{graphicx}
+\usepackage{babel}
+\usepackage{fancyhdr}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb}
+\usepackage{url}
+\usepackage{enumerate}
+\usepackage{tikz}
+
+\tikzstyle{na} = [shape=rectangle, inner sep =0pt]
+
+\newcommand{\tocandfigures}{
+	\rule[0.5ex]{1\columnwidth}{1pt}
+	Last Revision: \today
+	\noindent \begin{flushleft}
+	\makeatletter
+	\makeatother
+	\setcounter{page}{1}
+	\setcounter{secnumdepth}{0} %Hide section number in header
+	\end{flushleft}
+	\noindent \begin{flushleft}
+	\tableofcontents{}
+	\par\end{flushleft}
+	\noindent \begin{flushleft}
+	\rule[0.5ex]{1\columnwidth}{1pt}
+	\par\end{flushleft}
+	\noindent \begin{flushleft}
+	\newpage{}
+	\par\end{flushleft}
+}
+
+
+\newcommand{\thiscoursecode}{PHYS 5243}
+\newcommand{\thiscoursename}{Solid State Physics}
+\newcommand{\thisprof}{Sheena Murphy}
+\newcommand{\me}{Chase Brown}
+\newcommand{\thisterm}{Spring 2015}
+
+
+% helpful stuff
+\newcommand{\vect}[1]{\textrm{\textbf{#1}}}
+
+% Headers
+\pagestyle{fancy}
+
+%%%%% TITLE %%%%%
+\newcommand{\notefront} {
+	\pagenumbering{roman}
+	\begin{center}
+		\textbf{\Huge{\thiscoursecode}}{\Huge \par}
+		{\Large{\thiscoursename}}\\ \vspace{0.1in}
+		\thisprof \ $\bullet$ \ \thisterm \ $\bullet$ \ University of Oklahoma \\
+	  \end{center}
+  }

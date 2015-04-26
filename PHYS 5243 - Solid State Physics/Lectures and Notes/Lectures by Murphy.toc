@@ -1,0 +1,9 @@
+\select@language {english}
+\contentsline {section}{2015-01-09: Chapter 1 - About Condensed Matter Physics}{ii}
+\contentsline {subsection}{Syllabus}{ii}
+\contentsline {subsection}{Class Notes}{ii}
+\contentsline {section}{2015-02-20: Chapter 1 (Kittel) - Crystal Structure}{iii}
+\contentsline {subsection}{Primitive Cells}{iii}
+\contentsline {section}{2015-04-06: Chapter 8 Kittel? - Semiconductor}{iv}
+\contentsline {section}{2015-04-08: Optical Properties of Materials - Chapter 14 and 16 in Kittel}{v}
+\contentsline {section}{2015-04-22: Tight Binding - by someone not Murphy}{x}

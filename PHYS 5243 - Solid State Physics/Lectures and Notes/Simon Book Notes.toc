@@ -1,0 +1,8 @@
+\select@language {english}
+\contentsline {section}{Chapter 1 - About Condensed Matter Physics}{ii}
+\contentsline {subsection}{1.1 - What is Condensed Matter Physics?}{ii}
+\contentsline {subsection}{1.2 - Why study Condensed Matter Physics?}{ii}
+\contentsline {subsection}{1.3 - Why Solid State?}{ii}
+\contentsline {section}{Chapter 2 - Heat Capacity and Specific Heat}{iii}
+\contentsline {section}{Chapter 15 - Electrons in a Periodic Potential}{iv}
+\contentsline {subsection}{Nearly Free Electron Model}{iv}

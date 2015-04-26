@@ -1,0 +1,702 @@
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.3.24)  9 MAR 2015 14:52
+entering extended mode
+**C:/Users/cbrown/Google*Drive/PHYS*5243*-*Solid*State*Physics/Homework/Homewor
+k*6/Homework*6.tex
+
+("C:/Users/cbrown/Google Drive/PHYS 5243 - Solid State Physics/Homework/Homewor
+k 6/Homework 6.tex"
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
+abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
+croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
+lician, german, german-x-2013-05-26, greek, gujarati, hindi, hungarian, iceland
+ic, indonesian, interlingua, irish, italian, kannada, kurmanji, latin, latvian,
+ lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerman, n
+german-x-2013-05-26, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
+ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
+an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
+ishmax, welsh, loaded.
+(C:\MikTex\tex\latex\base\article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(C:\MikTex\tex\latex\base\size10.clo
+File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(C:\MikTex\tex\latex\fancyhdr\fancyhdr.sty
+\fancy@headwidth=\skip43
+\f@ncyO@elh=\skip44
+\f@ncyO@erh=\skip45
+\f@ncyO@olh=\skip46
+\f@ncyO@orh=\skip47
+\f@ncyO@elf=\skip48
+\f@ncyO@erf=\skip49
+\f@ncyO@olf=\skip50
+\f@ncyO@orf=\skip51
+)
+(C:\MikTex\tex\latex\fancyhdr\extramarks.sty
+\@temptokenb=\toks14
+)
+(C:\MikTex\tex\latex\amsmath\amsmath.sty
+Package: amsmath 2013/01/14 v2.14 AMS math features
+\@mathmargin=\skip52
+
+For additional information on amsmath, use the `?' option.
+(C:\MikTex\tex\latex\amsmath\amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(C:\MikTex\tex\latex\amsmath\amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks15
+\ex@=\dimen103
+))
+(C:\MikTex\tex\latex\amsmath\amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen104
+)
+(C:\MikTex\tex\latex\amsmath\amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count87
+LaTeX Info: Redefining \frac on input line 210.
+\uproot@=\count88
+\leftroot@=\count89
+LaTeX Info: Redefining \overline on input line 306.
+\classnum@=\count90
+\DOTSCASE@=\count91
+LaTeX Info: Redefining \ldots on input line 378.
+LaTeX Info: Redefining \dots on input line 381.
+LaTeX Info: Redefining \cdots on input line 466.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen105
+LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
+\macc@depth=\count92
+\c@MaxMatrixCols=\count93
+\dotsspace@=\muskip10
+\c@parentequation=\count94
+\dspbrk@lvl=\count95
+\tag@help=\toks16
+\row@=\count96
+\column@=\count97
+\maxfields@=\count98
+\andhelp@=\toks17
+\eqnshift@=\dimen106
+\alignsep@=\dimen107
+\tagshift@=\dimen108
+\tagwidth@=\dimen109
+\totwidth@=\dimen110
+\lineht@=\dimen111
+\@envbody=\toks18
+\multlinegap=\skip53
+\multlinetaggap=\skip54
+\mathdisplay@stack=\toks19
+LaTeX Info: Redefining \[ on input line 2665.
+LaTeX Info: Redefining \] on input line 2666.
+)
+(C:\MikTex\tex\latex\amsfonts\amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(C:\MikTex\tex\latex\amsfonts\amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(C:\MikTex\tex\latex\tools\enumerate.sty
+Package: enumerate 1999/03/05 v3.00 enumerate extensions (DPC)
+\@enLab=\toks20
+)
+(C:\MikTex\tex\latex\graphics\graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(C:\MikTex\tex\latex\graphics\keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks21
+)
+(C:\MikTex\tex\latex\graphics\graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(C:\MikTex\tex\latex\graphics\trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(C:\MikTex\tex\latex\00miktex\graphics.cfg
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+(C:\MikTex\tex\latex\pdftex-def\pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(C:\MikTex\tex\generic\oberdiek\infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(C:\MikTex\tex\generic\oberdiek\ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count99
+))
+\Gin@req@height=\dimen112
+\Gin@req@width=\dimen113
+)
+(C:\MikTex\tex\latex\pgfplots\pgfplotstable.sty
+(C:\MikTex\tex\generic\pgfplots\pgfplots.revision.tex)
+Package: pgfplotstable 2014/02/28 v1.10 Table typesetting and Pretty-printing (
+1.10-2-gb39fe75)
+
+(C:\MikTex\tex\latex\pgfplots\pgfplots.sty
+(C:\MikTex\tex\generic\pgfplots\pgfplots.revision.tex)
+Package: pgfplots 2014/02/28 v1.10 Data Visualization (1.10-2-gb39fe75)
+
+(C:\MikTex\tex\latex\pgf\frontendlayer\tikz.sty
+(C:\MikTex\tex\latex\pgf\basiclayer\pgf.sty
+(C:\MikTex\tex\latex\pgf\utilities\pgfrcs.sty
+(C:\MikTex\tex\generic\pgf\utilities\pgfutil-common.tex
+\pgfutil@everybye=\toks22
+\pgfutil@tempdima=\dimen114
+\pgfutil@tempdimb=\dimen115
+
+(C:\MikTex\tex\generic\pgf\utilities\pgfutil-common-lists.tex))
+(C:\MikTex\tex\generic\pgf\utilities\pgfutil-latex.def
+\pgfutil@abb=\box28
+
+(C:\MikTex\tex\latex\ms\everyshi.sty
+Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
+))
+(C:\MikTex\tex\generic\pgf\utilities\pgfrcs.code.tex
+Package: pgfrcs 2013/12/20 v3.0.0 (rcs-revision 1.28)
+))
+Package: pgf 2013/12/18 v3.0.0 (rcs-revision 1.14)
+
+(C:\MikTex\tex\latex\pgf\basiclayer\pgfcore.sty
+(C:\MikTex\tex\latex\pgf\systemlayer\pgfsys.sty
+(C:\MikTex\tex\generic\pgf\systemlayer\pgfsys.code.tex
+Package: pgfsys 2013/11/30 v3.0.0 (rcs-revision 1.47)
+
+(C:\MikTex\tex\generic\pgf\utilities\pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks23
+\pgfkeys@temptoks=\toks24
+
+(C:\MikTex\tex\generic\pgf\utilities\pgfkeysfiltered.code.tex
+\pgfkeys@tmptoks=\toks25
+))
+\pgf@x=\dimen116
+\pgf@y=\dimen117
+\pgf@xa=\dimen118
+\pgf@ya=\dimen119
+\pgf@xb=\dimen120
+\pgf@yb=\dimen121
+\pgf@xc=\dimen122
+\pgf@yc=\dimen123
+\w@pgf@writea=\write3
+\r@pgf@reada=\read1
+\c@pgf@counta=\count100
+\c@pgf@countb=\count101
+\c@pgf@countc=\count102
+\c@pgf@countd=\count103
+\t@pgf@toka=\toks26
+\t@pgf@tokb=\toks27
+\t@pgf@tokc=\toks28
+
+(C:\MikTex\tex\generic\pgf\systemlayer\pgf.cfg
+File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
+)
+Driver file for pgf: pgfsys-pdftex.def
+
+(C:\MikTex\tex\generic\pgf\systemlayer\pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2013/07/18  (rcs-revision 1.33)
+
+(C:\MikTex\tex\generic\pgf\systemlayer\pgfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
+)))
+(C:\MikTex\tex\generic\pgf\systemlayer\pgfsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
+\pgfsyssoftpath@smallbuffer@items=\count104
+\pgfsyssoftpath@bigbuffer@items=\count105
+)
+(C:\MikTex\tex\generic\pgf\systemlayer\pgfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
+))
+(C:\MikTex\tex\latex\xcolor\xcolor.sty
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+ (C:\MikTex\tex\latex\00miktex\color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+) (C:\MikTex\tex\generic\pgf\basiclayer\pgfcore.code.tex
+Package: pgfcore 2010/04/11 v3.0.0 (rcs-revision 1.7)
+
+(C:\MikTex\tex\generic\pgf\math\pgfmath.code.tex
+(C:\MikTex\tex\generic\pgf\math\pgfmathcalc.code.tex
+(C:\MikTex\tex\generic\pgf\math\pgfmathutil.code.tex)
+(C:\MikTex\tex\generic\pgf\math\pgfmathparser.code.tex
+\pgfmath@dimen=\dimen124
+\pgfmath@count=\count106
+\pgfmath@box=\box29
+\pgfmath@toks=\toks29
+\pgfmath@stack@operand=\toks30
+\pgfmath@stack@operation=\toks31
+)
+(C:\MikTex\tex\generic\pgf\math\pgfmathfunctions.code.tex
+(C:\MikTex\tex\generic\pgf\math\pgfmathfunctions.basic.code.tex)
+(C:\MikTex\tex\generic\pgf\math\pgfmathfunctions.trigonometric.code.tex)
+(C:\MikTex\tex\generic\pgf\math\pgfmathfunctions.random.code.tex)
+(C:\MikTex\tex\generic\pgf\math\pgfmathfunctions.comparison.code.tex)
+(C:\MikTex\tex\generic\pgf\math\pgfmathfunctions.base.code.tex)
+(C:\MikTex\tex\generic\pgf\math\pgfmathfunctions.round.code.tex)
+(C:\MikTex\tex\generic\pgf\math\pgfmathfunctions.misc.code.tex)
+(C:\MikTex\tex\generic\pgf\math\pgfmathfunctions.integerarithmetics.code.tex)))
+(C:\MikTex\tex\generic\pgf\math\pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count107
+))
+(C:\MikTex\tex\generic\pgf\basiclayer\pgfcorepoints.code.tex
+File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
+\pgf@picminx=\dimen125
+\pgf@picmaxx=\dimen126
+\pgf@picminy=\dimen127
+\pgf@picmaxy=\dimen128
+\pgf@pathminx=\dimen129
+\pgf@pathmaxx=\dimen130
+\pgf@pathminy=\dimen131
+\pgf@pathmaxy=\dimen132
+\pgf@xx=\dimen133
+\pgf@xy=\dimen134
+\pgf@yx=\dimen135
+\pgf@yy=\dimen136
+\pgf@zx=\dimen137
+\pgf@zy=\dimen138
+)
+(C:\MikTex\tex\generic\pgf\basiclayer\pgfcorepathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
+\pgf@path@lastx=\dimen139
+\pgf@path@lasty=\dimen140
+)
+(C:\MikTex\tex\generic\pgf\basiclayer\pgfcorepathusage.code.tex
+File: pgfcorepathusage.code.tex 2013/12/13  (rcs-revision 1.23)
+\pgf@shorten@end@additional=\dimen141
+\pgf@shorten@start@additional=\dimen142
+)
+(C:\MikTex\tex\generic\pgf\basiclayer\pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2013/10/09  (rcs-revision 1.44)
+\pgfpic=\box30
+\pgf@hbox=\box31
+\pgf@layerbox@main=\box32
+\pgf@picture@serial@count=\count108
+)
+(C:\MikTex\tex\generic\pgf\basiclayer\pgfcoregraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2013/09/19  (rcs-revision 1.11)
+\pgflinewidth=\dimen143
+)
+(C:\MikTex\tex\generic\pgf\basiclayer\pgfcoretransformations.code.tex
+File: pgfcoretransformations.code.tex 2013/10/10  (rcs-revision 1.17)
+\pgf@pt@x=\dimen144
+\pgf@pt@y=\dimen145
+\pgf@pt@temp=\dimen146
+)
+(C:\MikTex\tex\generic\pgf\basiclayer\pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
+)
+(C:\MikTex\tex\generic\pgf\basiclayer\pgfcoreobjects.code.tex
+File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
+)
+(C:\MikTex\tex\generic\pgf\basiclayer\pgfcorepathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
+)
+(C:\MikTex\tex\generic\pgf\basiclayer\pgfcorearrows.code.tex
+File: pgfcorearrows.code.tex 2013/11/07  (rcs-revision 1.40)
+\pgfarrowsep=\dimen147
+)
+(C:\MikTex\tex\generic\pgf\basiclayer\pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
+\pgf@max=\dimen148
+\pgf@sys@shading@range@num=\count109
+)
+(C:\MikTex\tex\generic\pgf\basiclayer\pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
+
+(C:\MikTex\tex\generic\pgf\basiclayer\pgfcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2013/07/15  (rcs-revision 1.20)
+\pgfexternal@startupbox=\box33
+))
+(C:\MikTex\tex\generic\pgf\basiclayer\pgfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2013/07/18  (rcs-revision 1.7)
+)
+(C:\MikTex\tex\generic\pgf\basiclayer\pgfcoretransparency.code.tex
+File: pgfcoretransparency.code.tex 2013/09/30  (rcs-revision 1.5)
+)
+(C:\MikTex\tex\generic\pgf\basiclayer\pgfcorepatterns.code.tex
+File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
+)))
+(C:\MikTex\tex\generic\pgf\modules\pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2013/10/31  (rcs-revision 1.34)
+\pgfnodeparttextbox=\box34
+)
+(C:\MikTex\tex\generic\pgf\modules\pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2013/07/31  (rcs-revision 1.12)
+)
+(C:\MikTex\tex\latex\pgf\compatibility\pgfcomp-version-0-65.sty
+Package: pgfcomp-version-0-65 2007/07/03 v3.0.0 (rcs-revision 1.7)
+\pgf@nodesepstart=\dimen149
+\pgf@nodesepend=\dimen150
+)
+(C:\MikTex\tex\latex\pgf\compatibility\pgfcomp-version-1-18.sty
+Package: pgfcomp-version-1-18 2007/07/23 v3.0.0 (rcs-revision 1.1)
+))
+(C:\MikTex\tex\latex\pgf\utilities\pgffor.sty
+(C:\MikTex\tex\latex\pgf\utilities\pgfkeys.sty
+(C:\MikTex\tex\generic\pgf\utilities\pgfkeys.code.tex))
+(C:\MikTex\tex\latex\pgf\math\pgfmath.sty
+(C:\MikTex\tex\generic\pgf\math\pgfmath.code.tex))
+(C:\MikTex\tex\generic\pgf\utilities\pgffor.code.tex
+Package: pgffor 2013/12/13 v3.0.0 (rcs-revision 1.25)
+
+(C:\MikTex\tex\generic\pgf\math\pgfmath.code.tex)
+\pgffor@iter=\dimen151
+\pgffor@skip=\dimen152
+\pgffor@stack=\toks32
+\pgffor@toks=\toks33
+))
+(C:\MikTex\tex\generic\pgf\frontendlayer\tikz\tikz.code.tex
+Package: tikz 2013/12/13 v3.0.0 (rcs-revision 1.142)
+
+(C:\MikTex\tex\generic\pgf\libraries\pgflibraryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.0 (rcs-revision 1.20)
+\pgf@plot@mark@count=\count110
+\pgfplotmarksize=\dimen153
+)
+\tikz@lastx=\dimen154
+\tikz@lasty=\dimen155
+\tikz@lastxsaved=\dimen156
+\tikz@lastysaved=\dimen157
+\tikzleveldistance=\dimen158
+\tikzsiblingdistance=\dimen159
+\tikz@figbox=\box35
+\tikz@figbox@bg=\box36
+\tikz@tempbox=\box37
+\tikz@tempbox@bg=\box38
+\tikztreelevel=\count111
+\tikznumberofchildren=\count112
+\tikznumberofcurrentchild=\count113
+\tikz@fig@count=\count114
+
+(C:\MikTex\tex\generic\pgf\modules\pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
+\pgfmatrixcurrentrow=\count115
+\pgfmatrixcurrentcolumn=\count116
+\pgf@matrix@numberofcolumns=\count117
+)
+\tikz@expandcount=\count118
+
+(C:\MikTex\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarytopaths.code
+.tex
+File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.0 (rcs-revision 1.2)
+))) (C:\MikTex\tex\generic\pgfplots\pgfplots.code.tex
+(C:\MikTex\tex\generic\pgfplots\pgfplotscore.code.tex
+\t@pgfplots@toka=\toks34
+\t@pgfplots@tokb=\toks35
+\t@pgfplots@tokc=\toks36
+\pgfplots@tmpa=\dimen160
+\c@pgfplots@coordindex=\count119
+\c@pgfplots@scanlineindex=\count120
+
+(C:\MikTex\tex\generic\pgfplots\sys\pgfplotssysgeneric.code.tex))
+(C:\MikTex\tex\generic\pgfplots\libs\pgfplotslibrary.code.tex)
+(C:\MikTex\tex\generic\pgfplots\oldpgfcompatib\pgfplotsoldpgfsupp_loader.code.t
+ex (C:\MikTex\tex\generic\pgf\libraries\pgflibraryfpu.code.tex))
+(C:\MikTex\tex\generic\pgfplots\util\pgfplotsutil.code.tex
+(C:\MikTex\tex\generic\pgfplots\liststructure\pgfplotsliststructure.code.tex)
+(C:\MikTex\tex\generic\pgfplots\liststructure\pgfplotsliststructureext.code.tex
+) (C:\MikTex\tex\generic\pgfplots\liststructure\pgfplotsarray.code.tex
+\c@pgfplotsarray@tmp=\count121
+)
+(C:\MikTex\tex\generic\pgfplots\liststructure\pgfplotsmatrix.code.tex)
+(C:\MikTex\tex\generic\pgfplots\numtable\pgfplotstableshared.code.tex
+\c@pgfplotstable@counta=\count122
+\t@pgfplotstable@a=\toks37
+)
+(C:\MikTex\tex\generic\pgfplots\liststructure\pgfplotsdeque.code.tex)
+(C:\MikTex\tex\generic\pgfplots\util\pgfplotsbinary.code.tex
+(C:\MikTex\tex\generic\pgfplots\util\pgfplotsbinary.data.code.tex))
+(C:\MikTex\tex\generic\pgfplots\util\pgfplotsutil.verb.code.tex)
+(C:\MikTex\tex\generic\pgfplots\libs\pgflibrarypgfplots.surfshading.code.tex
+\c@pgfplotslibrarysurf@no=\count123
+
+(C:\MikTex\tex\generic\pgfplots\sys\pgflibrarypgfplots.surfshading.pgfsys-pdfte
+x.def))) (C:\MikTex\tex\generic\pgfplots\util\pgfplotscolormap.code.tex
+(C:\MikTex\tex\generic\pgfplots\util\pgfplotscolor.code.tex))
+(C:\MikTex\tex\generic\pgfplots\pgfplotsstackedplots.code.tex)
+(C:\MikTex\tex\generic\pgfplots\pgfplotsplothandlers.code.tex
+(C:\MikTex\tex\generic\pgfplots\pgfplotsmeshplothandler.code.tex))
+(C:\MikTex\tex\generic\pgfplots\pgfplots.scaling.code.tex)
+(C:\MikTex\tex\generic\pgfplots\pgfplotscoordprocessing.code.tex)
+(C:\MikTex\tex\generic\pgfplots\pgfplots.errorbars.code.tex)
+(C:\MikTex\tex\generic\pgfplots\pgfplots.markers.code.tex)
+(C:\MikTex\tex\generic\pgfplots\pgfplotsticks.code.tex)
+(C:\MikTex\tex\generic\pgfplots\pgfplots.paths.code.tex)
+(C:\MikTex\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarydecorations.
+code.tex (C:\MikTex\tex\generic\pgf\modules\pgfmoduledecorations.code.tex
+\pgfdecoratedcompleteddistance=\dimen161
+\pgfdecoratedremainingdistance=\dimen162
+\pgfdecoratedinputsegmentcompleteddistance=\dimen163
+\pgfdecoratedinputsegmentremainingdistance=\dimen164
+\pgf@decorate@distancetomove=\dimen165
+\pgf@decorate@repeatstate=\count124
+\pgfdecorationsegmentamplitude=\dimen166
+\pgfdecorationsegmentlength=\dimen167
+)
+\tikz@lib@dec@box=\box39
+)
+(C:\MikTex\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarydecorations.
+pathmorphing.code.tex
+(C:\MikTex\tex\generic\pgf\libraries\decorations\pgflibrarydecorations.pathmorp
+hing.code.tex))
+(C:\MikTex\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarydecorations.
+pathreplacing.code.tex
+(C:\MikTex\tex\generic\pgf\libraries\decorations\pgflibrarydecorations.pathrepl
+acing.code.tex))
+\pgfplots@numplots=\count125
+\pgfplots@xmin@reg=\dimen168
+\pgfplots@xmax@reg=\dimen169
+\pgfplots@ymin@reg=\dimen170
+\pgfplots@ymax@reg=\dimen171
+\pgfplots@zmin@reg=\dimen172
+\pgfplots@zmax@reg=\dimen173
+)
+(C:\MikTex\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibraryplotmarks.co
+de.tex
+File: tikzlibraryplotmarks.code.tex 2008/01/09 v3.0.0 (rcs-revision 1.1)
+ (C:\MikTex\tex\generic\pgf\libraries\pgflibraryplotmarks.code.tex
+File: pgflibraryplotmarks.code.tex 2013/07/20 v3.0.0 (rcs-revision 1.13)
+)))
+(C:\MikTex\tex\generic\pgfplots\numtable\pgfplotstable.code.tex
+(C:\MikTex\tex\generic\pgfplots\numtable\pgfplotstable.coltype.code.tex))
+(C:\MikTex\tex\latex\tools\array.sty
+Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen174
+\extrarowheight=\dimen175
+\NC@list=\toks38
+\extratabsurround=\skip55
+\backup@length=\skip56
+))
+\c@partCounter=\count126
+\c@homeworkProblemCounter=\count127
+
+("C:\Users\cbrown\Google Drive\PHYS 5243 - Solid State Physics\Homework\Homewor
+k 6\Homework 6.aux")
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 103.
+LaTeX Font Info:    ... okay on input line 103.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 103.
+LaTeX Font Info:    ... okay on input line 103.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 103.
+LaTeX Font Info:    ... okay on input line 103.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 103.
+LaTeX Font Info:    ... okay on input line 103.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 103.
+LaTeX Font Info:    ... okay on input line 103.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 103.
+LaTeX Font Info:    ... okay on input line 103.
+ (C:\MikTex\tex\context\base\supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count128
+\scratchdimen=\dimen176
+\scratchbox=\box40
+\nofMPsegments=\count129
+\nofMParguments=\count130
+\everyMPshowfont=\toks39
+\MPscratchCnt=\count131
+\MPscratchDim=\dimen177
+\MPnumerator=\count132
+\makeMPintoPDFobject=\count133
+\everyMPtoPDFconversion=\toks40
+) ABD: EveryShipout initializing macros
+
+Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
+ick labels; missing features). Consider writing \pgfplotsset{compat=1.10} into 
+your preamble.
+ on input line 103.
+
+LaTeX Font Info:    Try loading font information for U+msa on input line 108.
+(C:\MikTex\tex\latex\amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 108.
+ (C:\MikTex\tex\latex\amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+<NaCl_Fig.png, id=4, 309.155pt x 183.18437pt>
+File: NaCl_Fig.png Graphic file (type png)
+ <use NaCl_Fig.png>
+Package pdftex.def Info: NaCl_Fig.png used on input line 110.
+(pdftex.def)             Requested size: 216.40701pt x 128.22818pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 105--112
+
+ []
+
+[1{C:/Users/cbrown/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
+
+ <C:/Users/cbrown/Google Drive/PHYS 5243 - Solid State Physics/Homework/Homewor
+k 6/NaCl_Fig.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 139--142
+
+ []
+
+<small_NaCl.png, id=18, 80.80188pt x 77.79062pt>
+File: small_NaCl.png Graphic file (type png)
+ <use small_NaCl.png>
+Package pdftex.def Info: small_NaCl.png used on input line 152.
+(pdftex.def)             Requested size: 80.80167pt x 77.79042pt.
+File: small_NaCl.png Graphic file (type png)
+
+<use small_NaCl.png>
+Package pdftex.def Info: small_NaCl.png used on input line 164.
+(pdftex.def)             Requested size: 80.80167pt x 77.79042pt.
+ <010plane.png, id=19, 67.75313pt x 24.09pt>
+File: 010plane.png Graphic file (type png)
+
+<use 010plane.png>
+Package pdftex.def Info: 010plane.png used on input line 164.
+(pdftex.def)             Requested size: 67.75294pt x 24.08992pt.
+ <001plane.png, id=20, 19.07124pt x 80.3pt>
+File: 001plane.png Graphic file (type png)
+
+<use 001plane.png>
+Package pdftex.def Info: 001plane.png used on input line 164.
+(pdftex.def)             Requested size: 19.07118pt x 80.29979pt.
+ <3D.png, id=21, 73.27374pt x 80.80188pt>
+File: 3D.png Graphic file (type png)
+ <use 3D.png>
+Package pdftex.def Info: 3D.png used on input line 164.
+(pdftex.def)             Requested size: 73.27354pt x 80.80167pt.
+
+Overfull \hbox (17.77782pt too wide) in paragraph at lines 150--167
+[] 
+ []
+
+
+Overfull \hbox (17.77782pt too wide) in paragraph at lines 150--167
+[] 
+ []
+
+[2 <C:/Users/cbrown/Google Drive/PHYS 5243 - Solid State Physics/Homework/Homew
+ork 6/small_NaCl.png> <C:/Users/cbrown/Google Drive/PHYS 5243 - Solid State Phy
+sics/Homework/Homework 6/010plane.png> <C:/Users/cbrown/Google Drive/PHYS 5243 
+- Solid State Physics/Homework/Homework 6/001plane.png> <C:/Users/cbrown/Google
+ Drive/PHYS 5243 - Solid State Physics/Homework/Homework 6/3D.png>]
+<ZnS.png, id=25, 276.03125pt x 273.02pt>
+File: ZnS.png Graphic file (type png)
+ <use ZnS.png>
+Package pdftex.def Info: ZnS.png used on input line 191.
+(pdftex.def)             Requested size: 165.62001pt x 163.81326pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 186--193
+
+ []
+
+[3 <C:/Users/cbrown/Google Drive/PHYS 5243 - Solid State Physics/Homework/Homew
+ork 6/ZnS.png>] <SC.png, id=29, 193.72375pt x 137.01187pt>
+File: SC.png Graphic file (type png)
+ <use SC.png>
+Package pdftex.def Info: SC.png used on input line 242.
+(pdftex.def)             Requested size: 193.72327pt x 137.01154pt.
+
+Overfull \hbox (17.77782pt too wide) in paragraph at lines 240--244
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 240--244
+
+ []
+
+<BCC.png, id=30, 107.40125pt x 112.92188pt>
+File: BCC.png Graphic file (type png)
+ <use BCC.png>
+Package pdftex.def Info: BCC.png used on input line 250.
+(pdftex.def)             Requested size: 107.40097pt x 112.92159pt.
+
+Overfull \hbox (17.77782pt too wide) in paragraph at lines 248--252
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 248--252
+
+ []
+
+[4 <C:/Users/cbrown/Google Drive/PHYS 5243 - Solid State Physics/Homework/Homew
+ork 6/SC.png> <C:/Users/cbrown/Google Drive/PHYS 5243 - Solid State Physics/Hom
+ework/Homework 6/BCC.png>] <FCC.png, id=35, 112.92188pt x 105.89563pt>
+File: FCC.png Graphic file (type png)
+
+<use FCC.png>
+Package pdftex.def Info: FCC.png used on input line 259.
+(pdftex.def)             Requested size: 112.92159pt x 105.89536pt.
+
+Overfull \hbox (17.77782pt too wide) in paragraph at lines 257--261
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 257--261
+
+ []
+
+[5 <C:/Users/cbrown/Google Drive/PHYS 5243 - Solid State Physics/Homework/Homew
+ork 6/FCC.png>] <Fluorine.png, id=39, 180.17313pt x 134.5025pt>
+File: Fluorine.png Graphic file (type png)
+
+<use Fluorine.png>
+Package pdftex.def Info: Fluorine.png used on input line 274.
+(pdftex.def)             Requested size: 180.17267pt x 134.50215pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 269--276
+
+ []
+
+[6 <C:/Users/cbrown/Google Drive/PHYS 5243 - Solid State Physics/Homework/Homew
+ork 6/Fluorine.png>] [7] [8]
+("C:\Users\cbrown\Google Drive\PHYS 5243 - Solid State Physics\Homework\Homewor
+k 6\Homework 6.aux") ) 
+Here is how much of TeX's memory you used:
+ 21075 strings out of 493921
+ 532007 string characters out of 3154497
+ 687799 words of memory out of 3000000
+ 24014 multiletter control sequences out of 15000+200000
+ 6252 words of font info for 25 fonts, out of 3000000 for 9000
+ 841 hyphenation exceptions out of 8191
+ 69i,12n,78p,789b,609s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/MikTex/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/
+MikTex/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/MikTex/fonts/type1/public/
+amsfonts/cm/cmex10.pfb><C:/MikTex/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:
+/MikTex/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/MikTex/fonts/type1/public/
+amsfonts/cm/cmr10.pfb><C:/MikTex/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Mi
+kTex/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/MikTex/fonts/type1/public/amsf
+onts/cm/cmsy10.pfb><C:/MikTex/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
+Output written on "Homework 6.pdf" (8 pages, 496287 bytes).
+PDF statistics:
+ 82 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 63 words of extra memory for PDF output out of 10000 (max. 10000000)
+

@@ -1,0 +1,6 @@
+\select@language {english}
+\contentsline {section}{2015-01-09: Chapter 1 - About Condensed Matter Physics}{ii}
+\contentsline {subsection}{Syllabus}{ii}
+\contentsline {subsection}{Class Notes}{ii}
+\contentsline {section}{2015-02-20: Chapter 1 (Kittel) - Crystal Structure}{iii}
+\contentsline {subsection}{Primitive Cells}{iii}

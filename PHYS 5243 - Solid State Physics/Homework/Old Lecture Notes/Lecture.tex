@@ -1,0 +1,2322 @@
+\documentclass[english, 11pt]{article}
+\usepackage[makeroom]{cancel}
+\usepackage{../notes}
+%\usepackage{cmbright}
+\newcommand{\thiscoursecode}{PHYS 5243}
+\newcommand{\thiscoursename}{Solid State Physics}
+\newcommand{\thisprof}{Sheena Murphy}
+\newcommand{\me}{Chase Brown}
+\newcommand{\thisterm}{Spring 2015}
+
+% Headers
+\lhead{\thisterm}
+
+%%%%% TITLE %%%%%
+\newcommand{\notefront} {
+\pagenumbering{roman}
+\begin{center}
+
+
+\textbf{\Huge{\noun{\thiscoursecode}}}{\Huge \par}
+
+{\Large{\noun{\thiscoursename}}}\\ \vspace{0.1in}
+
+\vspace{0in}\includegraphics[scale=0.5]{../logo.png}
+
+  %\includegraphics[scale=0.1]{shield.png} \\
+  {\noun \thisprof} \ $\bullet$ \ {\noun \thisterm} \ $\bullet$ \ {\noun {University of Oklahoma}} \\
+
+  \end{center}
+  }
+
+%   ooooo      ooo   .oooooo.   ooooooooooooo oooooooooooo  .oooooo..o
+%   `888b.     `8'  d8P'  `Y8b  8'   888   `8 `888'     `8 d8P'    `Y8
+%    8 `88b.    8  888      888      888       888         Y88bo.
+%    8   `88b.  8  888      888      888       888oooo8     `"Y8888o.
+%    8     `88b.8  888      888      888       888    "         `"Y88b
+%    8       `888  `88b    d88'      888       888       o oo     .d8P
+%   o8o        `8   `Y8bood8P'      o888o     o888ooooood8 8""88888P'
+
+\begin{document}
+  % Notes fron,
+  \notefront
+  % Table of Contents and List of Figures
+  \tocandfigures
+  % Abstract
+  \doabstract{These notes are intended as a resource for myself; past, present, or future students of this course, and anyone interested in the material. The goal is to provide an end-to-end resource that covers all material discussed in the course displayed in an organized manner. If you spot any errors or would like to contribute, please contact me directly. \\}
+
+  Robert Hill is a low temperature experimentalist, but this course will be mostly theoretical.
+  \newline
+
+   Albert Einstein once said, "Quantum mechanics is certainly imposing. But an inner voice tells me that it is not yet the real thing. The theory says a lot, but does not really bring us any closer to the secret of the 'old one'. I, at any rate, am convinced that He does not throw dice."
+   \newline
+
+   Richard Feynman said "I think I can safely say that nobody understand quantum mechanics."
+   \newline
+
+   So we're in for miserable experience with this course then? Well not really, there are some good reasons to study Quantum Physics:
+
+   \begin{itemize}
+     \item It's Extremely interesting!
+     \begin{itemize}
+        \item Physically
+        \item Mathematically
+        \item Philosophically
+      \end{itemize}
+      \item It is the science behind future technology!
+      \item Waterloo is Quantum Valley!
+   \end{itemize}
+
+   \section{The Photoelectric and Compton Effects}
+
+     \subsection{Historical Background}
+       In classical physics we always observed things as behaving like waves or as particles. For example, there is
+
+       \begin{itemize}
+         \item Particle-like behaviour of radiation
+         \item Wave-like behaviour of matter
+         \item Wave-particle duality that combines the two
+       \end{itemize}
+
+       Let's explore the two sides of the coin. First, {\bf what is a particle?} Some words that describe it are {\textit point, localised, mass, solid} and similarly {\bf what is a wave?} It can be described with words like \textit{interference, oscillation, delocalised}, and \textit{medium}. One such thing that we have had trouble with describing is {\bf light}. Is it a wave or a particle?
+
+     \subsection{Einstein's Theory of Photoelectric Effect}
+
+       Radiant energy (light) is quantized into concentrated bundles (photons)
+
+       \[ E = hf \]
+
+       His Photoelectric Equation (1905) states that
+
+       \[ K_{\mbox{max}} = hf - \omega_0 \]
+
+     \subsection{Compton Effect}
+
+       In the photoelectric effect, we treated light as being composed of individual light particles, called photons, that carry some energy. It then makes sense to think that the photons also have momentum.
+       \newline
+
+       Electromagnetic radiation is scattered by a target object. In classical theory, the charges in the target object will respond to the incoming wave and start to oscillate. All oscillating charges emit radiation at the frequency of oscillation, and this newly generated set of waves can also be detected at an angle $\theta$ with respect to the incoming wave. This classical model explains why the sky is blue and all that jazz. The scattering process itself, though, does not change the frequency of incoming and outgoing radiation.
+       \newline
+
+       However, an experimental problem occurred. In experiments with X-ray radiation on a graphene target, one observes that two separate frequencies at an angle $\theta$ result in different intensities. This effect is independent of the material, though intensities may vary.
+       \newline
+
+       \begin{defn}[Compton Shift]\label{compton_shift}
+         \[ \Delta \lambda = \lambda_c (1 - \cos \theta) \]
+       \end{defn}
+
+       \begin{defn}[Compton wavelength]\label{compton_wavelength}
+         \[ \lambda_c = \f{h}{m_0c} \]
+       \end{defn}
+
+       \begin{figure}[t]
+         \centering
+           \includegraphics[width=0.35\textwidth]{compton_scattering.png}
+         \caption{The Compton Effect. The scattered light has a different frequency; the frequency depends on the direction. A bigger deflection causes a bigger change in frequency.}
+       \end{figure}
+
+   \section{De Broglie Wavelength and the Davisson-Germer Experiement}
+
+     We have shown that wave phenomena can exhibit particle features. We can rewrite the momentum instead as $p = \f{h}{\lambda}$ using a simple wave relationship. There is nothing in this reformed equation that has to do with light. This led to the following postulate.
+
+     \subsection{The De Broglie Postulate (1924)}
+       De Broglie's hypothesis was based on the grand symmetry of nature; if radiation has wave-particle duality, then so should matter.
+       \begin{defn}[de Broglie Relation]\label{de_broglie_relation}
+         \[ \lambda = \f{h}{p} \]
+       \end{defn}
+
+     \subsection{The Davisson-Germer Experiment}
+       We must first understand the Bragg Grating; it is an optical filter that reflects particular wavelengths and transmits all others. Note that reflection, however, is common to both waves and particles.
+
+     \subsection{Final Words}
+       The observation of both phenomena in one and the same experiment leads us also to the concept of delocalization, which goes beyond the simple concept of "being extended", because single quantum objects seem to be able to simultaneously explore regions in space-time that cannot be explored by a single object in any classical way.
+
+   \section{Linear Algebra Review}
+
+     We're going to begin by reviewing some mathematics that will be needed in the course. This is a physics course so we're going to be a little loosey-goosey.
+
+     \subsection{Vector Spaces}
+        \begin{defn}[Vector Space]\label{vector_space}
+          A {\bf vector space} consists of a set of vectors : ($|\alpha\rangle, |\beta\rangle, |\gamma\rangle, \ldots$) which is closed under vector addition and scalar multiplication.
+        \end{defn}
+        {\bf Vector Addition} produces another vector, that is
+        \[ \ket{\alpha} + \ket{\beta} = \ket{\gamma}  \]
+        it is also commutative
+        \[ \ket{\alpha} + \ket{\beta} =  \ket{\beta}  + \ket{\alpha} \]
+        and associative
+        \[ \ket{\alpha} + (\ket{\beta} + \ket{\gamma}) =  (\ket{\alpha}+\ket{\beta} ) + \ket{\gamma} \]
+        The null vector exists such that $\ket{\alpha} + \ket{0} = \ket{\alpha}$, and of course there is the inverse vector such that $\ket{\alpha} + \ket{-\alpha} = \ket{0}$.
+        \newline
+
+        {\bf Scalar Multiplication}: The product of a scalar with a vector is another vector ($a\ket{\alpha} = \ket{\gamma}$). Note that scalar multiplication is distributive with respect to vector addition
+        \[ a(\ket{\alpha} + \ket{\beta}) = a\ket{\alpha} + a\ket{\beta} \]
+        Scalar multiplication is distributive with respect to scalar addition too
+        \[ (a + b)\ket{\alpha} = a\ket{\alpha} + b\ket{\alpha} \]
+        and it is associative with respect to the product of scalars.
+        \[ a(b \ket{\alpha}) = (ab)\ket{\alpha} \]
+        then multiplication by zero and by $\pm 1$ has
+        \[ 0\ket{\alpha} = \ket{0}, \ \ \ \ 1\ket{\alpha} = \ket{\alpha}, \ \ \ \ -1\ket{\alpha} = -\ket{\alpha} = \ket{-\alpha} \]
+        \newline
+
+        {\bf Linear Combinations of Vectors}: To generate a linear combination of vectors
+        \[ \ket{\lambda} = a\ka + b\kb + c\kg \]
+        \begin{itemize}
+          \item[(I)] Any vector is linearly independent of a set of vectors if it cannot be written as a linear combination of them.
+          \item[(II)] A set of vectors is linearly independent if each is linearly independent of the rest.
+          \item[(III)] A colelction of vectors is said to {\bf span} the space if every vector can be written as a linear combination of them.
+          \item[(IV)] A set of linearly independent vectors that span a space is called a {\bf basis}.
+          \item[(V)] The number of vectors in the basis is called the {\bf dimension} of the space.\newline
+        \end{itemize}
+
+        {\bf Co-ordinate Representation}: With respect to a given basis, $\ket{e_1}, \ket{e_2}, \ket{e_3}, \hdots, \ket{e_n}$, any given vector $\ka = a_1 \ket{e_1} + a_2\ket{e_2} + \hdots + a_n \ket{e_n}$ is uniquely defined by the ordered $n$-tuple of its components.
+        \[ \ka \iff \left(\begin{matrix}a_1 \\ a_2 \\ \vdots \\ a_n\end{matrix}\right) \]
+        (the co-ordinate representation of $\ka$ with respect to the basis given by each $\ket{e_1}$.)
+
+        Coordinates depend on the chosen basis. In basis 1 $\ka = a_x\kx + a_y\ket{y} \iff \left(\begin{matrix}a_x \\ a_y \end{matrix}\right)$ and then in basis 2 we see $\ka = a_{x'}\ket{x'} + a_{y'}\ket{y'} \iff \mtx{a_{x'} \\ a_{y'}}$. \newline
+
+        Addition of vectors by adding corresponding components (when in the same basis) works as you might expect, too:
+        \[ \ket{\alpha} + \ket{\beta} \iff (a_1 + b_1, a_2 + b_2, \hdots, a_n + b_n \]
+
+        Also, scalar multiplication works by multiplying the scalar in each component
+        \[ c\ka \iff (ca_1, ca_2, ca_3, \ldots, ca_n) \]
+        so of course,
+        \[ \ket{0} = (0, 0, 0, \ldots, 0),  \ \ \ \ \ \ \  \ket{-\alpha} = (-a_1, -a_2, \ldots, -a_n) \]
+
+        {\bf Inner Product}: For every vector, $\ka$, in a vector space there exists a dual vector $\bra{\alpha}$ in a corresponding dual vector space. Importantly, the dual vector to $c\ka$ is $C^*\bra{\alpha}$ where $*$ denotes complex conjugation. So the inner product of $\ka$ and $\kb$ is $\braket{\alpha}{\beta}$ which is a scalar (complex number), hence $\braket{\alpha}{\beta}$ is sometimes called {\bf scalar product}.
+
+        \begin{itemize}
+          \item[(I)] $\braket{\beta}{\alpha} = \braket{\alpha}{\beta}^*$
+          \item[(II)] $\braket{\alpha}{\alpha} \geq 0$ (real and positive), so $\braket{\alpha}{\alpha} = 0$ if $\ka = \ket{0}$.
+          \item[(III)] The norm of a vector $||\alpha|| = \sqrt{\braket{\alpha}{\alpha}}$ generalized "length" of a vector.
+          \item[(IV)] Normalized $||\alpha|| = 1$.
+          \item[(V)] Orthogonal if $\braket{\alpha}{\beta} = 0$, then $\ka$ is orthogonal to $\kb$.
+          \item[(VI)] Orthogonal set $\braket{a_i}{a_j} = \delta_{ij} = \piecewise{1}{if $i = j$}{0}{if $i \not = j$}$
+        \end{itemize}
+
+        Consider the orthonormal basis $\ebasis$, and
+        \[ \ka = a_1 \ket{e_1} + a_2 \ket{e_2} + \ldots + a_n \ket{e_n} \]
+        \[ \kb = b_1 \ket{e_1} + b_2 \ket{e_2} + \ldots + b_n \ket{e_n} \]
+        where we have the column vectors
+        \[ \ka = \mtx{a_1 \\ a_2 \\ \vdots \\ a_n} \ \ \ \ \ \ \ \ \kb = \mtx{b_1 \\ b_2 \\ \vdots \\ b_n} \]
+        then with dual vectors
+        \[ \ka  = a_1^*\ket{e_1} + a_2^*\ket{e_2} + \ldots + a_n^*\ket{e_n} \]
+        \[ \kb  = b_1^*\ket{e_1} + b_2^*\ket{e_2} + \ldots + b_n^*\ket{e_n} \]
+        so that we have row vectors
+        \[ \ka = (a_1^*, a_2^*, \ldots, a_n^*)  \ \ \ \ \ \ \ \ \kb = (b_1^*, b_2^*, \ldots,b_n^*) \]
+        Now we can see that these results interact in a kind of cool way, check this out:
+        \[ \braket{\alpha}{\beta} = (a_1^*, a_2^*, \ldots, a_n^*) \mtx{b_1 \\ b_2 \\ \vdots \\ b_n} = a_1^*b_1 + a_2^*b_2 + \ldots + a_n^* b_n \]
+        which is a complex number. The components of the linear expansion are inner products too:
+        \[ \ka = a_1\ket{e_1} + a_2\ket{e_2} + \ldots + a_n\ket{e_n} \]
+        Consider also that
+        \[ \braket{e_1}{\alpha} = \braket{e_1}{\left(a_1\ket{e_1} + a_2\ket{e_2} + \ldots + a_n\ket{e_n}\right)} = a_1\braket{e_1}{e_1} + a_2\braket{e_1}{e_2} + \ldots + a_n\braket{e_1}{e_n} = a_1\]
+
+     \subsection{Matrices}
+
+        Matrices represent linear transformations that take a vector in a vector space and map it to another vector.
+        \[ \ket{\alpha} \longrightarrow \ket{\alpha'}= \hat{T} \ket{\alpha} \]
+        The transformation must be linear
+        \[ \hat{T}(a \ket{\alpha} + b \ket{\beta}) = a\hat{T}\ket{\alpha} + b \hat{T}\ket{\beta} \]
+        Consider $\hat{T}$ acting on $n$ basic vectors, $\ket{e_i}$
+        \[ \hat{T} \ket{e_1} = T_{11}\ket{e_1} + T_{21}\ket{e_2} + \ldots + T_{n1} \ket{e_n} \]
+        That is, $\ket{e_1}$ is mapped to a new vector written as a linear combination of basis vectors, likewise
+        \begin{align*}
+          \hat{T} \ket{e_2} & = T_{12}\ket{e_1} + T_{22}\ket{e_2} + \ldots + T_{n2} \ket{e_n} \\
+          & \vdots \\
+          \hat{T} \ket{e_n} & = T_{1n} \ket{e_1} + T_{2n} \ket{e_2} + \ldots + T_{nn} \ket{e_n}
+        \end{align*}
+        which can be compactly expressed
+        \[ \hat{T}\ket{e_j} = \sum_{i=1}^nT_{ij} \ket{e_i} \ \ \ \ \ \ (j = 1,2,\ldots,n) \]
+        If $\ket{\alpha}$ is an arbitrary vector, expressed in terms of basis $\ket{e_i}$'s
+        \[ \ket{\alpha} = a_1\ket{e_1} + a_2\ket{e_2} + \ldots + a_n\ket{e_n} = \sum_{j=1}^n a_j\ket{e_j} \]
+        (and recall $a_i = \braket{e_1}{\alpha}$). Then the effect of $\hat{T}$ on $\ka$ is
+        \[ \hat{T}\ka = \sum_{j=1}^n a_j \hat{T} \ket{e_j} = \sum_{j=1}^n \sum_{i=1}^n a_j T_{ij} \ket{e_i} = \sum_{i=1}^n \left( \sum_{j=1}^n T_{ij}a_j \right) \ket{e_i} \]
+        Hence $\hat{T}$ takes a vector $\ka$, with components $a_1, a_2, \ldots, a_n$ and maps to a new vector $\alpha'$ with components $a_i' = \sum_{j=1}^n T_{ij} a_j$. So $\hat{T}$ is characterized by $n^2$ elements, $T_{ij}$, which depend on the chosen basis. Express $\hat{T}$ as a matrix.
+        \[ \mtx{T_{11} & T_{12} & \hdots & T_{1n} \\ T_{21} & T_{22} & \hdots & T_{2n} \\ \vdots & \ddots & \ddots & \vdots \\ T_{n1} & T_{n2} & \hdots & T_{nn} } \]
+        where $T_{ij}$ is a matrix element, the row is $i$ and column $j$. Now if we want to express $\hat{T}$ with respect to a particular set of basis vectors, the $i$-th element will define the values of matrix elements $T_{ij}$
+        \[ \hat{T}\ket{e_j} = \sum_{i=1}^n \ket{e_i} \ \ \ \ \ (j = 1,2,\ldots,n) \]
+        multiply on left by basis vector $\ket{e_k}$,
+        \begin{align*}
+          \bra{e_k}\hat{T}\ket{e_j} & = \bra{e_k}\sum_{i = 1}T_{ij}\ket{e_i} \\
+          & = \bra{e_k} \left(T_{ij}\ket{e_1} + T_{2j}\ket{e_2} + \ldots + T_{nj} \ket{e_n} \right) \\
+          & = \left( T_{ij} = \braket{e_k}{e_1} + T_{2j}\braket{e_k}{e_2} + \ldots + T_{kj}\braket{e_k}{e_k} + \ldots + T_{nj}\braket{e_k}{e_n} \right)
+        \end{align*}
+        where all terms except $\braket{e_k}{e_k}$ go to 0. Now apply the orthonormal property of basis vectors $\ket{e_i}$ and thus
+        \[ \bra{e_k}\hat{T}\ket{e_j} = T_{kj} \ \ \ \ \mbox{matrix element} \]
+        Once the basis is chosen, the $i$-th element will define the vector in coordinate representation and the linear transformation  in matrix form.
+        \newline
+
+        Some matrix terminology,
+
+        \begin{defn}[transpose]\label{transpose}
+          The interchange of rows and columns of the matrix. Transpose of column is row and vice versa. The transpose of a square matrix is to reflect elements in main diagonal.
+        \end{defn}
+        \begin{defn}[symmetric]\label{symmetric}
+        A matrix is equal to its transpose (square matrices only).
+        \end{defn}
+        \begin{defn}[conjugate]\label{conjugate}
+        The complex conjugate of every element.
+        \end{defn}
+        \begin{defn}[adjoint]\label{adjoint}
+        The conjugate transpose of a matrix. Indicated by a dagger symbol $\hat{T}^\dagger$. A square matrix is \textbf{Hermitian} if matrix and adjoint are equal $\hat{T} = \hat{T}^{\dagger}$. Vector space and dual are related by adjoint.
+        \end{defn}
+        \[ \ket{\alpha} = \mtx{a_1 \\ a_2 \\ \vdots \\ a_n} = a \implies \mbox{DUAL} = a^\dagger = (a_1^*, a_2^*,
+        \ldots, a_n^*) \]
+        The inner product $\braket{\alpha}{\beta} = a^{\dagger}b$.
+        \begin{defn}[product]\label{product}
+        Multiplication may not be commutative : $\hat{T}\hat{S} \not = \hat{S}\hat{T}$. The difference between orders is commutator
+        \[ [\hat{S}, \hat{T}] = \hat{S}\hat{T} - \hat{T}\hat{S} \ \ \ \ \mbox{(will be zero if $\hat{T}$ and $\hat{S}$ commute)} \]
+        \end{defn}
+
+        \begin{defn}[eigenvalues, eigenvectors]\label{eigenvalues, eigenvectors}
+        Every linear transformation has special vectors that transform into scalar multiples of themselves.
+        \[ \hat{T}\ka = \lambda \ka \]
+        where $\ka$ is the eigenvector, and $\lambda$ is the eigenvalue.
+        \end{defn}
+
+        \begin{exmp}
+          Find the eigenvalues and normalized eigenvectors of $\mtx{5 & -2 \\ -2 & 2}$.
+          \newline
+          \[ \left| \begin{matrix} 5 - \lambda & -2 \\ -2 & 2-\lambda \end{matrix} \right| = 0 \ \ \ \ \ \mbox{(Characteristic Equation)} \]
+          This resolves to solving
+          \begin{align*}
+            (5-\lambda)(2-\lambda) - (-2)(-2) & = 0 \\
+            (\lambda - 1)(\lambda - 6) & = 0
+          \end{align*}
+          Therefore $\lambda = 1$ or $\lambda = 6$ are eigenvalues. Eigenvectors
+          \begin{itemize}
+            \item $\lambda_1 = 1 \implies \ket{\lambda_1} = \mtx{x_1 \\ y_1}$
+            \[ \mtx{5 & -2 \\ -2 & 2}\mtx{x_1 \\ y_1} = 1 \mtx{x_1 \\ y_1} \implies 5x_1 - 2y_1 = x_1 \mbox{ and } -2x_1 + 2y_1 = y_1 \]
+            Rearranging these equations gives us that $2x_1 - y_1 = 0$. This means that any vector on the line $2x_1 - y_1 = 0$ is an eigenvector. So one possible vector is $\ket{\lambda_1} = \mtx{1 \\ 2}$. Now we can normalize by introducing a normalization constant,
+            \[ \ket{\lambda_1} = a \mtx{1 \\ 2} \]
+            then
+            \[ \sqrt{\braket{\lambda_1}{\lambda_1}} = 1 \implies \left(a(1,2)\mtx{1 \\ 2} \right)^{\f{1}{2}} = a\sqrt{5} = 1 \implies a = \f{1}{\sqrt{5}} \implies \ket{\lambda_1} = \f{1}{\sqrt{5}} = \mtx{1 \\ 2} \]
+          \end{itemize}
+        \end{exmp}
+
+   \section{Introduction to the Formalism and Structure of Quantum Mechanics}
+
+     We're going to cover a few topics including Angular Momentum and Spin, the Stern-Gerlach Experiment, Quantum State Vectors, Computing Probabilities, and Operators and Measure.
+
+     \subsection{Angular Momentum and Spin}
+
+       Angular momentum and magnetic dipole moment (orbital). Consider an electron in a circular orbit, it has radius $r$, tangential velocity $\vv$, and current going in the opposite direction of travel $I$, as well as dipole moment $\vec{\mu_L}$ and angular momentum $\vec{L}$. Now, to calculate the magnitude of the dipole moment,
+       \begin{align*}
+         |\vec{\mu_L}| & = IA \mbox{\ \ (product of current and area)} \\
+                       & = \f{e}{T} \pi r^2 \mbox{ \ \ ($T =$ period of electron)} \\
+                       & = \f{e}{\left( \f{2 \pi r}{v} \right)} \pi r^2 \\
+                       & = \f{e}{2} vr \\
+                       & = \f{e}{2m_e} m_evr \\
+                       & = \f{e}{2m_e} |\vec{L}|
+       \end{align*}
+
+       The direction of $\vec{\mu_L}$ (follow the usual right hand rule)
+       \[ \vec{\mu_L} = -\f{e}{2m_e} \vec{L} \]
+
+       Next, we want to talk a little bit about \textbf{spin}. Spin is the intrinsic angular momentum $\vec{S}$ which leads to an intrinsic dipole moment $\vec{\mu_S}$. This intrinsic property is a fundamental nature of particle and cannot be taken away (c.f., mass or charge). In analogy with orbital angular momentum,
+       \[ \vec{\mu_S} = g\f{q}{2m} \vec{S} \]
+       where $g$ is the \textbf{gyromagnetic ratio}, $q$ is the \textbf{charge}, and $m$ is the \textbf{mass} of the particle.
+       \newline
+
+       For an electron, $g \approx 2$, $q = -e$, $m = m_e$, which means
+       \[ \vec{\mu_S} = -\f{e}{m_e} \vec{S} \]
+
+     \subsection{Stern Gerlach Experiments}
+
+       \begin{figure}[t!]
+          \centering
+          \includegraphics[width=0.8\textwidth]{stern_gerlach.png}
+          \caption{Stern-Gerlach experiment to measure the spin component of neutral particles along the $z$-axis. The magnet cross section at right shows the inhomogeneous field used in the experiment.}
+       \end{figure}
+
+       This experiment was designed to measure the magnetic dipole moment of a particle (atom). A beam of atoms is passed through a magnetic field gradient and observations are made as to what happens to the trajectory.
+       \newline
+
+       So what are the physics in this experiment?
+
+       Potential energy of the magnetic dipole moment $\vec{\mu}$, in external field $\vec{B}$
+       \[ E_{magn} = - \vec{\mu} \cdot \vec{B} \]
+       The force is negative of the gradient of the potential energy
+       \[ \vec{F} = - \vec{\nabla} ( - \vec{\mu} \cdot \vec{B}) \]
+
+       In the Stern Gerlach experiment, the field gradient is in the $z$-direction, so only $\f{dB_z}{dz} \not = 0$, so
+       \[ \vec{F} = \mu_z \f{dB_z}{dz} \hat{z} \ \ \ \ \ \mbox{($\hat{z}$ is unit vector in $z$-direction)}\]
+       Atoms experience a force in the $z$-direction proportionsl to the $z$-component of magnetic dipole moment $\mu_z$ because we designed an experiment where only $\f{dB_z}{dz} \not = 0$.
+       \newline
+
+       What is the classical expectation for silver atoms? (47$e^-$, 47 photons, 60/62 neutrons). Note that
+       \[ - \mu_L \mbox{ or } \mu_S \propto \f{1}{m}, \ \ \ \ \mbox{so only consider electrons } (m_p \approx 2000m_e) \]
+       and there is only one non-closed (tell electron that contributes to angular momentum), it is in an s-shell $(\vec{L} = 0)$, leaving only instrinsic angular momentum. For silver atoms,
+       \[ \vec{\mu} = - g \f{e}{2m_e} \vec{S} \ \ \ \ \mbox{(with $g \approx 2$)} \]
+       For a random gas of atoms, $\vec{\mu}$ is in all directions, so $\mu_z$ will have all possible values. So the force will range,
+       \[ - \mu \f{dB_z}{dz} \leq |\vec{F}| \leq + \mu \f{dB_z}{dz} \]
+       which implies a circular beam spread in the $z$-direction.
+       \newline
+
+       It turns out that experimental results reveal that the beam is split into two. This is known as \textbf{space quantization}. This indicates that $S_z$ has two possible values,
+       \[ S_z = \pm \f{\hbar}{2} \ \ \ \ \ \ \ \left( \hbar = \f{h}{2\pi} \right) \]
+       Splitting is associated with the field gradient $\f{dB_z}{dz}$ since it can change direction and splitting tracks the direction of field gradient. The weird thing here is that \textbf{there is no bias to atom deflection}. There is a 50\% deflection up rate and 50\% deflection down rate. An individual atom is deflected in a probabilistic way. So there is no way of determining precisely what happens to an individual atom.
+
+       \begin{figure}[t!]
+          \centering
+          \includegraphics[width=0.5\textwidth]{stern_gerlach_expect.png}
+          \caption{Space quantization as it appears in the experimental results of the Stern Gerlach experiment.}
+       \end{figure}
+
+       No what we'd like to do is strip down the experiment to the essentisls and introduce language for additional study. First, there are \textbf{two possible outcomes}
+       \[ S_z = + \f{\hbar}{2} \ \ \mbox{"spin up"} \ \ \ \ \ \ S_z = - \f{\hbar}{2} \ \ \mbox{"spin down"}  \]
+       \begin{defn}[observable]\label{observable}
+       The Quantum Mechanics term for the quantity being measured ($S_z$ in this case.)
+       \end{defn}
+       \begin{defn}[analyser]\label{analyser}
+       Stern Gerlach device is some form of an analyser ($x, y, z, \theta, \hat{n}$)
+       \end{defn}
+
+       These are being called the essense of quantum mechanics, and there are a number of experiments involved, we're going to analyze each experiment, one by one.
+
+       \subsubsection{Stern-Gerlach Experiment 1}
+
+         \begin{figure}[t!]
+            \centering
+            \includegraphics[width=0.5\textwidth]{stern_gerlach_exp1.png}
+            \caption{Experiment 1}
+         \end{figure}
+
+         In this experiment, no atoms are deflected down at the second analyzer. Also, each analyzer plays a different role; the first analyszer \textbf{prepared} the beam in a specific quantum state ($\ket{+}$) and so it is a \textbf{state preparation device}. The second analyzer \textbf{measures} the prepared beam.
+
+       \subsubsection{Stern-Gerlach Experiment 2}
+
+         \begin{figure}[t!]
+            \centering
+            \includegraphics[width=0.5\textwidth]{stern_gerlach_exp2.png}
+            \caption{Experiment 2}
+         \end{figure}
+
+         The $X$ analyzer has field gradient in the $x$-direction, ($90^{\circ}$ with respect to the $z$-direction). Also, atoms leaving spin-up / spin-down part of the $X$-analyzer have
+         \[ S_x = + \f{\hbar}{2} \ \ \ / \ \ S_x = - \f{\hbar}{2} \]
+         For input beam $S_z = + \f{\hbar}{2}$ [$\ket{+}$], then 50\% are measured to have $S_x = +\f{\hbar}{2}$. There is the same result for any two different $X$, $Y$, or $Z$ analyser combinations.
+
+       \subsubsection{Stern-Gerlach Experiment 3}
+
+         \begin{figure}[b!]
+            \centering
+            \includegraphics[width=0.5\textwidth]{stern_gerlach_exp3.png}
+            \caption{Experiment 3}
+         \end{figure}
+
+         Classically, we expect to be able to measure $X$, $Y$, and $Z$ components and figure out the total spin direction.  Experiment 3 shows this is not possible in quantum mechanics, as information is reset or lost when new measurements are made. This is a very generic and key feature of quantum mechanics and comes down to really the statement that \textbf{measurement disturbes the system}. By making a measurement, we change the information of the system. Every time we make a measurement, the system isn't what it was before you made the measurement.
+         \newline
+
+         This is a key feature of quantum mechanics. We cannot have simultaneous knowledge of more than one spin component; this is a fundamental incompatability of knowing spin components along two or more directions. We can say that in quantum mechanics, $S_x$, $S_y$, $S_z$ are \textbf{incompatible observables}. More specifically then, the state represented by $\ket{+}_z = \ket{S_z = +\f{\hbar}{2}}$ or $\ket{+}_x = \ket{S_x = + \f{\hbar}{2}}$ but \textbf{not} $\ket{S_z = +\f{\hbar}{2}, S_x = + \f{\hbar}{2}}$.
+
+      \subsubsection{Stern-Gerlach Experiment 4}
+
+         \begin{figure}[t!]
+            \centering
+            \includegraphics[width=0.5\textwidth]{stern_gerlach_exp4.png}
+            \caption{Experiment 4}
+         \end{figure}
+
+         The first two demonstrate experiment 3 for both parts of the middle $X$ analyzer independently. The third one gives a surprising result, allowing both parts into the $Z$ analyzer simultaneously then it is as if the middle measurement had not occured. This is reminiscent of interference; adding two outputs results in enhancement in one sector and reduction or cancellation in the other.
+         \newline
+
+       In summary,
+
+       \begin{itemize}
+         \item Experiment 1: State preparation. If we know the input state and choose an appropriate experiment, we remeasure the state with certainty.
+         \item Experiment 2: Probabilistic nature of quantum measurement when the measurement is not matched to the input state.
+         \item Experiment 3: Measurement disturbs the system leading to incompatible observables.
+         \item Experiment 4: Quantum mechanical interference effects can be observed.
+       \end{itemize}
+
+       \subsection{Quantum State Vectors}
+
+         \begin{defn}[Postulate 1]\label{postulate_1}
+         We label the input state with a left \textbf{ket}, $(\kpsi$), and label the output states with $\ket{+}$ for spin up and $\ket{-}$ for spin down.
+         \end{defn}
+
+         Thus the ket, $\kpsi$ is part of a vector space called a \textbf{Hilbert Space}. The dimensionality of the Hilbert Space depends on the \textbf{observable}. For the $S_z$ observable ($z$-component of angular momentum), it has two possible values,
+         \[ S_z = \pm \f{\hbar}{2} \]
+         Each value is associated with a state vector $\ket{+}$, $\ket{-}$ (note that no subscript will in general mean the $z$-direction, which is just our notation here), so the Hilbert Space is 2D.
+
+         \begin{itemize}
+            \item Much like $\hat{x}, \hat{y}, \hat{z}$ vectors span 3D geometric space, the kets $\ket{+}$ and $\ket{-}$ span the 2D Hilbert Space associated with observable $S_z$.
+            \item They are \textbf{complete} (only 2 possible outcomes).
+            \item They are \textbf{orthogonal}; the result is either spin up or spin down.
+            \item They are also \textbf{normalised}; All Quantum state vectors can (or should be) normalized such that $\braket{\Psi}{\Psi} = 1$.
+         \end{itemize}
+
+         Orthonormal properties are characterised mathematically as
+         \[ \braket{+}{+} = 1 \ \ \ \ \ \ \ \ \braket{+}{-} = 0 \]
+         \[ \braket{-}{-} = 1 \ \ \ \ \ \ \ \ \braket{-}{+} = 0 \]
+
+         Completeness ensures that $\ket{+}, \ket{-}$ can be used as a basis to express any general Quantum Mechanical state as a linear combination of them
+         \[ \mbox{General State Vector \ \ \ } \kpsi = a\ket{+} + b\ket{-} \mbox{ \ \ \ \ \ with $a, b$ complex scalars}  \]
+         The coefficients are inner products, for example consider multiplying on the left by $\ket{+}$,
+         \begin{align*}
+           \braket{+}{\Psi} & = \braket{+}{\left( a\ket{+}+b\ket{-} \right)} \\
+                            & = a\braket{+}{+} + b\braket{+}{-} \\
+                            & = a(1) + b(0) \\
+                            & = a
+         \end{align*}
+
+         Likewise, $\braket{-}{\Psi} = b$. Therfore,
+         \[ \kpsi = \left( \braket{+}{\Psi} \right)\ket{+} + \left( \braket{-}{\Psi} \right) \ket{-} \]
+          As an aside, the $\bra{+}$ is the bra to the $\ket{+}$, so together $\braket{+}{+}$ is a bra-ket. $\ddot\smile$.
+          \newline
+
+          The dual vector (bra) to the Quantum Mechanical ket $\kpsi$:
+          \begin{align*}
+            \bra{\Psi} & = a^*\bra{+} + b^*\bra{-} \\
+            \braket{\Psi}{+} & = a^*\braket{+}{+} + b^*\braket{-}{+} = a^*
+          \end{align*}
+          Hence,
+          \[ \braket{\Psi}{+} = a^* = (a)^* = \left( \braket{+}{\Psi} \right)^* = \braket{+}{\Psi}^* \]
+          Finally,
+          \[ \bra{\Psi} = \left( \braket{\Psi}{+} \right) \bra{+} + \left( \braket{+}{-} \right)\bra{-} \]
+          In Quantum Mechanics we require that all kets (vectors) are normalized.
+
+          \begin{exmp}
+            Given a general quantum state vector expressed as a linear combination of the basis kets for the 2D Hilbert Space associated with the $S_z$ observable:
+            \[ \kpsi = a \ket{+} + b\ket{-} \]
+            Derive an expression for the coefficients, $a$ and $b$, which when satisfied ensure that $\kpsi$ is normalized.
+          \end{exmp}
+
+          First we normalize $\kpsi$, so
+          \begin{align*}
+             \braket{\Psi}{\Psi} & = 1 \\
+             &= \left( a^*\bra{+} + b^*\bra{-} \right)\left( a\ket{+} + b\ket{-} \right) \\
+             & =a^*a\braket{+}{+} + a^*b\braket{+}{-} + b^*a\braket{-}{+} + b^*b\braket{-}{-} \\
+             & = a^*a + b^*b \\
+             & = 1 \mbox{ \ \ \ (requires normalization)} \\
+             & = |a|^2 + |b|^2
+          \end{align*}
+          or since
+          \[ a = \braket{+}{\Psi} \ \ \ \ \ a^* = \braket{\Psi}{+} \]
+          \[ b = \braket{-}{\Psi} \ \ \ \ \ b^* = \braket{\Psi}{-} \]
+          which implies
+          \[ \left| \braket{+}{\Psi} \right|^2 + \left| \braket{-}{\Psi} \right|^2 = 1 \]
+
+          \begin{defn}[Postulate 4]\label{postulate_4}
+            The probability of obtaining the value $\pm \f{\hbar}{2}$ in a measurement of the observable $S_z$ on a system in the state $\kpsi$ is
+            \[ P_{\pm} = \left| \braket{\pm}{\Psi} \right|^2 \]
+            where $\ket{\pm}$ is the basis ket of $S_z$ corresponding to the result $\pm \f{\hbar}{2}$.
+          \end{defn}
+
+          \begin{itemize}
+            \item[(i)] $\braket{+}{\Psi}$ is the \textbf{Probability Amplitude}, it must be "squared" (multiply by the complex conjugate) to get a probability.
+            \item[(ii)] Convention is usually to put order of the inner product as $\braket{\mbox{out}}{\mbox{in}}$ but since
+            \[ P = \left| \braket{\mbox{out}}{\mbox{in}}\right|^2  = \braket{\mbox{out}}{\mbox{in}} \braket{\mbox{in}}{\mbox{out}}\]
+            it doesn't really matter.
+          \end{itemize}
+          $\ket{\mbox{in}}$ is the input state, and $\ket{\mbox{out}}$ is the output state, whose probability for measurement we are calculating.
+
+          \begin{exmp}
+            A Z-analyzer is used to prepare atoms in the state "spin-up". The spin state if these atoms is then measured using a 2nd Z-analyzer. What is the probability that these atoms are measured as "spin-up" and "spin-down"?
+          \end{exmp}
+          \[ P = \left| \braket{\mbox{out}}{\mbox{in}} \right|^2 \mbox{ \ \ \ \ \ \nameref{postulate_4}} \]
+          The first analyzer prepares the input state to the 2nd analyzer : $\ket{\mbox{in}} = \ket{+}$. The probablilty when $\ket{\mbox{out}} = \ket{+}$ implies that
+          \[ P_+ = \left| \braket{+}{+}\right|^2 = 1 \]
+          then similary for when $\ket{\mbox{out}} = \ket{-}$ we get
+          \[ P_- = \left| \braket{-}{+}\right|^2 = 0 \]
+          This agrees perfectly with our observations for Stern Gerlach Experiment 1.
+
+          \textbf{Quantum State Tomography} is a way of determining the quantum state based on results of measurement and is the name of this method.
+
+          With regards to Stern Gerlach Experiment 2, let's apply this method:
+          \newline
+
+          The input state is $\ket{+}$ and we measure $S_x$ with output states $\ket{+}_x$ with probability $\f{1}{2}$ and $\ket{-}_x$ with probability $\f{1}{2}$ (giving a sum probability of 1). Next we formulate mathematically using \nameref{postulate_4} :
+          \[ P = \left| \braket{\mbox{out}}{\mbox{in}} \right|^2 \]
+          So,
+          \begin{align*}
+            \ket{\mbox{in}}  = \ket{+} \implies P_{+x} & = \left| {}_x\braket{+}{+} \right|^2 = \f{1}{2} & (1) \\
+            P_{-x} & = \left| {}_x\braket{-}{+} \right|^2 = \f{1}{2} & (2) \\
+          \end{align*}
+          and the result should be the same if $\ket{\mbox{in}} = \ket{-}$ (Experiment 4b)
+          \begin{align*}
+            \ket{\mbox{in}}  = \ket{-} \implies P_{+x} & = \left| {}_x\braket{+}{-} \right|^2 = \f{1}{2} & (3) \\
+            P_{-x} & = \left| {}_x\braket{-}{-} \right|^2 = \f{1}{2} & (4) \\
+          \end{align*}
+          Since $\ket{+}$ and $\ket{-}$ are basis states that SPAN the 2D Hilbert Space then kets for outputs of other Stern Gerlach measurements can be expressed as linear combinations of them. For example, $S_x$ output states
+          \begin{align*}
+            \ket{+}_x & = a \ket{+} + b\ket{-} \\
+            \ket{-}_x & = c \ket{+} + d\ket{-}
+          \end{align*}
+          for $a,b,c,d \in \C$. Now,
+          \begin{align*}
+            P_{+x} = \left| {}_x\braket{+}{+} \right|^2 & = \left| \left( a^*\bra{+} + b^*\bra{-} \right)\ket{+} \right|^2 \\
+            & = \left|  a^*\braket{+}{+} + b^*\braket{-}{+} \right|^2 \\
+            & = |a|^2 \\
+            & = \f{1}{2} \mbox{ \ \ \ \ \ (from experiment)}
+          \end{align*}
+          Similary we can use (2), (3), and (4) to show that $|b|^2 = |c|^2 = |d|^2 = \f{1}{2}$.
+          \newline
+
+          The coefficients $a,b,c,d$ are complex numbers implying that the amplitude of the phase is
+          \[ re^{i\theta} \]
+          \begin{note}
+            The overall phase (global phase) of a quantum state vector is not physically meaningful - this means it doesn't affect the computation of probabilities (Assignment 3).
+          \end{note}
+
+          Only the relative phase between components of a ket (vector) is important, that is between $a$ and $b$ or $c$ and $d$. This means that we chose one component to be real ($\theta = 0$) and one complex ($\theta \not = 0$).
+          \newline
+
+          Say $a = r_1e^{i\theta_1}$ and $b = r_2e^{i\theta_2}$, then only $\theta_2 - \theta_1$ matters for quantum mechanics so we rotate the vectors to make one real. \newline
+
+          This means we can solve for $a$, $b$, $c$, and $d$ in the following way
+          \begin{align*}
+            \ket{+}_x & = \f{1}{\sqrt{2}}\ket{+} + \f{1}{\sqrt{2}}e^{i\alpha}\ket{-} \\
+            \ket{-}_x & = \f{1}{\sqrt{2}}\ket{+} + \f{1}{\sqrt{2}}e^{i\beta}\ket{-}
+          \end{align*}
+
+          We still need to determine the phases $\alpha$ and $\beta$. We can check,
+
+          \[ P_{+x} = \left| \braket{\mbox{out}}{\mbox{in}} \right|^2 = \left| \left( \f{1}{\sqrt{2}}\ket{+} + \f{1}{\sqrt{2}}e^{i\alpha}\ket{-} \right) \ket{+} \right|^2 = \f{1}{2}\]
+
+          If we consider experiment 1 with an $X$-analyser, we would establish orthonormal properties of $\ket{+}_x$ and $\ket{-}_x$. That is,
+          \begin{align*}
+            {}_x\braket{+}{+}_x & = {}_x\braket{-}{-}_x = 1 \mbox{ \ \ (normalized)} \\
+            {}_x\braket{+}{-}_x & = {}_x\braket{-}{+}_x = 0 \mbox{ \ \ (orthogonal)}
+          \end{align*}
+          Also, orthogonality shows
+          \begin{align*}
+            {}_x\braket{+}{+}_x & = \f{1}{\sqrt{2}} \left( \ket{+} + e^{-i\beta}\ket{-} \right)\cdot\f{1}{\sqrt{2}}\left( \ket{+}+e^{i\alpha}\ket{-} \right) = 0 \\
+            & = \f{1}{2} \left( \cancelto{1}{\braket{+}{+}} + e^{-i\beta}\cancelto{0}{\braket{-}{+}} + e^{-i\alpha}\cancelto{0}{\braket{+}{-}} + e^{i(\alpha -\beta)}\cancelto{1}{\braket{-}{-}} \right) = 0\\
+            & \implies \f{1}{2}\left( 1 + e^{i(\alpha-\beta)} \right) = 0 \\
+            & \implies  e^{i\alpha}  = -e^{i\beta}
+          \end{align*}
+
+          This is all the information we have to determine $\alpha$ and $\beta$. So, we choose $\alpha = 0$, so $e^{i\alpha}$ and $e^{i\beta} =-1$. Thus,
+          \begin{align*}
+            \ket{+}_x & = \f{1}{\sqrt{2}} \left( \ket{+} + \ket{-} \right) \\
+            \ket{-}_x & = \f{1}{\sqrt{2}} \left( \ket{+} - \ket{-} \right) \\
+          \end{align*}
+
+          Similar analysis leads to,
+
+          \begin{align*}
+            \ket{+}_y & = \f{1}{\sqrt{2}} \left( \ket{+} + i\ket{-} \right) \\
+            \ket{-}_y & = \f{1}{\sqrt{2}} \left( \ket{+} - i\ket{-} \right) \\
+          \end{align*}
+
+          \subsection{Matrix Notation}
+
+          If an ordered set of vectors is chosen as a basis, then we can express a general state as a linear combination of them.
+          \[ \kpsi = a\ket{+} + b\ket{-} \]
+          or as an ordered array of coefficients $a$, $b$ in co-ordinate representation.
+          \begin{align*}
+            \ket{+} \xrightarrow[\mbox{basis}]{S_z} \mtx{a \\ b} = \mtx{\braket{+}{\Psi} \\ \braket{-}{\Psi}} \ \ \ \ \ \ \mbox{(column vector)}
+          \end{align*}
+
+          \begin{align*}
+            \kpsi = \kplx = \f{1}{\sqrt{2}} \ket{+} + \f{1}{\sqrt{2}}\ket{-} \xrightarrow[\mbox{basis}]{S_z} \f{1}{\sqrt{2}} \mtx{1 \\ 1} \\
+            \kpsi = \kmiy = \f{1}{\sqrt{2}} \ket{+} - \f{i}{\sqrt{2}}\ket{-} \xrightarrow[\mbox{basis}]{S_z} \f{1}{\sqrt{2}} \mtx{1 \\ -i}
+          \end{align*}
+
+          \begin{note}
+            Basis vectors are unit vectors when expressed in co-ordinate representation with respect to their own basis. For example,
+            \[ \kpsi = \ket{+} = 1\ket{+} + 0\ket{-} = \mtx{1\\0} \]
+          \end{note}
+
+          For the dual space,
+
+          \[ \kpsi = a^*\bp + b^*\bm \xrightarrow[\mbox{basis}]{S_z} (a^*, b^*) \ \ \ \ \mbox{row vector} \]
+          remember that the bra is the conjugate transpose of ket. So for the inner product,
+          \[ \braket{\Psi}{\Psi} = (a^* \  b^*)\mtx{a \\ b} = |a|^2 + |b|^2 \]
+          Let's revisit $\ket{\pm}_y$ in Matrix Notation, first consider experiment 2, but with $X$, replaced by $Y$ (the probabilities measured will be the same).
+
+          \begin{figure}[t!]
+            \centering
+            \includegraphics[width=0.5\textwidth]{stern_gerlach_exp2.png}
+            \caption{Experiment 2}
+          \end{figure}
+
+          Then, if $\ket{\mbox{in}} = \kp$,
+          \begin{align*}
+            Prob_{+y} & = \left| {}_y\braket{+}{+} \right|^2 = \f{1}{2} \\
+            Prob_{-y} & = \left| {}_y\braket{-}{+} \right|^2 = \f{1}{2}
+          \end{align*}
+          otherwise if $\ket{\mbox{in}} = \km$,
+          \begin{align*}
+            Prob_{+y} & = \left| {}_y\braket{+}{-} \right|^2 = \f{1}{2} \\
+            Prob_{-y} & = \left| {}_y\braket{-}{-} \right|^2 = \f{1}{2}
+          \end{align*}
+          Then if we use $\kply = r\kp + s\km$ and $\kmiy = t\kp + u\km$ and orthonormality of $\ket{\pm}_y$ to  get
+          \begin{align*}
+            \kply & = \f{1}{\sqrt{2}} \left( \kp + e^{i\theta}\km \right) \xrightarrow[\mbox{basis}]{S_z}  \f{1}{\sqrt{2}} \mtx{1 \\e^{i\theta}} \\
+            \kmiy & = \f{1}{\sqrt{2}} \left( \kp - e^{i\theta}\km \right) \xrightarrow[\mbox{basis}]{S_z}  \f{1}{\sqrt{2}} \mtx{1 \\-e^{i\theta}}
+          \end{align*}
+          To determine the phase angle $\theta$ we need to consider Experiment 2 but with state preparation $\ket{\pm}_x$ (not $\ket{\pm}$, ($z$-analyzer))
+          \[ \ket{\mbox{in}} = \kplx \ \ \ \ \ Prob_{+y} = \left| {}_y\braket{+}{+}_x \right|^2 = \f{1}{2} \]
+          compute the inner product using Matrix notation
+          \begin{align*}
+            {}_y\braket{+}{+}_x & = \f{1}{\sqrt{2}}(1 \ \ e^{-i\theta})\f{1}{\sqrt{2}}\mtx{1\\1} = \f{1}{2} (1 + e^{-i\theta}) \\
+            \left| {}_y\braket{+}{+}_x \right|^2 & = \f{1}{2}(1 + e^{-i\theta})\f{1}{2}(1 +  e^{i\theta}) = \f{1}{4}(1 + e^{-i\theta} + e^{i\theta} + 1)
+          \end{align*}
+          then using Euler,
+          \begin{align*}
+            \left| {}_y\braket{+}{+}_x \right|^2 & = \f{1}{2}( 1 + \cos\theta) = \f{1}{2} \ \ \ \ \longleftarrow \mbox{from experiment}
+          \end{align*}
+          which implies $\cos\theta = 0$ and so $\theta = \pm \f{\pi}{2}$. So the two possible oputcomes correspond to RH or LH orientation of $Y$ with respect to $X$ and $Z$. Let's choose the RH slution $\theta = \f{\pi}{2}$ then
+          \begin{align*}
+            \kply \xrightarrow[\mbox{basis}]{S_z} \f{1}{\sqrt{2}} \mtx{1 \\ 1}, \ \ \ \ \kmiy \xrightarrow[\mbox{basis}]{S_z} \f{1}{\sqrt{2}} \mtx{1 \\ -i}
+          \end{align*}
+
+    \subsection{General Quantum Systems}
+
+      Consider a measurement of observable $A$, which yields results $a_1, a_2, \ldots, a_n$ (discrete and finite). The states associated with each outcome are described by kets, $\ket{a_1}, \ket{a_2}, \ldots, \ket{a_n}$. These kets are orthogonal (in the sense that any single measurement on a single particle yields only 1 outcome).
+      \newline
+
+      Mathematically, $\braket{a_i}{a_j} = \delta_{ij} = \piecewise{1}{if $i = j$}{0}{if $i \not = j$}$.
+      \newline
+
+      The set of kets is complete (they span the Hilbert Space associated with observable $A$). They can be used to express any arbitrary state as a linear combination.
+
+      \[ \kpsi = \alpha_1\ket{\alpha_1} + \alpha_2\ket{a_2} + \cdots + \alpha_n\ket{a_n} \]
+
+      with $\alpha_i = \braket{a_1}{\Psi}$. So, given $\kpsi$ as an input state to a measurement of observable $A$ with results $a_i$ and associates states $\ket{a_i}$, the probability for obtaining result $a_i$ is given by
+
+      \[ Prob_{(a_i)} = |\braket{a_i}{\Psi}|^2 \ \ \ \ \ \ \ \ \ \ [\mbox{\nameref{postulate_4}}] \]
+
+      \begin{exmp}
+        Consider a quantum systemw ith an observable $A$ that has three possible measurement outcomes, with values $a_1, a_2$ and $a_3$. The quantum state associated with each of these outcomes is described by the three orthonormal kets:
+        \[ \ket{a_1}, \ket{a_2}, \ket{a_3}  \]
+        A system is prepared in the state that is a superposition of the three basis kets:
+        \[ \kpsi = 2\ket{a_1} - 3\ket{a_2} + 4i\ket{a_3} \]
+        Calculate the probability for each of the possible outcomes if a measurement of $A$ is made on the state.
+      \end{exmp}
+
+      So,
+
+      \[ \ket{\mbox{in}} = \kpsi = 2\ket{a_1} - 3\ket{a_2} + 4i\ket{a_3} \ \ \ \ \ \mbox{with} \ \ \ket{a_1}, \ket{a_2}, \ket{a_3} \ \ \mbox{orthogonal, normalised basis set} \]
+
+      First we normalize the state vector. Let $\kpsi = C \left( 2\ket{a_1} - 3\ket{a_2} + 4i\ket{a_3} \right)$, then
+
+      \begin{align*}
+        1 & = \braket{\Psi}{\Psi} \\
+          & = C^* \left( 2\bra{a_1} - 3\bra{a_2} - 4i\bra{a_3} \right) C \left( 2\ket{a_1} - 3\ket{a_2} + 4i\ket{a_3} \right) \\
+          & = |C|^2 \left( 4\braket{a_1}{a_1} + 9\braket{a_2}{a_2} + 16\braket{a_3}{a_3}) \right) \\
+          |C|^2 & = \f{1}{29}
+      \end{align*}
+
+      So, $C = \f{1}{29}$. Note that I skipped the full expansion, but remember that mismatched bra and ket pairs have inner product 0, and same pairs have inner product 1. Okay then, let's get the probabilities.
+
+      \begin{align*}
+         Prob_{a_1} = \left| \braket{\mbox{out}}{\mbox{in}} \right|^2 & = Prob_{a_1} = \left| \braket{a_1}{\Psi} \right|^2 \\
+         & = \left| \braket{a_1}{\f{1}{\sqrt{29}}\left( 2\ket{a_1} - 3\ket{a_2} + 4i\ket{a_3} \right)} \right|^2 \\
+         & = \left| \f{1}{\sqrt{29}} \braket{a_1}{\left( 2\braket{a_1}{a_1} - 3\braket{a_1}{a_2} + 4i\braket{a_1}{a_3} \right)} \right|^2 \\
+         & = \left| \f{2}{\sqrt{29}} \right|^2 \\
+         & = \f{4}{29}
+      \end{align*}
+
+      Likewise, $Prob_{a_2} = \f{9}{29}$, $Prob_{a_3} = \f{16}{29}$ (check $Prob_{a_1} + Prob_{a_2} + Prob_{a_3} = 1$)
+
+    \subsection{Quantum Mechanical Operators and Measurement}
+
+      The goal is to be able to make prediction about measurements that haven't been done yet.
+
+      \subsubsection{Operators, Eigenvalues, \& Eigenvectors}
+
+        \begin{defn}[Postulate 2]\label{postulate_2}
+          A physical observable is represented mathematically by an operator $A$ that acts on kets.
+
+          \[ A\kpsi = \phi \]
+        \end{defn}
+
+        where $A$ is an operator that represents a physical observable.
+        \newline
+
+        For each operator there are "special" (eigen) kets that are not transformed by the operator except for being multiplied by a scalar constant, which has no measureable effect on the state (we will normalize anyway). So,
+
+        \[ \mbox{Eigenvector} = \mbox{unchanged ket (eigenstate, eigenket)} \]
+        \[ \mbox{Eigenvalue} = \mbox{multiplicative constant} \]
+
+        So, the Eigen-equation is
+
+        \[ A\kpsi = a\kpsi \]
+
+        where $A$ is an \textbf{operator}, $a$ is an \textbf{eigenvalue}, and $\kpsi$ is an \textbf{eigenstate}.
+
+        \begin{defn}[Postulate 3]\label{postulate_3}
+          The only possible result of a measurement of an observable is one of the eigenvalues $a_n$ of the corresponding operator $A$. Eigenvalues are the outputs of measurements.
+        \end{defn}
+
+        \begin{exmp}
+          Define operator $S_z$ associated with measurement of the observable that in the $z$-component of intrinsic angular momentum.
+
+          \[ S_z \ket{+} = +\f{\hbar}{2}\ket{+} \]
+          \[ S_z \ket{-} = \f{-\hbar}{2}\ket{-} \]
+
+          We are using Abstract notation here. Note that the eigenvalues are $\pm \f{\hbar}{2}$ and the eigenvectors of $S_z$ are $\ket{\pm}$.
+        \end{exmp}
+
+      \subsubsection{Hermitian Operators}
+
+        Operators used in Quantum Mechanics are Hermitian operators. This means that the operator is equal to its adjoint (conjugate transpose), that is
+
+        \[ A = A^\dagger \]
+
+        Why Hermitian?
+        \begin{itemize}
+          \item[(i)] Eigenvalues of Hermitian operators are real. (Quantum Mechanics interpretation is that they are results of measurements, to they must be real numbers (Energy, position, component of span))
+          \item[(ii)] Eigenvectors of Hermitian operators form a complete set of basis vectors.
+          \item[(iii)] Same operator for the dual space vectors. So,
+          \[ A\ket{\alpha} = \ket{\beta} \ \ \ \ \ \mbox{operator $A$ acts to right on ket $\ket{\alpha}$} \]
+          \[ \bra{\alpha}B = \bra{\gamma} \ \ \ \ \ \mbox{operator $B$ acts to left on bra $\ket{\alpha}$} \]
+          For $\bra{\gamma} = \ket{\beta}$, then $B = A^\dagger$. So if $A = A^\dagger$ then the operator can act to the left or the right to give appropriate dual space relationship. Note that the dual space is transformed in the same way as original space.
+          \[ A\ket{\alpha} = \kb \]
+          \[ \bra{\alpha}A = \bra{\beta} \]
+        \end{itemize}
+
+      \subsubsection{Completeness Relationship}
+
+        We have already seen operators, but didn't realize it.
+
+        \[ \kpsi = a\kp + b\km \mbox{ \ \ \ with \ } a = \braket{+}{\Psi}, b = \braket{-}{\Psi} \]
+        \begin{align*}
+          \kpsi & = \braket{+}{\Psi}\ket{+} + \braket{-}{\Psi}\km \\
+          & = \kp\braket{+}{\Psi} + \ket{-}\braket{-}{\Psi} \\
+          & = \left( \ket{+}\bra{+} \right) \kpsi + \left( \ket{-}\bra{-} \right) \kpsi \\
+          & = \left( \ket{+}\bra{+} + \ket{-}\bra{-} \right)\kpsi
+        \end{align*}
+
+        Hence $\ket{+}\bra{+} + \ket{-}\bra{-} = \mathbb{1}$, the identity operator. This is known as the completeness relation. Note that $\ket{+}\bra{+}$ and $\ket{-}\bra{-}$ are projection operators, and are an example of an outer product.
+
+        More generally for any orthonormal basis, $\ket{e_1}, \ket{e_2}, \ldots, \ket{e_n}$,
+        \[ \sum_{i=1}^n \ket{e_i}\bra{e_i} = \mathbb{1} \ \ \mbox{identity} \]
+
+      \subsubsection{Spectral Decomposition}
+
+        Clearly there exists a very close relationship between an operator, its eigenvalues, and its eigenvectors. In general, any operator is related to its eigenvectors and eigenvalues by
+        \[ \mbox{Operator } A = \sum_i a_i \ket{a_i}\bra{a_i} \]
+        where $a_i$ is an eigenvalue and $\bra{a_i}$ and $\ket{a_i}$ are eigenvectors (eigenkets).
+
+        \begin{exmp}
+          Use the eigen-equations for the $S_z$ operator to verify the spectral decomposition relationship.
+
+          \[ S_z\ket{+} = +\f{\hbar}{2}\kp, \ \ \ \ \ S_z\km = \f{-\hbar}{2}\km \ \ \ \mbox{are eigen-equations} \]
+
+          So we multiply by the appropriate bra,
+          \[ S_z\ket{+}\bra{+} = +\f{\hbar}{2}\kp\bra{+}, \ \ \ \ \ S_z\km\bra{-} = \f{-\hbar}{2}\km\bra{-} \]
+          Add the two equations together and factorize
+          \begin{align*}
+            S_z\kp\bra{+} + S_z\km\bra{-} & = +\f{\hbar}{2}\kp\bra{+} + \f{-\hbar}{2}\ket{-}\bra{-} \\
+            S_z(\kp\bra{+} + \km\bra{-}) & = +\f{\hbar}{2}\kp\bra{+} + \f{-\hbar}{2}\ket{-}\bra{-} \\
+            S_z & = +\f{\hbar}{2}\ket{+}\bra{+} + \f{-\hbar}{2}\ket{-}\bra{-}
+          \end{align*}
+        \end{exmp}
+
+    \subsection{More on Matrix Notation}
+
+      Kets are 2D vectors (defined by Hilbert Space for Stern Gerlach experiments), and operators must be a $2\times 2$ matrix. Matrix elements are defined (according to ruels of linear algebra) as follows:
+
+      \[ S_z \xrightarrow[\mbox{basis}]{S_z}  \mtx{\bra{+}S_z\ket{+} & \bra{+}S_z\ket{-} \\ \bra{-}S_z\kp & \bra{-}S_z\km} = \mtx{\bra{+}\f{+\hbar}{2}\ket{+} & \bra{+}\f{-\hbar}{2}\ket{-} \\ \bra{-}\f{+\hbar}{2}\kp & \bra{-}\f{-\hbar}{2}\km} = \f{\hbar}{2} \mtx{1 & 0 \\ 0 & - 1} \]
+
+      We can check the math for our eigen-equations
+
+      \[ S_z \xrightarrow[\mbox{basis}]{S_z} \f{\hbar}{2}\mtx{1 & 0 \\ 0 & -1} \ \ \ \ \kp \xrightarrow[\mbox{basis}]{S_z} \mtx{1 \\ 0} \ \ \ \ \km \xrightarrow[\mbox{basis}]{S_z} \mtx{0 \\ 1} \]
+
+      We want to see $S_z\kp$,
+
+      \[ S_z\kp = +\f{\hbar}{2} \kp\xrightarrow[\mbox{basis}]{S_z} +\f{\hbar}{2}\mtx{1 & 0 \\ 0 & -1}\mtx{1 \\ 0} = +\f{\hbar}{2}\mtx{1\\0} \]
+
+      \begin{note}
+        Operators are always diagonal in their own basis and eigenvectors are always unit vectors in their own basis.
+      \end{note}
+
+    \subsection{Expectation Values}
+
+      Quantum Mechanics allows us to compute probabilities for outcomes of measurements. Another useful quantity is the mean average value of many repeated measurements on the same initial system. This is known as the expectation value in Quantum Mechanics. Consider observable $X$ with $i$ eigenvalues $x_i$ (measured elements).
+
+      \[ \mbox{Expectation Value } \E{x} = \sum_i x_i prob(x_i) \]
+
+      For $z$-component of angular momentum, characterised by $S_z$ operator with eigenvalues $+\f{\hbar}{2}$,
+
+      \[ \E{S_z} = +\f{\hbar}{2}prob_+ + \f{-\hbar}{2}prob_- \ \ \ \ \ (1) \]
+
+      Given an input state $\kpsi$,
+      \begin{align*}
+        \E{S_z} & = +\f{\hbar}{2} \left| \braket{+}{\Psi} \right|^2 + \f{-\hbar}{2} |\braket{-}{\Psi}|^2 \\
+        & = +\f{\hbar}{2} \left( \braket{\Psi}{+}\braket{+}{\Psi} \right) + \f{-\hbar}{2} \left( \braket{\Psi}{-}\braket{-}{\Psi} \right) \\
+        & = \bra{\Psi} \left( \underbrace{+\f{\hbar}{2} \ket{+}\bra{+} + \f{-\hbar}{2}\ket{-}\bra{-}}_{\mbox{spectral decomposition for $S_z$}} \right) \kpsi
+      \end{align*}
+
+      Then,
+
+      \[ \E{S_z} = \bra{\Psi}S_z\kpsi \ \ \ \ \ \ \ (2) \]
+
+      The expression (2) is completely general: given an operator $\Lambda$ representing a Quantum Mechanical observable with eigenvalues $\lambda_1, \lambda_2, \ldots, \lambda_n$, and eigenkets $\ket{\lambda_1}, \ket{\lambda_2}, \ldots, \ket{\lambda_n}$ then $\Lambda$ can be expressed as
+      \[ \Lambda = \sum_{i=1}^n \lambda_i \ket{\lambda_i}\bra{\lambda_i} \ \ \ \ \mbox{spectral decomposition} \]
+      If a measurement of $\Lambda$ is made on an arbitrary input state $\ket{+}$, the expectation value of many repeated identical measurements will be
+      \[ \E{\Lambda} = \bra{\Psi}\Lambda\kpsi \ \ \ \ \mbox{Expectation value} \]
+
+      \begin{defn}[trace]\label{trace}
+        We are going to introduce a linear operation that assigns a number to each matrix.
+        \[ \trace{\ket{1}\bra{2}} = \braket{2}{1} \]
+      \end{defn}
+
+      \begin{exmp}
+          \[ \ket{1} = \mtx{a_1 \\ a_2} \ \ \ \ \ket{2} = \mtx{b_1 \\ b_2} \ \ \ \ \braket{2}{1} = \mtx{b_1^* & b_2^*}\mtx{a_1 \\ a_2} = a_1b_1^* + a_2b_2^* \]
+          Also
+          \[ \ket{1}\bra{2} = \mtx{a_1 \\ a_2}\mtx{b_1^* & b_2^*} = \mtx{a_1b_1^* & a_1b_2^* \\ a_2b_1^* & a_2b_2^*} \]
+          so
+          \[ \trace{\ket{1}\bra{2}} = a_1b_2^* + a_2b_2^* \]
+      \end{exmp}
+
+      Consider an arbitrary operator $X$ and completeness relation for a set of basis kets
+      \[ \ket{+}\bra{+} + \ket{-}\bra{-} = \mathbb{1} \]
+      then
+      \begin{align*}
+        \trace{X} = \tr{\mathbb{1}X} & = \tr{\ket{+}\bra{+} + \ket{-}\bra{-}X} \\
+                                     & = \tr{\ket{+}\left( \bra{+}X \right) + \ket{-}\left( \bra{-}X \right)} \\
+                                     & = \tr{\ket{+}\left( \bra{+}X \right)} + \tr{\ket{-}\left( \bra{-}X \right)} \\
+                                     & = \bra{+}X\ket{+} + \bra{-}X\ket{-}
+      \end{align*}
+      which is the sum of the diagonal elements of $X$ when written in co-ordinate representation with respect to basis $\ket{+}$ and $\km$.
+      \[ X = \mtx{\bp X\kp & \bp X\km \\ \bm X\kp & \bm X\km} \]
+
+      \textbf{Properties of Trace}
+
+      \begin{itemize}
+        \item[(i)] $\tr{X+Y} = \tr{X} + \tr{Y}$
+        \item[(ii)] $\tr{\lambda X} = \lambda\tr{X}$
+        \item[(iii)] $\tr{XY} = \tr{YX}$
+        \item[(iv)] $\tr{XYZ} = \tr{YZX} = \tr{ZXY}$
+      \end{itemize}
+
+      In regard to the expectation value for a Quantum Mechanical measurement for operator $X$ and input state $\Psi$,
+      \[ \E{X} = \bra{\Psi}X\kpsi = \bra{\Psi}\left( X\kpsi \right) = \tr{ \left( X\kpsi \right)\bra{\Psi}} = \tr{X\kpsi\bra{\Psi}}\]
+
+      Separate the properties of measured system (atoms) from Observable $X$.
+
+    \subsection{Stastical Operator / Density Matrix}
+
+      Mixed state or Pure State (superposition state)?
+      \newline
+
+      So far we have discussed sources (input states) that are composed of a single type of atom - this may be a superposition state (pure state) like
+
+      \[ \kpsi = a\kp + b\km \ \ \ \ \ \ \ \mbox{e.g., \ \ \ } \kp_x = \f{1}{\sqrt{2}}\kp + \f{1}{\sqrt{2}}\km \]
+
+      How do we describe a source that is, say, a 50\% mixture of atoms in $\kp$ state and 50\% in $\km$ state - at first glance this may appear similar to $\kp_x$, but think about $S_x$. \newline
+
+      Consider a mixture of $P_1 \kp_x$ atoms and $P_2 \kp_z$ atoms, $(P_1 +P_2 = 1)$ and an arbitrary Stern Gerlach measurement $S_n$. The overall expectation value $\E{S_n}$ is the weighted sum of individual expectation values.
+
+      \[ \E{S_n} = P_1 \E{S_n}_x + P_2\E{S_n}_z \]
+
+      with
+
+      \[ \E{S_n}_x = {}_x\bp S_n\kp_x = \tr{S_n\kp_x {}_x\bp} \]
+
+      and
+
+      \[ \E{S_n}_z = {}_z\bp S_n\kp_z = \tr{S_n\kp_z {}_z\bp} \]
+
+      Thus
+
+      \begin{align*}
+        \E{S_n} & = P_1\tr{S_n\kp_x {}_x\bp} + p_2\tr{S_n\kp_z {}_z\bp} \\
+                & = \tr{S_n \underbrace{\left( P_1\kp_x{}_x\bp + P_2\kp_z{}_z\bp \right)}_{\mbox{Statistical Operator}}}
+      \end{align*}
+
+      \begin{defn}[Statistical Operator (Density Matrix)]\label{statistical_operator}
+        \[ \rho = P_1\kp_x {}_x\bp + P_2\kp_z {}_z\bp \]
+        the weighted sum of outer products of source atoms.
+        \[ \E{S_n} = \tr{S_n\rho} \]
+        In general,
+        \[ \rho = \sum_i P_i \ket{x_i}\bra{x_i} \ \ \ \ \ \ \mbox{with } \sum_i P_i = 1 \]
+        If there is only one type of atom, it is a pure state (e.g., $\kpsi$) and the statistical operator is $\rho = \kpsi\bra{\Psi}$.
+      \end{defn}
+
+      % \begin{exmp}
+      %   The operator associated with the observable that is the $y$-component of instrinsic angular expressed in co-ordinate representation with respect to the $S_z$ basis is
+      %   \[ S_y \rightarrow \f{\hbar}{2} \mtx{0 & -i \\ i & 0} \]
+      % \end{exmp}
+
+      \begin{exmp}
+        \begin{itemize}
+          \item[(i)] Use spectral decomposition and the expressions for $\kp_x$, $\km_x$ in co-ordinate representation with respect to the $S_z$ basis to find $S_x$ as a matrix, also in the $S_z$ basis.\newline
+
+          The spectral decomposition for $S_x$ is
+          \[ S_x = +\f{\hbar}{2}\ket{+}_x{}_x\bra{+} + \f{-\hbar}{2}\ket{-}_x{}_x\bra{-} \]
+          and
+          \[ \kp_x \xrightarrow[\mbox{basis}]{S_z} \f{1}{\sqrt{2}}\mtx{1 \\ 1} \ \ \ \ \ \ \ \ \km_x \xrightarrow[\mbox{basis}]{S_z} \f{1}{\sqrt{2}}\mtx{1 \\ -1} \]
+          then
+          \begin{align*}
+            S_z & \xrightarrow[\mbox{basis}]{S_z} \f{+\hbar}{2}\f{1}{\sqrt{2}}\mtx{1 \\ 1}\f{1}{\sqrt{2}}\mtx{1 & 1} + \f{-\hbar}{2}\f{1}{\sqrt{2}}\mtx{1 \\ -1}\f{1}{\sqrt{2}}\mtx{1 & -1}\\
+            & = \f{+\hbar}{2}\f{1}{2}\mtx{1 & 1 \\ 1 & 1} + \f{-\hbar}{2}\f{1}{2}\mtx{1 & -1 \\ -1 & 1} \\
+            & = \f{\hbar}{2} \mtx{0 & 1 \\ 1 & 0}
+          \end{align*}
+          \item[(ii)] A source of atoms is prepared as 20\% $\kp$ and 80\% $\km_y$ and a measurement of the $x$-component of angular momentum is performed. What is the expectation value for this experiment?\newline
+
+          \[ \E{S_x} = \tr{S_x\rho} \]
+          and
+          \begin{align*}
+            \rho & = \sum_i P_i \ket{\lambda_i}\bra{\lambda_i} = \f{20}{100}\kp\bm + \f{80}{100}\km_y{}_y\bm
+          \end{align*}
+          which in the $z$-basis is
+          \begin{align*}
+            \rho & \xrightarrow[\mbox{basis}]{S_z} \f{20}{100}\mtx{1 \\ 0}\mtx{1 & 0} + \f{80}{100}\f{1}{\sqrt{2}}\mtx{1 \\ -i} \f{1}{\sqrt{2}}\mtx{1 & i} \\
+            & = \f{1}{5}\mtx{3 & 2i \\ -2i & 2}
+          \end{align*}
+          So,
+          \begin{align*}
+            \E{S_x} & = \tr{\f{\hbar}{2}\mtx{0 & 1 \\ 1 & 0}\f{1}{5}\mtx{3 & 2i \\ -2i & 2}} = \f{\hbar}{10}\tr{\mtx{2i & 3 \\ 2 & -2i}} = 0
+          \end{align*}
+        \end{itemize}
+      \end{exmp}
+
+    \subsection{Projection Operators and Measurements}
+
+      \begin{defn}[Postulate 5]\label{postulate_5}
+        After a measurement of $A$ that yields the result $a_n$, the quantum system is in a new state that is the normalized projection of the original system ket onto the ket (or kets) corresponding to the result of the measurement:
+
+        \[ \ket{\Psi'} = \f{P_n\kpsi}{\sqrt{\bra{\Psi}P_n\kpsi}} \]
+      \end{defn}
+
+      We have seen proejction operators before, for example
+      \[ \kpsi = \braket{+}{\Psi}\kp + \braket{-}{\Psi}\ket{-} = \left( \underbrace{\kp\bp}_{\mbox{projection}} \right)\kpsi + \left( \underbrace{\km\bm}_{\mbox{projection}}  \right)\kpsi\]
+
+      In this case, these are projection operators for $\kp$ and $\km$ states respectively. Applying the projection operator is analogous to taking components of geometric vectors. It produces a new state that is aligned along the eigenstate, with magnitude equal to the probability amplitude for the state to be in that eigenstate.
+
+      \[ P_+ = \kp\bp \xrightarrow[\mbox{basis}]{S_z} \mtx{1 \\0}\mtx{1 & 0} = \mtx{1 & 0 \\ 0 & 0} \]
+      \[ P_- = \km\bm \xrightarrow[\mbox{basis}]{S_z} \mtx{0 \\1}\mtx{0 & 1} = \mtx{0 & 0 \\ 0 & 1} \]
+
+      \[ P_+\kpsi = \kp\braket{+}{\Psi} = \braket{+}{\Psi} \kp \]
+      \[ P_-\kpsi = \km\braket{-}{\Psi} = \braket{-}{\Psi} \km \]
+
+      where $\kp$ and $\km$ are eigenstates, and $\left( \braket{+}{\Psi} \right)$ and $\left( \braket{-}{\Psi} \right)$ are probability amplitudes.\
+      \newline
+
+      Now Postulate 5 lets us determine the output state using the projection operator.
+      \[ \ket{\Psi'} = \f{P_\Psi\kpsi}{\sqrt{\bra{\Psi}P_\Psi\kpsi}} \]
+
+      where
+
+      \begin{align*}
+        P_\Psi & = \ket{\Psi'}\bra{\Psi'} \\
+        \sqrt{\bra{\Psi}P_{\Psi'}\kpsi} & = \sqrt{\braket{\Psi}{\Psi'}\braket{\Psi'}{\Psi}} \\
+        & = \sqrt{|\braket{\Psi}{\Psi'}|^2} = \mbox{probablity amplitude}
+      \end{align*}
+
+      Now, the expectation value for the projection operator is
+
+      \begin{align*}
+        \E{P_+} & = \bra{\Psi}P_+\kpsi \\
+                & = \braket{\Psi}{+}\braket{+}{\Psi} \\
+                & = |\braket{+}{\Psi}|^2 \\
+                & = prob_+
+      \end{align*}
+
+    \subsection{Spin Components in Arbitrary Directions}
+
+      For spin components in arbitrary directions, we are going to use as our operator a linear combination of the operators $S_z, S_x, S_y$. First we express an arbitrary vector $\hat{n}$ (for field gradient direction) in terms of polar co-ordinates. We'll use $\theta$ as the polar angle (angle between $\hat{n}$ and the $z$ axis), $\phi$ as the agimuthal angle (angle between $\hat{n}$ and the $x$ axis), and then
+      \[ \hat{n} = \hat{i}\sin\theta\cos\phi + \hat{j}\sin\theta\sin\phi + \hat{k}\cos\theta  \]
+      where $\hat{i}, \hat{j}, \hat{k}$ are unit vectors in direction $x, y,z$ respectively.
+      \newline
+
+      Then the operator for spin component along direction $\hat{n}$ is obtained by projecting spin vector operator $S = (S_x,S_y,S_z)$ on $\hat{n}$ unit vector. Then,
+
+      \[ \mbox{operator } S_n = S\cdot\hat{n} = S_x\sin\theta\cos\phi + S_y\sin\theta\sin\phi + S_z\cos\theta \]
+      in matrix form with respect to the $S_z$ basis
+      \begin{align*}
+        S_n & \xrightarrow[\mbox{basis}]{S_z} \f{\hbar}{2} \left[ \mtx{0 & 1 \\ 1 & 0}\sin\theta\cos\phi + \mtx{0 & -i \\ i & 0}\sin\theta\sin\phi + \mtx{1 & 0 \\ 0 & -1}\cos\theta \right] \\
+        & = \f{\hbar}{2}\mtx{\cos\theta & \sin\theta\cos\phi - i\sin\theta\sin\phi \\ \sin\theta\cos\phi+i\sin\theta\sin\phi & - \cos\theta} \\
+        & = \f{\hbar}{2}\mtx{\cos\theta & \sin\theta e^{-i\theta}\\ \sin\theta e^{i\theta} & -\cos\theta}
+      \end{align*}
+
+      This can be diagonalised to find eigenvalues and eigenvectors,
+
+      \[ \mbox{Eigenvalues } = \pm\f{\hbar}{2} \]
+     \begin{align*}
+       \mbox{Eigenvectors } & = \ket{+}_n = \cos\f{\theta}{2}\kp + \sin\f{\theta}{2}e^{i\phi}\km \xrightarrow[\mbox{basis}]{S_z} \mtx{\cos\f{\theta}{2} \\ \sin\f{\theta}{2}e^{i\phi}} \\
+        & = \ket{-}_n =  \sin\f{\theta}{2}\kp - \cos\f{\theta}{2}e^{i\phi}\km  \xrightarrow[\mbox{basis}]{S_z} \mtx{\sin\f{\theta}{2} \\ -\cos\f{\theta}{2}e^{i\phi}}
+     \end{align*}
+
+     We can check that this is consitent using spectral decomposition:
+
+     \[ S_n = \f{+\hbar}{2}\kp_n{}_n\bp + \f{-\hbar}{2}\km_n{}_n\bm \]
+
+     \begin{exmp}
+       Consider an input state with $\theta = \f{2\pi}{3}$ and $\phi = \f{\pi}{4}$, and we want to take an $X$ measurement. Then, in general we have
+       \[ Prob = |\braket{\mbox{out}}{\mbox{in}}|^2 \]
+       and in this case
+       \begin{align*}
+           \ket{\mbox{in}} & = \kp_n = \cos\f{\theta}{2}\kp + \sin\f{\theta}{2}e^{i\phi}\km = \cos\f{\pi}{3}\kp + \sin\f{\pi}{3}e^{i\f{\pi}{4}}\km \\
+                           & = \f{1}{2}\kp + \f{\sqrt{3}}{2}e^{i\f{\pi}{4}}\km
+       \end{align*}
+       For $Prob_{+x}$, $\ket{\mbox{out}} = \kp_x = \f{1}{\sqrt{2}} \kp + \f{1}{\sqrt{2}}\km$,
+       \begin{align*}
+         Prob_{+x} & = |{}_x\braket{+}{+}_n|^2 = \left| \left( \f{1}{\sqrt{2}}\bp + \f{1}{\sqrt{2}}\bm \right)\left( \f{1}{2}\kp + \f{\sqrt{3}}{2}e^{i\f{\pi}{4}}\km \right) \right|^2 \\
+         & = \left| \f{1}{\sqrt{2}} \left( \f{1}{2}\braket{+}{+} + \f{\sqrt{3}}{2}e^{i\f{\pi}{4}}\braket{+}{-} + \f{1}{2}\braket{-}{+} + \f{\sqrt{3}}{2}e^{i\f{\pi}{4}}\braket{-}{-} \right) \right|^2 \\
+         & = \left| \f{1}{2\sqrt{2}} \left( 1 + \sqrt{3}e^{i\f{\pi}{4}} \right) \right|^2 \\
+         & = \f{1}{8} \left( 1 + \sqrt{3}e^{i\f{\pi}{4}} \right) \left( 1 + \sqrt{3}e^{-i\f{\pi}{4}} \right) \\
+         & = 0.806
+       \end{align*}
+       Then of course $prob_{-x} = 1 - 0.806 = 0.194$. Next for the expectation value we could do it any of these ways
+       \begin{itemize}
+         \item[(i)] use weighted sum of products of eigenvalues $\f{\pm\hbar}{2}$ and probabilities
+         \item[(ii)] $\E{S_x} = {}_n\bp S_x \kp_n$
+         \item[(iii)] $\E{S_x} = \tr{S_x \kp_n{}_n\bp}$
+         \item[(iv)] use projection operator (expectation value) to compute probabilities and perform weighted sum as in (i)
+       \end{itemize}
+     \end{exmp}
+
+    \subsection{Commuting Observables}
+
+      Looking at the Stern Gerlach Experiment number 3, we see that simultaneous knowledge of a spin-component in more than one direction is not possible. How do we mathematically characterize the incompatible nature of certain observables? We use the \textbf{commutator}.
+
+      \begin{defn}[commutator]\label{commutator}
+        \[ [A, B] = AB - BA \]
+        The difference in the products of the two operators taken in alternate orders. For $[A,B] = 0$, we know that $AB = BA$ so the operators (or observables) commute and the order of operation does not matter.
+      \end{defn}
+
+      Consider the effect of commutation on eigen-equations. For operator $A$, with eigenvalues $a$ and eigenkets $\ket{a}$,
+      \[ A\ket{a} = a\ket{a} \]
+      then for a second operator $B$,
+      \[ BA\ket{a} = Ba\ket{a} = aB\ket{a} \]
+      If $[A,B] = 0$ then $AB = BA$ which implies
+      \[ BA\ket{a} = A(B\ket{A}) = a(B\ket{a}) \]
+      Hence $BA$ is an eigenket of $A$ with eigenvalue $a$, so $B\ket{a}$ is a scalar multiple of $\ket{a}$, say $b\ket{a}$ and therefore
+      \[ B\ket{a} = b\ket{a} \]
+
+      So, $A$ and $B$ share common eigenkets $\ket{a}$. Therefore the general statement is that
+
+      \begin{thrm}
+      Commuting operators (observables) share common eigenkets, eigenstates, and eigenvectors.
+      \end{thrm}
+
+       The consequence for measurement is shown in page 29 of the textbook. So, Commuting observables preserve the state information, and eigenvalues $(a_1,b_1)$ of the operators can be known simultaneously. So with non-commuting operators it means we have incompatible observables which cannot be shown simultaneously.\newline
+
+       From experiment 3,
+
+       \[ [S_z,S_x] \xrightarrow[\mbox{basis}]{S_z} \f{\hbar}{2}\mtx{1 & 0 \\ 0 & -1}\f{\hbar}{2}\mtx{0 & 1 \\ 1 & 0} - \f{\hbar}{2}\mtx{0 & 1 \\ 1 & 0}\f{\hbar}{2}\mtx{1 & 0 \\ 0 & -1} = -i\hbar\cdot\f{\hbar}{2}\mtx{0 & i \\ -i & 0} = +i\hbar S_y \]
+
+    \subsection{Uncertainty in Measurement of Observables}
+
+      \begin{itemize}
+        \item The outcome of measurements is probabilistic.
+        \item Compute "ideal" probabilities to which experimental results converge.
+      \end{itemize}
+
+      Expectation value is the average of repeated identical measurements but sees nothing about the distribution of results. Information on distribution requires variance or standard deviation. In Quantum Mechanics we call this the uncertainty,
+
+      \begin{defn}[uncertainty]\label{uncertainty}
+      \[ \Delta A = \sqrt{\E{A^2} - \E{A}^2} \]
+      where $\E{A}^2$ is the square of the expectation value for observable $A$ and $\E{A^2}$ is the expectation value of $A^2 = AA$.
+      \end{defn}
+
+      \begin{defn}[Uncertainty Principle]\label{Uncertainty Principle}
+        Connects the possibility or not of having simultaneous knowledge of two Quantum Mechanical observables to the product of their respective uncertainties in their measurement through the commutation relation.
+        \[ \Delta A \Delta B \geq \f{1}{2} \left| \E{[A,B]} \right| \]
+      \end{defn}
+
+      \begin{exmp}
+        For observables $S_x$ and $S_y$, where $[S_x,S_y] = i\hbar S_z$,
+        \begin{align*}
+          \Delta S_x \Delta S_y & \geq \f{1}{2} \left| \E{[S_x,S_y]} \right| \\
+                                & = \f{1}{2} \left| \E{i\hbar S_z} \right| \\
+                                & = \f{\hbar}{2} \left| \E{S_z} \right| \\
+        \end{align*}
+        If $\kp$ is used as the input state for a $Z$-SG measurement, then
+        \[ \underbrace{\E{S_z} = \f{+\hbar}{2}}_{\mbox{always deflected up}}, \ \ \ \ \ \underbrace{\Delta S_z = 0}_{\mbox{always get same result}} \]
+        The uncertainty principle then continues to say
+        \[  \Delta S_x \Delta S_y \geq \f{\hbar}{2} \left| \E{S_z} \right| \geq \left( \f{\hbar}{2} \right)^2 \not = 0 \]
+
+        This implies that
+        \[ \Delta S_x \not = 0 \ \ \ \ \ \ \ \ \ \mbox{and} \ \ \ \ \ \ \ \ \ \Delta S_y \not = 0 \]
+        That is, if we know $S_z$ with certainty ($\Delta S_z = 0$), then we have non-zero uncertainty in $S_x$ and $S_y$. This is entirely consistent with the concept of incompatible observables. \newline
+
+        For observables that do commute, then $[A,B] = 0$ and $\Delta A \Delta B \geq 0$, so uncertainties can be simultaneously zero and we can have simultaneous knowledge of observables $A$ and $B$.
+
+      \end{exmp}
+
+  \section{Quantum Dynamics}
+
+    We'll study how quantum systems evolve in time including details on the Shroedinger Equation, the Hamiltonian operator and energy eigenstates, the Time independent Hamiltonian, and some Examples.
+
+    \subsection{Time Dependence in Quantum Mechanics}
+
+    \begin{defn}[Postulate 6]\label{postulate_6}
+      The time evolution of a quantum system is determined by the Hamiltonian or total energy operator $H(t)$ through the Schrödinger equation
+      \[ i\hbar\f{d}{dt} \ket{\Psi(t)} = H(t)\ket{\Psi(t)} \]
+    \end{defn}
+
+    How does a quantum state (ket) evolve with time? Time dependence is governed by the Schrödinger Equation (see postulate 6). $H(t)$ is a new operator called the Hamiltonian Operator.
+    It is an observable corresponding to the \textbf{total} energy of the system. It is also a Hermitian operator, which means some important things for us:
+    \begin{itemize}
+      \item Its eigenvalues are real
+      \item Eigenvectors form a complete basis set
+    \end{itemize}
+    Eigenvalues are allowed energies of the system, and \textbf{may be discrete or continuous}. Eigenstates are the energy eigenstates of the system. If the allowed energy states are $\ket{E_n}$ corresponding to allowed energy eigenvalues $E_n$, Then
+    \[ H\ket{E_n} = E_n\ket{E_n} \]
+
+    Where $H$ is a Hamiltonian operator, $\ket{E_n}$ is the energy eigenket, and $E_n$ the energy eigenvalue. Given a Hamiltonian, it can be diagonalised to find the eigenvalues and eigenvectors.
+    \newline
+
+    Energy eigenstates form a complete basis, and any arbitrary state can be constructed as a linear combination of them
+    \[ \kpsi = \sum_n c_n\ket{E_n} \mbox{ \ \ \ \ \ with } c_n = \braket{E_n}{\Psi} \]
+    and
+    \[ \braket{E_k}{E_n} = \delta_{kn} = \piecewise{0}{if $k \not = n$}{1}{if $k = n$} \]
+    The Time Independent Hamiltonian is then
+    \[ H(t) = H(0) = H \]
+    Since $H$ is time independent, then eigenvalues and eigenkets must be time independent too (think spectral decomposition).
+    \newline
+
+    Time evolution of the quantum state $\ket{\Psi(t)}$ is governed by time independent coefficients of an expansion in the energy basis
+    \[ \ket{\Psi(t)} = \sum_n c_n(t)\ket{E_n} \]
+    The goal is to find an expression for the $c_n(t)$'s. We're going to substitue the expansion in the energy basis into the Schrödinger Equation
+    \begin{align*}
+      i\hbar\f{d}{dt} \ket{\Psi(t)} & = H(t)\ket{\Psi(t)} \\
+      i\hbar\f{d}{dt} \left( \sum_n c_n(t) \ket{E_n} \right) & = H\sum_n c_n(t)\ket{E_n} \\
+      i\hbar \sum_n \f{dc_n(t)}{dt} \ket{E_n} & = \sum_n c_n(t) E_n \ket{E_n} \\
+    \end{align*}
+    now we'll multiply on the left by the bra of the particular eigenstate $\ket{E_k}$
+    \begin{align*}
+      \bra{E_k} i\hbar \sum_n \f{dc_n(t)}{dt} \ket{E_n} & = \bra{E_k} \sum_n c_n(t) E_n \ket{E_n} \\
+      i\hbar \sum_n \f{dc_n(t)}{dt}\braket{E_k}{E_n} & = \sum_n c_n(t)E_n\braket{E_k}{E_n} \\
+      i\hbar \f{dc_k(t)}{dt} & = c_k(t)E_k
+    \end{align*}
+    This picks out the single eigenstate when $k=n$, and $\braket{E_k}{E_n} =1$
+    \begin{align*}
+      i\hbar \f{dc_k(t)}{dt} & = c_k(t)E_k \\
+      \f{dc_k(t)}{dt} & = \f{-iE_k}{\hbar} c_k(t)
+    \end{align*}
+    So a general solution is that
+    \[ c_k(t) = c_k(0) \exp \left\{ \f{-iE_k}{\hbar} t \right\} \]
+    Each coefficient in the linear expansion for $\ket{\Psi(t)}$ has the same form of complex exponential, with exponent proportional to the eigenvalue asociated with energy eigenket
+    \[ \ket{\Psi(t)} = \sum_n c_n(0)\exp\left\{\f{-iE_n}{\hbar} t\right\} \]
+    We can deduce the consequences for computing probabilities depending on what form the arbitrary state $\ket{\Psi(t)}$ takes.
+    \begin{itemize}
+      \item[(1)] $\ket{\Psi(0)}$ is an energy eigenstate $\implies \ket{\Psi(0)} = \ket{E_1}$. At time $t \ (t > 0)$, the quantum state is described by the ket:
+      \[ \ket{\Psi(t)} = \expo{\f{-iE_1}{\hbar} t}\ket{E_1} \]
+      Consider measuring observable $A$, the probability of measuring eigenvalue $a_i$, corresponding to eigenstate $\ket{a_i}$ is given then by
+      \begin{align*}
+         prob_{a_i} & = \left| \braket{\mbox{out}}{\mbox{in}} \right|^2 \\
+                    & = \left| \braket{a_i}{\Psi(t)} \right|^2 \\
+                    & = \left| \bra{a_i}{\expo{\f{-iE_1}{\hbar} t}\ket{E_1}} \right|^2 \\
+                    & = \left| \braket{a_i}{E_1} \right|^2
+      \end{align*}
+      So the probability is time independent, and the energy eigenstates are termed \textbf{stationary states}. If a system starts in that state it will continue to be in that state.
+
+      \item[(2)] Suppose that our input state is a linear combination of energy eigenstates,
+      \[ \ket{\mbox{in}} = \ket{\Psi(0)} = c_1\ket{E_1} + c_2\ket{E_2} \]
+      At some time $t > 0$, the quantum state is described by
+      \begin{align*}
+        \ket{\Psi(t)} & = c_1\exp{\f{-iE_1}{\hbar} t}\ket{E_1} + c_2\exp{\f{-iE_2}{\hbar} t}\ket{E_2}
+      \end{align*}
+      \begin{itemize}
+        \item[(i)] Consider measuring the energy of the system at some time $t$. The only possible outcomes are $E_1$ or $E_2$ (others may exists but $pr = 0$). This input state would yield $E_1$ with probability:
+        \begin{align*}
+          prob_{E_1} & = \left| \braket{\mbox{out}}{\mbox{in}} \right|^2 \\
+                      & = \pr{\braket{E_1}{\Psi(t)}} \\
+                      & = \pr{\bra{E_1}\left( c_1 \exp{\f{-iE_1}{\hbar} t}\ket{E_1} + c_2\exp{\f{-iE_2}{\hbar} t}\ket{E_2} \right)} \\
+                      & = |c_1|^2
+        \end{align*}
+        \item[(ii)] Consider measuring a different observable $A$, using $\ket{\Psi(t)}$ as $\ket{\mbox{in}}$
+        \begin{itemize}
+          \item If $A$ commutes with the Hamiltonian $([A,H] =0)$, then $A$ and $H$ share common eigenstates. The probabilities for outcomes of $A$ will proceed as in $(2)(i)$ and will be time independent.
+          \item If $A$ does \textbf{not} commute with $H$ $([A,H] \not = 0)$ then eigenstates of $A$ can be written as a linear combination of energy eigenstates of $H$. For example, an eigenstate of $A$
+          \[ \ket{a_1} = \alpha_1\ket{E_1} + \alpha_2\ket{E_2} \]
+        \end{itemize}
+        The probability for measuring $a_1$,
+        \begin{align*}
+          prob_{a_1} = \left| \braket{\mbox{out}}{\mbox{in}} \right|^2 & = \pr{\braket{a_1}{\Psi(t)}} \\
+          & = \pr{\left( \alpha_1^*\bra{E_1} + \alpha_2^*\bra{E_2} \right)\left( c_1 \exp{\f{-iE_1}{\hbar} t}\ket{E_1} + c_2\exp{\f{-iE_2}{\hbar} t}\ket{E_2} \right)} \\
+          & = \pr{\alpha_1^*c_1\exp{\f{-iE_1}{\hbar}t}+\alpha_2^*c_2\exp{\f{-iE_2}{\hbar}t}} \\
+          & = \pr{\exp{\f{-iE_1}{\hbar}t}}\pr{\alpha_1^*c_1 + \alpha_2^*c_2\exp{\f{-i(E_2-E_1)}{\hbar}t}} \\
+          & = \pr{\alpha_1}\pr{c_1} + \pr{\alpha_2}\pr{c_2} + 2\Re \left( \alpha_1c_1^*\alpha_2^*c_2\exp{\f{-i(E_1 - E_2)}{\hbar}t} \right)
+        \end{align*}
+        Time dependence is determined by the difference in energy of two energy eigenstates in the superposition for $\ket{\Psi(t)}$. The probability oscillates with a frequency
+        \[ \omega_{21} = \f{E_2-E_1}{\hbar} \ \ \ \ \ \ \ \mbox{Bohr Frequency} \ \ \ \ \ \ E =\hbar \omega \]
+      \end{itemize}
+    \end{itemize}
+
+    \begin{exmp}
+      The time evolution of a spin state in a constant magnetic field (Spin Precession).
+    \end{exmp}
+
+    Classically, we established that the potential energy for a magnetic dipole moment in a magnetic field depends on their relative orientation, such that:
+
+    \[ PE = E = - \vec{\mu} \cdot \vec{B} \]
+
+    Consider only intrinsic magnetic dipole moment (spin):
+
+    \[ \vec{\mu} = \vec{\mu_s} = g \f{q}{2m}\vec{S} \approx \f{-e}{m_e}\vec{S} \ \ \ \mbox{(for electron)} \]
+
+    So, $E = \f{e}{m_e}\vec{S}\cdot\vec{B}$. The Hamiltonian operator is then generated by analogy:
+
+    \[ H = \f{e}{m_e}\vec{S}\cdot\vec{B} \ \ \ \  \mbox{\ where \ } \vec{S} = S_x + S_y + S_z \]
+
+    and operators of spin observables as before. Consider a magnetic field along the $x$-direction
+
+    \[ \vec{B} = B_0 \hat{x} \implies H = \f{eB_0}{m_e}S_x = \omega_0 S_x \]
+
+    where $\omega_0 = \f{eB}{m_e}$ is angular frequency. What are the eigenstates and eigenvalues of our time independent Hamiltonian? Clearly $H$ is proportional to $S_x$ so $H$ and $S_x$ commute, so they share common eigenstates; also the eigenvalues are eigenvaues of $S_x$ multiplied by $\omega_0$,
+    \[ \mbox{eigenvalues} = \pm \f{\hbar\omega_0}{2} \ \ \ \ \ \ \mbox{(note these are energies)} \]
+
+    We could also compute in the $z$-basis,
+
+    \[ H = \omega_0S_x = \f{\hbar\omega_0}{2}\mtx{0&1\\1&0} \implies \kp_x = \f{1}{\sqrt{2}}\mtx{1\\1}. \ \ \km_x = \f{1}{\sqrt{2}}\mtx{1\\-1} \]
+
+    The eigenequations are then
+
+    \[ H\kp_x = \f{\hbar\omega_0}{2} \kp_x , \ \ \ \ \ \ \ \ H\km_x = \f{-\hbar\omega_0}{2} \km_x \]
+
+    Consider time evolved states and probabilities for different source states.
+
+    \begin{itemize}
+      \item[(i)] Consider the initial state to be an eigenstate of Hamiltonian (e.g., $\ket{\Psi(0)} = \kp_x$). The time dependent state is then
+      \begin{align*}
+        \ket{\Psi(t)} & = \exp{\f{-i \left( +\f{\hbar\omega_0}{2}t \right)}{\hbar}}\kp_x \\
+                      & = \exp{\f{-i\omega_0t}{2}}\kp_x
+      \end{align*}
+      The overall phase does \textbf{not} affect probabilities. For example,
+      \begin{align*}
+        prob(\kp) & = \left| \braket{\mbox{out}}{\mbox{in}} \right|^2  \\
+                  & = \pr{\braket{+}{\Psi(t)}} \\
+                  & = \pr{\bra{+}\exp{\f{-i\omega_0t}{2}}\kp_x}
+      \end{align*}
+      We can then compute this in abstract notation: $\kp_x = \f{1}{\sqrt{2}}\kp +\f{1}{\sqrt{2}}\km $
+      \[ prob(\kp) = \f{1}{2}\pr{\bra{+}\exp{\f{-i\omega_0t}{2}}\left( \kp + \km \right)} = \f{1}{2} \pr{\exp{\f{-i\omega_0t}{2}}} = \f{1}{2} \ \ \ \mbox{(time independent)} \]
+
+      \item[(ii)] Consider the initial state that is not an eigenstate of $H$, $\ket{\Psi(0)} = \kp_y$. We need to express this in terms of energy eigenstates
+      \[ \kp_y = \alpha\kp_x + \beta\km_x \]
+      So,
+      \[ \alpha = {}_x\braket{+}{+}_y \xrightarrow[\mbox{basis}]{S_z} \f{1}{\sqrt{2}}\mtx{1 & 1}\f{1}{\sqrt{2}}\mtx{1 \\ i} = \f{1+i}{2}  \]
+      \[ \beta = {}_x\braket{-}{+}_y \xrightarrow[\mbox{basis}]{S_z} \f{1}{\sqrt{2}}\mtx{1 & -1}\f{1}{\sqrt{2}}\mtx{1 \\ i} = \f{1-i}{2}  \]
+
+      Then
+
+      \begin{align*}
+          \ket{\Psi(0)} &  = \kp_y = \f{1}{2} \left( (1+i)\kp_x + (1-i)\km_x \right) \\
+          \ket{\Psi(t)} & = \f{1}{2} \left( \exp{\f{-i\omega_0t}{2}}(1+i)\kp_x + \exp{\f{+i\omega_0t}{2}}(1-i)\km_x \right)
+      \end{align*}
+
+      What about probabilities?
+
+      \begin{itemize}
+        \item[(a)] Consider a probability for an energy eigenstate, e.g., $\kp_x$
+        \begin{align*}
+          prob(\kp_x) & = \left| \braket{\mbox{out}}{\mbox{in}} \right|^2 \\
+                      & = \pr{{}_x\braket{+}{\Psi(t)}} \\
+                      & = \pr{ \f{1}{2} \exp{\f{-i\omega_0t}{2}} (1+i) } \ \ \ \ \mbox{(because of orthonormal properties of $\ket{\pm}_x$)} \\
+                      & = \f{1}{2}
+        \end{align*}
+
+        \item[(b)] Consider the probability for an eigenstate that doesn't commute with $H$, for example an eigenstate of $S_z, \kp$.
+        \begin{align*}
+          prob(\kp) & = \left| \braket{\mbox{out}}{\mbox{in}} \right|^2 \\
+                    & = \pr{\braket{+}{\Psi(t)}} \\
+                    & = \pr{ \bra{+} \left( \f{1}{2} \left( \exp{\f{-i\omega_0t}{2}} (1+i)\kp_x + \exp{\f{+i\omega_0t}{2}} (1-i)\km_x +  \right) \right)  } \\
+                    & = \pr{ \mtx{1 & 0} \left( \f{1}{2} \exp{\f{-i\omega_0t}{2}} (1+i) \f{1}{\sqrt{2}}\mtx{1\\1} + \f{1}{2}\exp{\f{+i\omega_0t}{2}}(1-i)\f{1}{\sqrt{2}}\mtx{1\\-1} \right) } \\
+                    & = \pr{ \f{1}{2\sqrt{2}} \left( \exp{\f{-i\omega_0t}{2}}(1+i) + \exp{\f{+i\omega_0t}{2}} (1-i)\right) } \\
+                    & = \f{1}{2} - \f{1}{2}\sin \left( \omega_0 t \right) \ \ \ \ \mbox{(time depemndent in range 0 - 1)}
+        \end{align*}
+        Check $t = 0$, $\ket{\mbox{in}} = \kp_y, \ket{\mbox{out}} = \kp$, so the probability is $\f{1}{2}$.
+      \end{itemize}
+      % Expectation values tend to follow classical rules. It is not so apparent when dealing with the expectation value for say, $S_z$, with no time dependence but with time dependence it becomes apparent.
+    \end{itemize}
+
+    What about expectation values?
+
+    \begin{align*}
+      \E{S_x} & = \bra{\Psi(t)}S_x\ket{\Psi(t)} \\
+              & = \f{1}{2} \left( \exp{\f{+i\omega_0t}{2}} (1-i){}_x\bp + \exp{\f{-i\omega_0t}{2}}(1+i){}_x\bm \right) S_x \f{1}{2} \left( \exp{\f{-i\omega_0t}{2}} (1+i)\kp_x + \exp{\f{+i\omega_0t}{2}}(1-i)\km_x \right)
+    \end{align*}
+    This is horrific so we use eigenequations,
+    \[ S_x\ket{\pm}_x = \pm\f{\hbar}{2}\ket{\pm}_x \]
+    \begin{align*}
+      \E{S_x} & = \f{1}{4} \left( (1+i)(1-i)\f{\hbar}{2} + (1+i)(1-i)\left( -\f{\hbar}{2} \right) \right) = 0
+    \end{align*}
+    Then for $S_y$,
+    \begin{align*}
+      \E{S_y} & = \bra{\Psi(t)}S_y\ket{\Psi(t)} \ \ \ \ \mbox{(use co-ordinate representation)} \\
+              & = \f{\hbar}{2}\cos(\omega_0t)
+    \end{align*}
+    likewise for $S_z$, $\E{S_z} = \f{\hbar}{2}\sin(\omega_0t)$. Checking consistency at $t = 0$, we see $\ket{\Psi(0)} = \kp_y$, and
+    \[ \underbrace{\E{S_x} = 0}_{\mbox{equal prob $\pm\f{\hbar}{2}$}} \ \ \ \ \ \underbrace{\E{S_y} = +\f{\hbar}{2}}_{\mbox{all $+\f{\hbar}{2}$}} \ \ \ \ \ \underbrace{\E{S_z} = 0}_{\mbox{equal prob $\pm\f{\hbar}{2}$}}\]
+    Can assembling vector for expecation value of total spin
+    \[ \E{S} = \left( \underbrace{\E{S_x}}_{\mbox{time indep}}, \underbrace{\E{S_y}, \E{S_z}}_{\mbox{time depen}} \right) \]
+
+    Time dependence is consistent with $\E{S}$ precessing about $\vec{B} = B_0\hat{x}$ in the $yz$-plane. This is consistent with our classical expectation for a spin dipole moment precessing about the field direction.
+
+  \section{Continuous Observables in Quantum Mechanics}
+
+    \subsection{Transition to Infinite Dimensions}
+
+    An example of an observable that has a continuum of possible outcomes would be the poisition of an atom (1 dimension for mathematical simplicity). We're going to characterize the quantum state associated with the position observable by a position ket and an associated bra
+
+    \[ \kx \equiv \mbox{"atom is at position $x$"} \]
+
+    \[ \bra{x} \equiv \kx^\dagger \]
+
+    These are known as \textbf{position eigenstates}. They require an infinite number of such kets (and bras) to allow for atoms existing anywhere on the $x$-axis. The theoretical idealization that a particle is at position $x$ (singularity on the $x$-axis) is not realistic, this is because there is a question of precision and spatial extent of a real particle. However, the realistic situation is that a physical position (i.e., one that occurs in reality) is a superposition of theoretically ideal position eigenstates.
+    \newline
+
+    Now we wish to build up an analogous formalism for continuous eigenstates to that which we have for discrete systems (e.g., Stern-Gerlach)
+
+    \begin{itemize}
+      \item[(1)] Expressing arbitrary state as a linear combination of basis states. In Finite Dimensions with basis $\ket{a_k}$, then
+      \[ \kpsi = \sum_x \ket{a}_k{}_k\braket{a}{\Psi} = \sum_k \Psi_k \ket{a_k} \]
+      where $\ket{a}_k$ is a basis state and ${}_k\braket{a}{\Psi} = \Psi_k$ are the probability amplitude. Similarly if we express $\kpsi$ as a vector in co-ordinate representation with respect to the ordered basis $\ket{a_k}$
+      \[ \kpsi  \xrightarrow[\mbox{basis}]{\ket{a_k}} \mtx{\Psi_1\\\Psi_2\\\vdots\\\Psi_n} \ \ \ \mbox{with } \Psi_k = \braket{a_k}{\Psi} \]
+      In \textbf{infinite dimensions} (position basis) then we write
+      \[ \kpsi = \int dx \kx \braket{x}{\Psi} = \int dx \kx\Psi(x) \]
+      with \textbf{position wave function} $\Psi(x) = \braket{x}{\Psi}$. Note that $\braket{x}{\Psi}$ is not a number as it was in the finite case, it is now a function over all possible values of $x$; a continuous function of probability amplitude for finding a particle in state $\kpsi$ at position $x$. The integrals are taken over the entire space unless otherwise noted.
+
+      \item[(2)] \textbf{Probabilities.} In order to use coefficients of linear expansions to compute probabilities the position kets must be normalized. Consider the special case of $\kpsi = \ket{x'}$ (position eigenstate), then
+      \[ \kpsi = \ket{x'} = \int dx \kx\braket{x}{x'} \]
+      This only makes sense if $\braket{x}{x'} = \delta(x-x')$ (Dirac-delta function).
+      \begin{defn}[Dirac-delta function]\label{Dirac-delta function}
+        This is the continuous analogue of the kronicker delta function $(\delta_{mn}$) from considering orthonormal properties of discrete kets. Its operation definition is
+        \[ \int dx' \delta{x-x'}f(x') = f(x) \]
+        with properties
+        \[ \int dx' \delta(x-x') = 1 \ \ \ \ \mbox{(special case that $f(x') = 1$)} \]
+        \[ \delta(x-x') = 0 \ \ \ \ \mbox{for all $x \not = x'$} \]
+        \[ \delta(x-x') = \infty \ \ \ \ \mbox{for $x = x'$} \]
+        (but really only makes sense in the context of integration)
+      \end{defn}
+      However, now it appears that when $x = x'$, then $\braket{x}{x'} = \delta(x-x')$ is infinite, and so our probability amplitude would apparently be infinite too. However, as already stated, the idea or concept of an exact position is not realistic. So, $\braket{x}{x'}$ is not related to any physical observable quantity.
+      \newline
+
+      The correct stance to take is to consider our position over some region of space (a linear superposition of position eigenstates), so the Dirac-delta function is integrated and results will be finite.
+      \newline
+
+      For normalisation we require that $\braket{\Psi}{\Psi} = 1$
+
+      \begin{align*}
+        \braket{\Psi}{\Psi} & = \int \int dx dx' \braket{\Psi}{x}\braket{x}{x'}\braket{x'}{\Psi} \\
+                            & = \int \int dx' dx \braket{\Psi}{x}\delta(x-x')\braket{x'}{\Psi} \\
+                            & = \int dx \braket{\Psi}{x}\braket{x}{\Psi} \\
+                            & = \int dx \pr{\braket{x}{\Psi}}
+      \end{align*}
+
+      If the state $\kpsi$ is normalised, then
+
+      \[ \braket{\Psi}{\Psi} = \int dx \pr{\braket{x}{\Psi}} = 1 \]
+
+      Also, since $\Psi(x) = \braket{x}{\Psi}$ is the position wave function (a continuous function of probability ampltitudes for all $x$)
+
+      \begin{align*}
+        \braket{\Psi}{\Psi} & = \int dx \Psi^*(x)\Psi(x) = \int dx \pr{\Psi(x)} = 1
+      \end{align*}
+
+      It's then natural to identify $dx \pr{\Psi(x)} = dx \pr{\braket{x}{\Psi}}$ with probability that the particle will be bound between $x$ and $x + dx$. Now, the normalisation condition ensured that the probability to find the particle somewhere on the $x$-axis ($-\infty \leftrightarrow \infty$) is 1.
+
+      Then, the probability of finding the particle between $x=a$ and $x=b$ is
+
+      \[ prob(a<x<b) = \int_a^b \pr{\braket{x}{\Psi}} dx = \int_a^b \Psi^*(x)\Psi(x) dx \]
+
+      \item[(3)] The completeness relation in finite dimensions is
+      \[ \sum_k \ket{a_k}\bra{a_k} = \mathbb{1} \]
+      and in infinite dimensions (continuous) it is
+      \[ \int dx \ket{x}\bra{x} = 1 \]
+
+      \item[(4)] The inner product is defined in finite dimensions as
+      \[ \braket{\phi}{\Psi} \longrightarrow \sum_x \braket{\phi}{a_k}\braket{a_k}{\Psi} = \sum_k \phi_k^*\Psi_k \]
+      where $\phi_k = \braket{a_k}{\phi}$ and $\Psi_k = \braket{a_k}{\Psi}$. Then, in infinite dimensions the inner product is defined like
+      \[ \braket{\phi}{\Psi} \longrightarrow \int dx \braket{\phi}{x}\braket{x}{\Psi} = \int dx (\phi(x))^*\Psi(x)  \]
+      with $\phi(x) = \braket{x}{\phi}$ and $\Psi(x) = \braket{x}{\Psi}$.
+
+      \item[(5)] The \textbf{expectation value} is the mean value of many repeated experiments on identical states. For observable $\hat{A}$ and input state $\ket{\Psi}$,
+
+      \[ \E{\hat{A}} = \bra{\Psi}\hat{A}\ket{\Psi} \]
+
+      In the position basis, it yields a continuous spectrum of results.
+
+      Now to summarize the transition from finite dimensional expectation values to infinite dimensions,
+
+      \begin{align*}
+        \kpsi & \longrightarrow \Psi(x) \\
+        \bra{\Psi} & \longrightarrow \Psi^*(x) \\
+        \hat{A} & \longrightarrow A(X) \\
+        \E{\hat{A}} & \longrightarrow \int dx \Psi^*(x)A(x)\Psi(x)
+      \end{align*}
+
+      \item[(6)] The position operator, $\hat{x}$
+
+      \[ \mbox{position basis } \ \ \hat{x} \longrightarrow x \ \ \ \mbox{multiply by scalar $x$} \]
+
+      The Eigenvalue equation is
+
+      \[ \hat{x}\kx = x\kx \]
+
+      Therefore the expectation value can be written like
+
+      \[ \E{\hat{x}} = \bra{\Psi}\hat{x}\ket{\Psi} \longrightarrow \int dx \Psi^*(x)x\Psi(x) \]
+
+      We can explore this value more formally:
+
+      \[ \E{\hat{x}} = \bra{\Psi}\hat{x}\ket{\Psi} \]
+
+      Now we need to express $\kx$ in the position basis, so
+
+      \begin{align*}
+        \kpsi & \longrightarrow \int dx \kx \braket{x}{\Psi} \\
+        \implies \E{\hat{x}} & = \int dx \bra{\Psi}\hat{x}\kx \braket{x}{\Psi}
+      \end{align*}
+
+      Now we use the eigenvalue equation for $\hat{x}$ and we get
+
+      \begin{align*}
+         \E{\hat{x}} & = \int dx \bra{\Psi}x\kx \braket{x}{\Psi} \\
+                     & = \int dx \braket{\Psi}{x}x\braket{x}{\Psi} \\
+                     & = \int dx \Psi^*(x)x\Psi(x)
+      \end{align*}
+
+      Also by the same arguments, we see that
+
+      \[ \E{\hat{x^2}} = \int dx \Psi^*(x) x^2 \Psi(x) \ \ \ \mbox{useful for computing uncertainties} \]
+
+      Even more generally,
+
+      \[ \E{f(\hat{x})} = \int dx \Psi^*(x) f(x) \Psi(x) \ \ \ \mbox{for $f$ a function} \]
+
+      Another operator of interest is the \textbf{momentum operator}, $\hat{p}$. In the position basis we note that
+
+      \[ \hat{p} \longrightarrow -i\hbar \f{d}{dx} \ \ \ \ \mbox{(advanced derivation through consideration of spatial translations)} \]
+
+      The expectation value for this operator is then $\E{\hat{p}} = \bra{\Psi}\hat{p}\ket{\Psi}$ for an input state $\ket{\Psi}$ and then written in the position basis it is
+
+      \[ \E{\hat{p}} = \int dx \Psi^*(x) \left( -i\hbar \f{d}{dx} \right) \Psi(x) \]
+
+      where we have a spatial derivative of the wavefunction and so order is important. So we require an explicit form of the wavefunction.\newline
+
+      Now we can consider \textbf{the Hamiltonian Operator}, $\hat{H}$. It is a total energy observable where total energy is equal to the sum of the potential energy and the kinetic energy, and the potential energy depends on position $V(\hat{x})$, a function of the position operator. The kinetic energy then depends on speed : $\f{\hat{p}^2}{2m}$, a function of the momentum operator. The total energy given by the hamiltonian operator is then
+
+      \[ \hat{H} = V(\hat{x}) + \f{\hat{p}^2}{2m} \]
+
+      in the position basis then it looks like
+
+      \[ H = V(\hat{x}) + \f{\hat{p}^2}{2m} \longrightarrow V(x) + \f{1}{2m} \left( -i\hbar \f{d}{dx} \right)^2 \]
+
+      The energy eigenvalue equation is
+
+      \[ \hat{H}\ket{E_i} = E_i\ket{E_i} \]
+
+      Now if we express it in the position basis: $\ket{E_i} \longrightarrow \phi_{E_i}(x)$ we have the energy eigenfunction as a wavefunction in the position basis. The energy eigen equation in the position basis is then
+
+      \[ \left[ V(x) + \f{1}{2m} \left( -i\hbar \f{d}{d x} \right)^2 \right] \phi_{E_i}(x) = E_1 \phi_{E_i}(x) \]
+
+      Second order differential equation, often called "time independent Schrödinger equation" (TISE)
+
+      \[ -\f{\hbar^2}{2m}\f{d^2}{dx^2}\phi_{E_i}(x) + V(x) \phi_{E_i}(x) = E_i\phi_{E_i}(x) \]
+
+      Now we consider the eigenstate ($\phi_{E_i}(x)$) and eigenvalues $(E_i)$ of the Hamiltonian operator for different potential energy functions $V(x)$.
+
+      \begin{figure}[t!]
+            \centering
+            \includegraphics[width=0.5\textwidth]{energy_quantum.png}
+            \caption{A generic potential energy well.}
+      \end{figure}
+
+      \subsection{Infinite Square Well Potential}
+
+        This is an approximation as the limiting case for a charged particle between two charged plates. So,
+
+        \[ V(x) = \piecewise{0}{$0 \leq x \leq L$}{\infty}{otherwise} \]
+
+        \begin{figure}[t!]
+              \centering
+              \includegraphics[width=0.4\textwidth]{well.png}
+              \caption{Infinite square potential energy well.}
+        \end{figure}
+
+        \textbf{Outside the well} (classically forbidden for all possible energies), we have that
+
+        \[ V(x) = \infty \]
+
+        We express the wavefunction (energy eigenstate) as $\Psi(x) = \phi_{E_i}(x)$ and so
+
+        \[ \Psi(x) = 0 \]
+
+        is the probability of finding the particle outside of the box ($x < 0$ or $x > L$), because the potential is infinite.
+
+        \textbf{Inside the well} now we have $V(x) = 0$ so looking again at the time independent Schrödinger equation,
+
+        \[ -\f{\hbar^2}{2m}\f{d^2\Psi(x)}{dx^2} = E\Psi(x) \]
+
+        which we can rewrite as
+
+        \[ \f{d^2\Psi(x)}{dx^2} = -k^2\Psi(x) \ \ \ \ \ \mbox{with } k = \f{\sqrt{2mE}}{\hbar} \]
+
+        Since $E>0$, so $k$ is real and so $k^2$ is positive. Here, we have a general solution
+
+        \[ \Psi(x) = c_1 \expo{ikx} + c_2\expo{-ikx} \]
+
+        Since complex exponentials can be rewritten as oscillatory functions. Now, constants $c_1$ and $c_2$ are fixed by boundary conditions. Ordinarily these are $\Psi(x)$ is continuous and $\f{d\Psi(x)}{dx}$ is continuous. Ensure that energy remains finite and the Schrödinger Equation can be solved.
+        \newline
+
+        In this case, because $V(x) = \infty$ and $\Psi(x) = 0$, the latter condition may be relaxed (i.e., derivative need not be continuous). Thus continuity for $\Psi(x)$ requires that $\Psi(0) = \Psi(L) = 0$, so we have matching solutions inside and outside the potential well. So,
+
+        \begin{align*}
+          \Psi(0) & \implies c_1 + c_2 = 0 \implies c_1 = - c_2 \\
+          & \implies \Psi(x) = c_1 \left( \expo{+ikx} - \expo{-ikx} \right) \\
+          & \implies \Psi(x) = A\sin(kx) & \left[ \mbox{Euler } e^{i\alpha} = \left( \cos\alpha + i\sin\alpha \right)\right]
+        \end{align*}
+
+        The other side of the well, given
+        \[ \Psi(L) = 0 \implies A\sin(kL) = 0 \implies kL=n\pi \]
+        Hence the values of $k$ are restricted to a set of discrete values.
+
+        \[ k_n = \f{n\pi}{L} \ \ \ \ \ \ \ n = 1, 2, 3, 4, \ldots \]
+
+        The solution to the time independent Schrödinger equation for $0 \leq x \leq L$ is then
+
+        \[ \Psi_n(x) = A_n\sin \left( \f{n\pi x}{2} \right) \ \ \ \ \ \mbox{energy eigenfunctions (wavefunctions) in position basis} \]
+
+        Furthermore, since $k^2 = \f{2mE}{\hbar^2}$ and $k_n = \f{n\pi}{L}$ for $n = 1, 2, 3, \ldots$. Then,
+
+        \[ E_n = \f{\hbar^2k_n^2}{2m} = \f{n^2h^2}{8mL^2} \ \ \ \ \mbox{energy eigenvalues.} \]
+
+    \end{itemize}
+
+    \subsubsection{Probability Density}
+
+      Integrate over a finite region of the $x$-axis to get the probability that it is to be in thay region. The wavefunction (energy eigenfunction) must be normalised. Find $A_n$ such that
+
+      \[ \int_{-\infty}^{\infty} dx \Psi_n^*(x)\Psi_n(x) = 1 \ \ \ \ \ \ \left( A_n = \sqrt{\f{2}{L}} \right) \]
+
+      If we compare this with the classical expectation, then we would have a classical particle bouncing around in a box that has equal probability to be found anywhere. Not so far in Quantum Mechanics when $n$ is small, but as $n$ gets very large, changes in the probability become extremely small on the spatial scale and the classical result is approximated (\textbf{correspondance principle}).
+
+    \subsubsection{Zero Point Energy}
+
+      Energy is quantised in $n$ (quantum number), but $n = 0$ is not a "physical" solution, so the lowest eigenstate is $n=1$ (ground state). The first energy eigenvalue $E_1 = \f{\pi^2\hbar^2}{2mL^2}$ is zero point energy. There are some purely Quantum Mechanical effect:
+
+      \begin{itemize}
+        \item Stops Helium from solidifying
+        \item Can be large enough to disrupt crystalline or magnetic order (quantum phase transition)
+      \end{itemize}
+
+      \subsubsection{Completeness and Orthonormality}
+
+        The set of solutions of the time independent Schrödinger equation form a complete set in the sense that any arbitrary wavefunction may be written as a linear combination of the $\Psi_n(x)$ (Fourier Series). \newline
+
+        The $\Psi_n(x)$ are orthonormal
+
+        \[ \int_{-\infty}^{\infty} \Psi_{n}^*(x)\Psi_{m} dx = \delta_{mn} = \piecewise{0}{if $m \not = n$}{1}{if $m = n$} \]
+
+      \subsubsection{Symmetry}
+
+        The potential energy function is symmetric about its center line, $x = \f{L}{2}$. The eigenfunctions $\Psi_n(x)$ are alternatively odd and even functions as $n$ is increased.\newline
+
+      These are very general properties of any solutions to a symmetric potential energy function (see finite potential well, harmonic oscillator).
+
+      \begin{exmp}
+        Consider a particle in the ground state of an infinite square well potential. Find the expectation value for a measurement of position, and the probability that a measurement of position would find the particle in the first third of the well.
+      \end{exmp}
+
+      We want to work in the position basis, so
+
+      \[ \ket{E_1} \xrightarrow[\mbox{basis}]{\mbox{position}} \Psi_1(x) = \sqrt{\f{2}{L}}\sin \left( \f{\pi x}{L} \right) \ \ \ \ \ \ \ (0 < x < L) \]
+
+      then,
+
+      \[ \E{\hat{x}} = \bra{E_1}\hat{x}\ket{E_1} = \int_{-\infty}^{\infty} dx \Psi_1^*(x)x\Psi_1(x) = \f{2}{L} dx \int_0^L x\sin^2 \left( \f{\pi x}{L} \right) \]
+
+      and finally the probability,
+
+      \[ prob\left(0<x<\f{L}{3}\right) = \int_0^{\f{L}{3}}\Psi_1^*(x)\Psi_1(x)dx = \f{2}{L} \int_0^{\f{L}{3}} \sin^2 \left( \f{\pi x}{L}\right) dx = 0.195  \]
+
+
+    \subsection{Harmonic Oscillator Potential}
+
+      The harmonic oscillator potential $V(x) = \f{1}{2}kx^2$ for spring constant $k = m\omega^2$ and $\omega = \sqrt{\f{k}{m}}$. This is distinct from the earlier piecewise functions because it is continuous. Since $V(x)$ is a quadratic function, we can split up the regions for which it has meaning into three; region II being the rectangular region bounded by the line $y = E$ and $y = 0$ and bounded on the left and right by the $x$ for which $y = E$. Region I is to the left of this, and region III to the right. So, for region II (classically allowed),
+
+      \[ \f{d^2\psi}{dx^2} = -k^2\psi \ \ \ \ \ \ \ \ \ \ k = \f{\sqrt{2m(E-V(x))}}{\hbar} \]
+
+      Let $V(x) = V_0$,\newline
+
+      Classically we have that $E > V_0$, so $k$ is real, and so $k^2$ is positive. This means that a general solution in this case is a complex exponential (oscillatory functions, wavelength determined by $k$).
+      \newline
+
+      Classically forbidden, $E<V_0$, which means $k$ is imaginary, $k^2$ is negative, and so our general solution is a real exponential (diverging or decreasing with $x$).\newline
+
+      We can use physical arguments based on required properties of $\Psi(x)$ as probability amplitude to discard "unphysical" terms in the general solution.
+
+    \subsection{Harmonic Oscillator - Algebraic Method}
+
+      The potential energy $V(x) = \f{1}{2}m \omega^2 x^2$, and we know that the time independent Schrödinger equation (energy eiegenvalue equation) states,
+      \[ \hat{H}\ket{\psi} = E\ket{\psi} \]
+
+      The Hamiltonian is also,
+
+      \[ \hat{H} = \f{\hat{p}^2}{2m} + V(\hat{x}) = \f{1}{2m} \left[ \hat{p}^2 + (m \omega \hat{x})^2 \right] \]
+
+      This is the sum of the two squared operators, which can be factorized. For numbers, it is straightforward
+
+      \[ v^2 + u^2 = (v+iu)(v-iu) \]
+
+      For operators, order is important becuse they may not commute.\newline
+
+      However, consider
+
+      \[ \hat{a}_{\pm} = \f{1}{\sqrt{2\hbar m \omega}} \left( \mp i \hat{p} + m\omega \hat{x} \right) \]
+
+      The product of the two can be computed,
+
+      \begin{align*}
+        \hat{a}_-\hat{a}_+ & = \f{1}{2\hbar m \omega} \left( i\hat{p} + m\omega \hat{x} \right)\left( -i\hat{p} + m\omega\hat{x} \right) \\
+        & = \f{1}{2\hbar m \omega} \left( \hat{p}^2 + (m\omega \hat{x})^2 - im\omega(\hat{x}\hat{p} - \hat{p}\hat{x}) \right)
+      \end{align*}
+
+      Where the latter term is the commutator $[\hat{x}, \hat{p}] = \hat{x}\hat{p}-\hat{p}\hat{x}$. \newline
+
+      To find the commutator, move to the position basis and apply it to the wavefunction.
+
+      \begin{align*}
+         [\hat{x}, \hat{p}]\ket{\psi} & \longrightarrow \left[x, (-i\hbar)\f{d}{dx} \right]\psi(x)  \\
+         & = x(-i\hbar)\f{d}{dx} \psi(x) - (-i\hbar)\f{d}{dx} (x\psi(x)) \\
+         & = -i\hbar \left( x \f{d\psi(x)}{dx} - x\f{d\psi(x)}{dx} - \psi(x) \right) \\
+         &  = i\hbar\psi(x)
+       \end{align*}
+       Thus the commutator relationship for $\hat{x}$ and $\hat{p}$ is
+       \[ [\hat{x},\hat{p}] = i\hbar \]
+       Substitute this into the product of factoring operators,
+
+       \begin{align*}
+         \hat{a}_-\hat{a}_+ & = \f{1}{2\hbar m \omega} \left( \hat{p}^2 + (m\omega \hat{x})^2 \right) - \f{i}{2\hbar}[\hat{x},\hat{p}] \\
+         & = \f{1}{2\hbar m \omega} \left( \hat{p}^2 + (m\omega\hat{x})^2 \right) - \f{i}{2\hbar}(i\hbar) \\
+         & = \f{1}{\hbar \omega}\hat{H} + \f{1}{2} & (1)
+       \end{align*}
+
+       Similarly,
+
+       \begin{align*}
+         \hat{a}_+\hat{a}_- &  = \f{1}{\hbar\omega}\hat{H} - \f{1}{2} & (2)
+       \end{align*}
+
+       Using (1) and (2),
+
+       \[ \hat{H} = \hbar \omega \left(\hat{a}_+\hat{a}_- + \f{1}{2}\right) = \hbar \omega \left(\hat{a}_-\hat{a}_+ - \f{1}{2}\right) \]
+
+       Substitute with the time independent Schrödinger equations,
+
+       \[ \hbar\omega \left( \hat{a}_\pm\hat{a}_\mp  \pm \f{1}{2} \right)\ket{\psi} = E\ket{\psi} \]
+
+       Also,
+
+       \[ [\hat{a}_-,\hat{a}_+] = \hat{a}_-\hat{a}_+ - \hat{a}_+\hat{a}_- = 1 \]
+
+       Now we can use operator manipulation to show that if $\ket{\psi}$ is an eigenstate of the Hamiltonian for the Harmonic Oscillator with energy eigenvalue $E$, then $\hat{a}_+\ket{\psi}$ is also an eigenstate with energy eigenvalue $E + \hbar \omega$.
+
+       \begin{align*}
+         \hat{H} (\hat{a}_+\ket{\psi}) & = \hbar \omega \left( \hat{a}_+\hat{a}_- + \f{1}{2} \right)\left( \hat{a}_+\ket{\psi} \right) \\
+         & = \hbar \omega \left( \hat{a}_+\hat{a}_-\hat{a}_+ + \f{1}{2}\hat{a}_+\right)\ket{\psi} \\
+         & = \hbar \omega \hat{a}_+ \left( \hat{a}_-\hat{a}_+ + \f{1}{2} \right)\ket{\psi} & \mbox{use commutator} \\
+         & = \hat{a}_+\hbar \omega \left( \hat{a}_+\hat{a}_- + 1 + \f{1}{2} \right)\ket{\psi} & \mbox{use Hamiltonian} \\
+         & = \hat{a}_+\left( \hat{H} + \hbar \omega + \hbar \omega \right)\ket{\psi} \\
+         & = \hat{a}_+ \left( E + \hbar \omega \right)\ket{\psi} \\
+         & = (E + \hbar \omega) \hat{a}_+\ket{\psi}
+       \end{align*}
+
+       The same method can be used to show that $(\hat{a}_-\ket{\psi})$ is the eigenstate with energy $E - \hbar \omega$.\newline
+
+       We call these $\hat{a}_{\pm}$ \textbf{ladder operators}, once we have one solution we can obtain all others by applying $\hat{a}_+$ and or $\hat{a}_-$.
+
+       \begin{defn}[Lowest Energy Eigenstate]\label{Lowest Energy Eigenstate}
+        We require that repeated application of the lowering operator $\hat{a}_-$, will eventually result in zero, this is the \textbf{ladder termination condition}.
+       \end{defn}
+
+       That is, at the lowest rung,
+
+       \[ \hat{a}_-\ket{\psi_0} = 0 \]
+
+       is the lowest energy eigenstate.
+
+       Expressing this equation in the position basis,
+
+       \[ \f{1}{2\hbar m \omega} \left( -\hbar \f{d}{dx} + m\omega x \right) \psi_0(x) = 0 \implies \f{d\psi_0(x)}{dx} = -\f{m\omega}{\hbar} x\psi_0(x) \]
+
+       We can solve this equation by integrating,
+
+       \begin{align*}
+         \int \f{1}{\psi_0(x)} d\psi_0(x) & = -\f{m\omega}{\hbar} \int x dx \implies \ln(\psi_0(x)) = -\f{-m\omega}{2\hbar}x^2 + A' \\
+         & \implies \psi_0(x) = A\expo{-\f{m\omega}{2\hbar}x^2}
+       \end{align*}
+
+       We find $A$ by normalizing,
+
+       \begin{align*}
+         A^2 \int_{-\infty}^{\infty} \expo{-\f{m\omega}{\hbar}x^2} dx \implies A = \left( \f{m\omega}{\pi \hbar} \right)^{\f{1}{4}}
+       \end{align*}
+
+       So,
+
+       \[ \psi_0(x) = \left( \f{m\omega}{\pi\hbar} \right)^{\f{1}{4}}\expo{-\f{m\omega}{2\hbar}c^2} \ \ \ \ \ \ \ \ \ \ (\ket{\psi_0} \mbox{ in position basis})\]
+
+       What about the corresponding energy eigenvalues? The time independent Schrödinger equation is,
+
+       \[ \hbar \omega \left(\hat{a}_+\hat{a}_- + \f{1}{2}\right) \ket{\psi_0} = E_0 \ket{\psi_0} \]
+
+       Then expanding the operator,
+
+       \begin{align*}
+         \hbar \omega \hat{a}_+\hat{a}_-\ket{\psi_0} + \f{\hbar \omega}{2} \ket{\psi_0} & = E_0\ket{\psi_0} \\
+        & = \f{\hbar \omega}{2} \ket{\psi_0} \\
+        & = E_0\ket{\psi_0}
+       \end{align*}
+
+       So,
+
+       \[ \f{\hbar\omega}{2} = E_0 \ \ \ \ \mbox{ground state energy} \]
+
+       Since we know the lowest energy eigenvalue and eigenstate, all others are computed using the raising operator $\hat{a}_+$
+
+       \begin{align*}
+         \psi_n(x) & = A_n (\hat{a}_+)^n\psi_0(x) \ \ \ \ \mbox{with $E_n = \left( n + \f{1}{2} \right) \hbar \omega$} \\
+         \mbox{and } \psi_0(x) & = \left( \f{m\omega}{\pi\hbar} \right)^{\f{1}{4}}\expo{\f{-m\omega}{2\hbar}x^2}, \ \ E_0 = \f{1}{2}\hbar\omega
+       \end{align*}
+
+       \[ \hat{a}_+ \longrightarrow \f{1}{\sqrt{2\hbar m \omega}} \left( -i \left( -i\hbar \right) \f{d}{dx} + m\omega x \right) \]
+
+       Now, let's explore the Time Dependent Wavefunction
+
+       \[ \Psi_n(x,t) = \expo{\f{-iE_n}{\hbar}t}\psi_n(x) \ \ \ \ \ \ \mbox{consequence of $\psi_n(x)$ being an Energy eigenstate} \]
+
+       Here are some properties of Eigenstates of H.O. Potential,
+
+       \begin{itemize}
+         \item[1.] Penetration into classically forbidden region
+         \begin{itemize}
+           \item Non-zero probability that if a measurement of position is made, it maybe found in  a classically forbidden region ($V(x) > E_n$)
+           \item Ultimately leads to quantum mechanical tunnelling
+         \end{itemize}
+        \item[2.] Note energy of ground state is $n = 0$ (c.f., $n = 1$ for infinite potential well). Seperation in energy between adjacent states is equal (c.f., $\delta E ~ n^2$ for infinite potential well)
+        \item[3.] Low quantum numbers implies high probability for finding the particle in the centre of the well. Classically, we expect the highest probability when moving most slowly, so the edges of the well Classical expectation is recorded for $n \longrightarrow$ large (see e.g., $n = 100$)
+        \item[4.] As for solutions to the infinite potential well, eigenstates of the H.O. potential have the following generic properties:
+        \begin{itemize}
+          \item[(i)] Symmetry $\longrightarrow$ they are alternately odd and even
+          \item[(ii)] Orthonormality $\longrightarrow$ Eigenstates are orthonormal and normalized
+          \item[(iii)] Completeness - any arbitrary state may be expressed as a linear combination of them.
+        \end{itemize}
+       \end{itemize}
+
+    \subsection{Time Dependance for Continuous Observables}
+
+      Eigenstates for time independent Hamiltonians are a simple generation of time dependant states.
+
+      \[ \ket{E_n(0)} \longrightarrow \psi_n(x) \ \ \ \ \ \mbox{wavefunction in position basis} \]
+
+      \[ \ket{E_n(t)} \longrightarrow \Psi(x, t) = \expo{\f{-iE_n}{\hbar} t}\psi_n(x) \]
+
+      Eigenstates of such Hamiltonians are stationary states, so the probabilities and expectation values are time independent. Consider making a measurement of observable $A$ with eigenstates $\ket{a_i}$ on energy eigenstate $\ket{E_n(t)}$,
+
+      \[ prob(a_i) = \pr{\braket{\mbox{out}}{\mbox{in}}} = \pr{\braket{a_i}{E_n(t)}} \]
+
+      In the position basis,
+
+      \[ \ket{a_i} \longrightarrow a_i(x) \]
+
+      \[ \ket{E_n(t)} \longrightarrow \psi_n(x) \expo{\f{-iE_n}{\hbar}t} \]
+
+      So,
+
+      \begin{align*}
+        prob(a_i) & = \pr{\int dx a_i^*(x) \psi_n(x)\expo{\f{-iE_n}{\hbar}t}} \\
+        & = \pr{\expo{\f{-iE_n}{\hbar}t}}\expo{\int dx a_i^*(x)\psi_n(x)} \\
+        & = \pr{\int dx a_i^* \psi_n(x)} \ \ \ \mbox{time independent}
+      \end{align*}
+
+      For arbitrary states that are linear combinations of energy eigenstates
+
+      \[ \ket{\alpha} = \sum_n c_n \ket{E_n} \longrightarrow \sum_n c_n \psi_n(x) \ \ \ \mbox{linear combination of position energy eigenfunctions} \]
+
+      \[ c_n = \braket{E_n}{\alpha} \longrightarrow \int dx \psi_n^*(x) \alpha(x) \]
+
+      If $\ket{\alpha} = \ket{\alpha(0)}$ (initial state), the state at time $t$ is given by
+
+      \[ \alpha(t) = \sum_n c_n \expo{\f{-iE_n}{\hbar}t} \ket{E_n} \longrightarrow \sum_n c_n \expo{\f{-iE_n}{\hbar}t}\psi_n(x) \]
+
+      \[ c_n = \braket{E_n}{\alpha(0)} \longrightarrow \int dx \psi_n^*(x) \alpha(x,0) \]
+
+      Time dependence for probabilities and expectation values, for example
+
+      \[ \ket{\alpha(0)} = c_1\ket{E_1} + c_2\ket{E_2} \ \ \ \ c_1 = \braket{E_1}{\alpha(0)}, c_2 = \braket{E_2}{\alpha(0)} \]
+
+      So,
+
+      \[ \ket{\alpha(t)} = c_1\expo{\f{-iE_1}{\hbar}t}\ket{E_1} + c_2\expo{\f{-iE_2}{\hbar}t}\ket{E_2} \]
+
+      In the position basis, $\ket{\alpha(t)} = \alpha(x,t)$  \ \ \ \ (time independent wavefunction in a position basis), so
+
+      \[ c_1 \expo{\f{-iE_1}{\hbar}t} \psi_1(x) + c_2\expo{\f{-iE_2}{\hbar}t}\psi_2(x)\]
+
+      with
+
+      \[ c_1 = \int dx \psi_1^*(x)\alpha(x,0) \ \ \ \ \ \  \ \ \ \ \ c_2 = \int dx \psi_2^*(x)\alpha(x,0) \]
+
+      \begin{itemize}
+        \item[(i)] If observable is Hamiltonian, then the probabilities and expectations will be time independent. (use eigenvalue equations to compute where possible)
+        \item[(ii)] If observable commutes with the Hamiltonian, then the probabilities and expectation values will be time independent.
+        \item[(iii)] If observable does not commute, then the probabilities and expectation values will be time independent.
+      \end{itemize}
+
+      \begin{exmp}
+        Consider a particle in an infinite potential well with an initial wavefunction that is:
+        \[ \ket{\alpha(0)} = 3\ket{E_1} + 2\ket{E_3} \]
+        where $\ket{E_n}$ is an eigenstate of the Hamiltonian
+        \begin{itemize}
+          \item[i.] Normalize the initial state
+          \begin{align*}
+            \braket{\alpha(0)}{\alpha(0)} = 1 = A^2[3\bra{E_1} + 2\bra{E_3}][3\ket{E_1} + 2\ket{E_2}]
+          \end{align*}
+          provided $\ket{E_1}$ and $\ket{E_3}$ are orthonormal, which they are as they're eigenstates of an infinite potential well, then
+          \[ 1 = |A|^2(9+4) \implies A = \f{1}{\sqrt{13}} \ \ \ \ \ \ \mbox{choose to be real and positive} \]
+
+          \item[ii.] Find the expectation values for position and energy
+          \begin{align*}
+            \E{\hat{x}} & = \bra{\alpha(0)}\hat{x}\ket{\alpha(0)} \\
+                        & = \left[ \f{3}{\sqrt{13}} \bra{E_1} + \f{2}{\sqrt{13}}\bra{E_3} \right]\hat{x}\left[ \f{3}{\sqrt{13}}\ket{E_1} + \f{2}{\sqrt{13}}\ket{E_3} \right]
+          \end{align*}
+          We don't know how $\hat{x}$ acts on $\ket{E_n}$ (it is not an eigenstate of $\hat{x}$), therefore we move to the position basis.
+
+          \[ \bra{\alpha(0)}\hat{x}\ket{\alpha(0)} = \int_{-\infty}^{\infty} dx \left[ \f{3}{\sqrt{13}}\psi_1^*(x) + \f{2}{\sqrt{13}}\psi_3^*(x) \right]x \left[ \f{3}{\sqrt{13}}\psi_1(x) + \f{2}{\sqrt{13}}\psi_3(x) \right] \]
+
+          Energy eigenstates in the position basis:
+
+          \[ \psi_n(x) = \sqrt{\f{2}{L}} \sin \left( \f{n\pi x}{L} \right)  \ \ \ \ \ n = 1,2,3,\ldots \ \ \ \ \ \ 0 \leq x \leq L\]
+
+          See page 144 of the textbook for full math details. There are two types of integral.
+          \[ \f{2}{L} \int_0^L dx \sin^2 \left( \f{n\pi x}{L} \right) x = \f{L}{2} \ \ \ \ \ \ \mbox{[diagonal terms, $n$ is same]}  \]
+          \[ \f{2}{L} \int_0^L dx \sin^2 \left( \f{n\pi x}{L} \right) x \sin \left( \f{m\pi x}{L} \right) = \piecewise{0}{if $m + n$ is even}{\f{-16L}{9\pi^3}}{if $m + n$ is odd} \]
+          So,
+          \begin{align*}
+            \E{\hat{x}} & = \f{9}{13} \int_0^L dx \psi_1^*(x)x\psi_1(x) + \f{6}{13} \int_0^L dx \psi_1^*(x)x\psi_3(x) +  \f{6}{13} \int_0^L dx \psi_3^*(x)x\psi_1(x) +  \f{4}{13} \int_0^L dx \psi_3^*(x)x\psi_3(x) \\
+            & = \f{L}{2}
+          \end{align*}
+          Next, the expectation value for energy is
+          \begin{align*}
+            \E{\hat{H}} & = \bra{\alpha(0)}\hat{H}\ket{\alpha(0)} \\
+            & = \left( \f{3}{\sqrt{13}}\bra{E_1} + \f{2}{\sqrt{13}} \right) \hat{H} \left( \f{3}{\sqrt{13}}\ket{E_1} + \f{2}{\sqrt{13}}\ket{E_3} \right) \\
+            & = \f{9}{\sqrt{13}} \bra{E_1}\hat{H}\ket{E_1} + \f{6}{\sqrt{13}} \bra{E_1}\hat{H}\ket{E_3} + \f{6}{\sqrt{13}} \bra{E_3}\hat{H}\ket{E_1} + \f{4}{\sqrt{13}} \bra{E_3}\hat{H}\ket{E_3} & \mbox{(use energy eigen equation)} \\
+            & = \f{9}{\sqrt{13}} E_1 \braket{E_1}{E_1} + \f{6}{\sqrt{13}} E_3 \braket{E_1}{E_3} + \f{6}{\sqrt{13}} E_1 \braket{E_3}{E_1} + \f{4}{\sqrt{13}} E_3 \braket{E_3}{E_3} \\
+            & = \f{1}{13} \left( 9E_1 + 4E_3 \right)
+          \end{align*}
+          Now,
+          \[ E_n = \f{n^2\pi^2\hbar^2}{2mL^2} \implies \E{\hat{H}} = \left( \f{9\times 1}{13} + \f{4 \times 9}{13} \right) \f{\pi^2\hbar^2}{2mL^2} = \f{45}{13} \f{\pi^2\hbar^2}{2mL^2} \]
+          The solution could have also been obtained by
+          \[ \E{\hat{E}} = \sum_n E_n \times prob(E_n) \]
+
+          \item[iii.] Find the wavefunction at a later time $t$. \newline
+
+          Since $\ket{\alpha(0)}$ is written as a linear combination of energy eigenstates then,
+          \[ \ket{\alpha(t)} = \f{3}{\sqrt{13}}\expo{\f{-iE_1}{\hbar}t}\ket{E_1} + \f{2}{\sqrt{13}}\expo{\f{-iE_2}{\hbar}t}\ket{E_2}\]
+
+
+          \item[iv.] Find the time dependence of the expectation value for position and energy.\newline
+
+          \begin{align*}
+            \E{\hat{x}} & = \bra{\alpha(t)}\hat{x|\ket{\alpha(t)}} \\
+            & = \left( \f{3}{\sqrt{13}} \expo{\f{+iE_1}{\hbar}t}\bra{E_1} + \f{2}{\sqrt{13}} \expo{\f{+iE_3}{\hbar}t}\bra{E_3} \right) \hat{x} \left( \f{3}{\sqrt{13}} \expo{\f{-iE_1}{\hbar}t}\ket{E_1} + \f{2}{\sqrt{13}} \expo{\f{-iE_3}{\hbar}t}\ket{E_3} \right) \\
+            & = \f{9}{13} \bra{E_1}\hat{x}\ket{E_1} + \f{4}{13} \bra{E_3}\hat{x}\ket{E_3} + \f{6}{13} \expo{\f{-i(E_1-E_3)}{\hbar}t} \bra{E_3}\hat{x}\ket{E_1} + \f{6}{13} \expo{\f{-i(E_3-E_1)}{\hbar}t} \bra{E_1}\hat{x}\ket{E_3}
+          \end{align*}
+
+          We need to switch to the position basis to evaluate the inner products. Same integrals as earlier.
+
+          \[ \E{\hat{x}} = \f{9}{13} \f{L}{2} + \f{4}{13} \f{L}{2} = \f{L}{2} \ \ \ \ \mbox{as before} \]
+
+          time dependence has disappeared because of the nature of integrals for $\bra{E_n}\hat{x}\ket{E_m}$ with $m+n$ being even, \textbf{not} because of orthogonality. In general, we expect to see time dependence because $[\hat{x}, \hat{H}] \not = 0$.
+
+        \end{itemize}
+      \end{exmp}
+
+
+  \section{Free Particle}
+
+    To consider a free particle in Quantum Mechanics, we solve the time independent Schrödinger equation for $V(x) = 0$
+
+    \[ \f{d^2\psi_E(x)}{dx^2} = \f{-2mE}{\hbar^2}\psi_E(x) = -k^2 \psi_E(x) \ \ \ \ \ \ \ k = \f{\sqrt{2mE}}{\hbar} \]
+
+    again since $E > 0$, $k$ is REAL and so $k^2$ is positive. The general solution is then
+
+    \[ \psi_E(x) = A\expo{+ikx} + B\expo{-ikx} \]
+
+    No boundary conditions to apply means that solutions exist for all $k$ (and $E$), this means that $\psi_E(x)$ and $E$ for a continuous spectrum of eigenfunctions and eigenvalues respectively. \newline
+
+    Mathematically, the system is underconstrained with only normalisation (if possible) to get $A, B$ and $E$. How one proceeds depends on what problem is being solved.
+
+    \begin{itemize}
+      \item[1.] Physical interpretation \newline
+
+      Consider the full time dependent eigenfunction
+      \[ \Psi_E(x,t) = \psi_E(x)\expo{\f{-iE}{\hbar}t} \]
+      then using $E = \hbar \omega$,
+      \[ \Psi_E(x,t) = A\expo{i(kx - \omega t)} + B \expo{-i(kx + \omega t)} \]
+      and expand $\psi_E(x)$. If we compare this to a classical expression for a travelling wave, we see that $\Psi_E(x,t)$ is a linear superposition of a plane wave travelling in the positive $x$ direction and plane wave travelling in the negative $x$ direction.
+
+      For a more reliable description of moving particles use the continuous superposition of energy eigenstates $\Psi_E(x,t) \implies$ wavepacket. \newline
+    \end{itemize}
+      \subsubsection{Position, Momentum, and Heisenberg's Uncertainty Principle.}
+
+      Consider the energy eigenstate for a free particle ($V(x) = 0$) that is a travelling wave in the $x$ direction
+
+      \[ \psi_E(x) = A\expo{+ikx} \]
+
+      The probability density is
+
+      \[ \pr{\psi_E(x)} = \psi_E^*(x)\psi_E(x) = A^2 \ \ \ \ \ \mbox{constant} \]
+
+      The particle has the same probability to be found anywhere (delocalised). [ignore normalization issue for now, already identified state as physically unreliable but theoretically ideal] \newline
+      Apply the momentum operator to $\psi_E(x)$
+
+      \[ \hat{p} \longrightarrow (-i\hbar)\f{d}{dx} \]
+
+      \[ \hat{p}\ket{\psi_E} \longrightarrow -i\hbar\f{d}{dx}\psi_E(x) = \hbar kA\expo{+ikx} = \hbar k \psi_E(x) \]
+
+      This is an eiegen equation for the momentum operator. In this case, $\hat{p}\ket{\psi_E} = p\ket{\psi_E}$ with momentum eigenvalue $p = \hbar k$. If we compare this with the de Broglie relationship, $p=\f{h}{\lambda}$.
+
+      \[ p = \hbar k = \f{h}{\lambda} \implies k = \f{2\pi}{\lambda} \ \ \ \ \ \ k \mbox{is wave vector, units of inverse length} \]
+
+      \subsubsection{Uncertainties}
+
+      \[ \psi_E(x) = A\expo{+ikx} \]
+      is an energy eigenstate that has equal probability to be found anywhere on the $x$-axis in the momentum eigenstate with eigenvalue $p = \hbar k$. Thus,
+
+      \[ \E{\hat{p}} = \hbar k, \ \ \ \ \ \ \E{\hat{p}^2} = (\hbar k)^2,  \ \ \ \ \ \ \Delta \hat{p} = \sqrt{\E{\hat{p}^2} - \E{\hat{p}}^2} = 0 \]
+
+      $\Delta \hat{x}$ uncertainty in positions is as large as it can be (infinite?). \newline
+
+      If we try to reduce our uncertainty in position ($\Delta \hat{x}$) we will increase out uncertainty in momentum ($\Delta \hat{p}$) because this is simply a general property of waves. That is, the more a wave is localised, the less well-defined its wavelength and vice versa.
+
+      \subsubsection{Quantitively in QM}
+
+      \[ \Delta \hat{A} \Delta \hat{B} \geq \f{1}{2} \left|\langle\left|\left[A,B\right]\right|\rangle\right| \]
+
+      For $\hat{x}$ and $\hat{p}$, the Heisenberg Commutator is
+
+      \[ [\hat{x},\hat{p}] = i\hbar \]
+
+      \begin{align*}
+        \Delta \hat{x} \Delta \hat{p} & \geq \f{1}{2} \left|\langle\left|\left[\hat{x},\hat{p}\right]\right|\rangle\right| \\
+        & \geq \f{1}{2} \hbar \implies \mbox{Heisenberg Uncertainty Principle}
+      \end{align*}
+
+    \subsection{Scattering and Unbound Particles}
+
+      Classically bound ($E$ inside well) implies quantised states (boundary conditions on eiether side).\newline
+      Classically unbound ($E$ above well) implies a continuous spectrum of energy eigenstates (no quantisation). \newline
+
+      Consider the simplest example of a finite potential well
+
+      \begin{itemize}
+        \item define well symmetry about $x = 0$
+        \item potential is zero at $x = \pm \infty$ and $V(x) = V_0$ inside the well
+        \item consequently $E<0 \implies$ bound states (quantisation) and $E>0 \implies$ unbound states (comntinuous)
+      \end{itemize}
+
+      Sondier just $E > 0$ (unbound, scattering states). Solve the Time Independent Schrödinger Equation in each of the three regions, and match solutions together at boundaries
+
+      \[ \mbox{Region I and III: } \ \ \ \ \ \f{d^2\psi_E(x)}{dx^2} = -k_1^2\psi_E(x) \ \ \ \ \ \ \ k_1 = \f{\sqrt{2mE}}{\hbar} \]
+      \[ \mbox{Region II: } \ \ \ \ \ \f{d^2\psi_E(x)}{dx^2} = -k_2^2\psi_E(x) \ \ \ \ \ \ \ k_2 = \f{\sqrt{2m(E+V_0)}}{\hbar} \]
+
+      In both cases $k_1$ and $k_2$ are REAL, then $k_1^2$ and $k_2^2$ are positive. General solutions are complex exponents sinusoids. Qualitatively we have already seen that the effect of the change in potential is a change in wavevector, $k$ (see above, on Harmonic Oscillator eigenstates). $\implies$ a change in wavelength of the wavefunction.\newline
+
+      % For these interactions between two particles, we typically only require relative amplitudes before and after interactions (e.g, $\f{|A|^2}{|B|^2}$) and travelling wave interpretation in sufficient
+
+      Outside of a potential energy well, we can make the observation that the potential energy will be higher and the kinetic energy lower; therefore any particle in that space will have less momentum and a longer wavelength. Conversely, within the box the P.E. will be lower, K.E., highwe, and so we have a larger momentum and short wavelength. This means the probablity amplitudes are larger just outside the box than inside the box.\newline
+
+      The general solutions for $\psi_E(x)$ are
+
+      \[ \mbox{I :} \ \ \ A\expo{+ik_1x} + B\expo{-ik_1x} \]
+      \[ \mbox{II :} \ \ \ C\expo{+ik_2x} + D\expo{-ik_2x} \]
+      \[ \mbox{III :} \ \ \ F\expo{+ik_1x} + G\expo{-ik_1x} \]
+
+      In principle there are 7 unknowns (including $E$) to solve for. We need to impose the continuity of $\psi(x)$ and $\f{d\psi}{dx}$ at boundaries of the well (4 equations). \newline
+
+      \subsubsection{Consider Scattering Problems}
+
+        \begin{itemize}
+          \item Describes interaction between two particles and how it affects their motion
+          \item Consider 1 particle to be fixed, the other incident, and the potential energy function describes their interaction
+        \end{itemize}
+
+        Treat $E$ as a starting condition for the incoming particle (continuous spectrum). In 1D, we consider the two possibilities of \textbf{transmission} beyond the well, or \textbf{reflection} back by well. \newline
+
+        In this case consider a particle incident from $-\infty$ travelling in the $x$-direction, with energy $E > 0$. There are two possibilities in the potential well,
+        \begin{itemize}
+          \item[1.] Reflected back
+          \item[2.] Transmitted beyond
+        \end{itemize}
+        In Region I, we require incoming and reflected particles so we associate $A(+vek)$ with incident, $B(-vek)$ with reflected.
+        In Region III, we require transmitted particles, and so we associate $F(+vek)$ with transmission, and set $G = 0$, since there is nothing beyond $x = +a$ to reflect any particles.\newline
+
+        We will also define a \textbf{reflection coefficient} $R = \pr{\f{B}{A}}$, which is the probability that the plate is reflected by the well. Additionally we'll define a \textbf{transmission} coefficient $T=\pr{\f{F}{A}}$, the probability that the particle is transmitted by the well.\newline
+
+        We now use the continuity of $\psi(x)$ and $\f{d\psi}{dx}$ at $x = +a$ and $x = -a$ to generate 4 equations. For example,
+
+        \[ \psi_E(x=-a) : A\expo{-ik_1a} + B\expo{+ik_1a} = C\expo{-ik_2a}+D\expo{+ik_2a} \ \ \  \ \ \ \ \ \ (1) \]
+
+        These can be used to find the ratios $\f{F}{A}$ and $\f{B}{A}$. Doing this, we find that
+
+        \[ T = \pr{\f{F}{A}} = \left[ 1 + \f{V_0^2}{\psi_E(E+V_0)}\sin^2 \left( \f{2a}{\hbar} \sqrt{2m(E+V_0)} \right) \right]^{-1} \]
+        and
+        \[ R = \pr{\f{B}{A}} = \left[ 1 + \f{4k_1^2k_2^2}{(k_1^2-k_2^2)\sin(2k_2a)} \right]^{-1} \]
+
+        $R + T = 1$ since the particle is either transmitted or reflected.
+
+        \begin{note} \
+          \begin{itemize}
+            \item[1.] $T \longrightarrow 1$ as $E >> V_0$ - the well becomes insignificant.
+            \item[2.] $T = 1$ at particular value of $E$, this means we have resonance. From the expression for $T$, this occurs when $\sin (\cdots)$ is zero (that is, when $2k_2a = n \pi$). If we use $k_2 = \f{2\pi}{\lambda_2}$ then $2a=\f{n\lambda_2}{2}$, i.e., the well contains an integer number of half wavelengths. $\left(\f{1}{2}\lambda\right)$. In the end, this occurs as a result of forward waves interfering constructively and reflected waves inteffering destructively - analogous phenomena occur in optics.
+            \item[3.] $R \not = 0$ unless $E$ is in resonance or as $E >> V_0$. This is counter to our classical expectation.
+          \end{itemize}
+        \end{note}
+
+    % TODO
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+   \section{Tutorials}
+
+     \subsection{Tutorial 1}
+
+     \begin{itemize}
+       \item[1.] Given two vectors
+       \[ \va = \mtx{1 \\ 2 \\ 4}, \ \ \ \  \vb = \mtx{6 \\ 4 \\ 1} \]
+       \begin{itemize}
+         \item[(a)] Compute the inner product $\va^T\vb$ \\
+           \[ 1\cdot6 + 2\cdot4 + 4\cdot 1 = 12 \]
+         \item[(b)] Compute the outer product $\va\vb^T$
+           \[ 6 \cdot 1 + 4\cdot2 + 1\cdot4 = 12 \]
+       \end{itemize}
+       \item[2.] Given two matrices
+       \[ A = \mtx{1 & 9 \\ 4 & 3}, \ \ \ \ B = \mtx{0 & 2 \\ 5 & 6} \]
+       \begin{itemize}
+         \item[(a)] Compute the product $AB$
+           \[ \mtx{1\cdot0 + 9\cdot5 & 1 \cdot2 + 9\cdot 6 \\ 4 \cdot 0 + 3 \cdot 5 & 4 \cdot 2 + 3 \cdot 6} = \mtx{45 & 56 \\ 15 & 20}\]
+         \item[(b)] Do these matrices commute? \\
+           Let's check
+           \[ \mtx{ 0 \cdot 1 + 2 \cdot 4 & 0 \cdot 9 + 2 \cdot 3 \\ 5\cdot1 + 6 \cdot 4 &  5 \cdot 9 + 6\cdot 3 } = \mtx{8 & 6 \\ 29 & 63} \]
+           No.
+       \end{itemize}
+       \item[3.] Given the matrix
+       \[ C = \mtx{7 & 2 \\ 2 & 4} \]
+       \begin{itemize}
+         \item[(a)] Compute the eigenvalues of $C$
+           The characteristic polynomial is
+           \[ C(\lambda) = \det{(C - \lambda I)} = \det \mtx{7 - \lambda & 2 \\ 2 & 4 - \lambda} = (7-\lambda)(4-\lambda) - 4  = 24 -11\lambda + \lambda^2 \implies \lambda = 8, 3 \]
+         \item[(b)] Compute the eigenvectors of $C$
+           \[ C - 8I = \mtx{-1 & 2 \\ 2 & -4 } \equiv \mtx{-1 & 2 \\ 0 & 0} \implies \vv = t\mtx{2 \\ 1} \ \ \ \ s, t \in \R\]
+           \[ C - 3I = \mtx{4 & 2 \\ 2 & 1 } \equiv \mtx{0 & 0 \\ 2 & 1} \implies \vv = t\mtx{-1 \\ 2} \ \ \ \ s, t \in \R\]
+         \item[(c)] Are the eigenvectors orthogonal?
+         \[ \mbox{Yes.} \]
+         \item[(d)] Normalize the eigenvectors.
+         \[ \mtx{\f{2}{\sqrt{5}} \\ \f{1}{\sqrt{5}}}, \mtx{\f{-1}{\sqrt{5}} \\ \f{2}{\sqrt{5}}} \]
+       \end{itemize}
+       \item[4.] Given the complex number
+       \[ z = 3 + 3i \]
+       \begin{itemize}
+         \item[(a)] Compute the complex conjugate of $z$ (denoted $\bar{z}$)
+            \[ \bar{z} = 3 - 3i \]
+         \item[(b)] Compute the norm of $z$ (denoted $|z|$)
+            \[ |z| = \sqrt{z\cdot \bar{z}} = \sqrt{18} \]
+         \item[(c)] Express $z$ as $z = re^{i\theta}$.
+            \[ z = (\sqrt{18})e^{i\arctan\left( \f{3}{3} \right)} = \sqrt{18}e^{\f{\pi i}{2}} \]
+         \item[(d)] Express $z$ as $z = r(cos\theta + i\sin\theta)$
+             \[ z = \sqrt{18}\left(\cos \f{\pi}{2} + i\sin \f{\pi}{2}\right) \]
+       \end{itemize}
+     \end{itemize}
+
+     \subsection{Tutorial 2}
+
+      Tutorial 2 concerns coin flipping, the SPINS program, and connections to Quantum Theory. We played games.
+
+     \subsection{Tutorial 3}
+
+      We are given a matrix $M_2 = \mtx{1 & 0 \\ 0 & -1}$, so first we find the eigenvalues:
+      \[ (1-\lambda)(-1 - \lambda) = 0 \implies \lambda = \pm 1 \]
+      Then for $\lambda_1 = 1$ we get
+      \[ \mtx{0\\0} = \mtx{0 & 0 \\ 0 & -2}\mtx{x_1 \\ x_2} \implies \vv_1 = \mtx{1 \\ 0} \]
+      and $\lambda_2 = -1$ which corresponds to $\vv_2 = \mtx{0 \\ 1}$. Now we want to determine if this matrix is a reflection and if so on what line; well actually this is pretty straightforward because you can see that for any vector, $M_2\mtx{x_1\\x_2} = \mtx{x_1\\-x_2}$ which means it is a vertical reflection (over the $x$-axis).
+      \newline
+
+      Also a little bit on Group Theory.
+
+     \subsection{Tutorial 4}
+
+      On the theory of ideal finite-dimensional Quantum Mechanics and for an application, a Numerical QST Exercise.
+
+      \begin{figure}[b!]
+            \centering
+            \includegraphics[width=0.8\textwidth]{any_physics.png}
+            \caption{"Any physical experiment, classical, quantum, or other, can be viewed as the type of experiment described here." - L. Hardy (2001)}
+      \end{figure}
+
+      Axioms for Finite-Dimensional Quantum Mechanics
+
+      \begin{itemize}
+        \item Axiom 0. Systems Exist
+        \item Axiom 1. For each preparation device $\mathcal{P}$, there is an associated $\kpsi \in \C^d : \braket{\Psi}{\Psi} = 1$.
+        \item Axiom 2. For each transformation channel $\mathcal{T}$, there is an associated $u \in U(\C^d), \kpsi \rightarrow u\kpsi$
+        \item Axiom 3. For each measurement device $\mathcal{M}$, there is an associated Hermitian $A$ with eigenvalues $\lambda_r$ and eigenkets $\ket{\xi_r}$ such that for input $\ket{\phi}$,
+        \[ pr(\lambda_r) = \left| \braket{\phi}{\xi_r}\right|^2 \]
+        This is The Born Rule.
+      \end{itemize}
+
+      \begin{note}
+        $uu^\intercal = \mathbb{1}$ implies unitary, and $A = A^\intercal$ implies hermitian.
+      \end{note}
+
+      \begin{exmp}
+        Suppose that we have some preparation device with four possible states $\Psi_1, \Psi_2, \Psi_3, \Psi_4$, then we can describe $\Psi_1$ as
+        \[ \ket{\Psi_1} = a\ket{+_z} + be^{i\theta}\ket{-_z} \]
+        for $a, b \in \R_+$, and $\theta \in [0, 2\pi]$. Then,
+        \[ pr(+_z) = \left|\braket{\Psi}{+_z}\right|^2 = a^2\]
+        and remember that $a^2 + b^2 = 1$. Also,
+        \begin{align*}
+          pr(+_x) & = \left| \braket{\Psi}{+_x} \right|^2 \\
+                  & = \left| \left( a \bra{+_z}+be^{-i\theta}\bra{-_z} \right) \left( \f{\ket{+_z} + \ket{-_z}}{\sqrt{2}} \right) \right|^2 \\
+                  & = \f{1}{2} \left| a + be^{-i\theta} \right|^2 \\
+                  & = \f{1}{2} \left( a^2 + b^2 + ab \left( e^{-i\theta} + e^{i\theta} \right) \right) \\
+          pr(+_x) & = \f{1}{2} (1 + 2ab\cos\theta)
+        \end{align*}
+
+        Using this framework we can find $a_r$, $b_r$, and $\theta_r$ from experimental results (finding $pr(+_x)$, $pr(+_y)$, $pr(+_z)$ for each $\Psi_r$)
+      \end{exmp}
+
+      \begin{exmp}
+        Prove that $\left|\braket{\Psi}{\phi}\right|^2 = \left|\braket{\tau}{\phi}\right|^2$ where $\ket{\tau} = e^{i\theta} \kpsi$, for $\kpsi, \ket{\phi} \in \C^d$.
+        \newline
+        \begin{align*}
+          \left|\braket{\tau}{\phi}\right|^2 & = |e^{-i\theta}|^2\left|\braket{\Psi}{\phi}\right|^2 \\
+          & = \left|\braket{\Psi}{\phi}\right|^2 \\ \braket{\tau}{\phi} & = \braket{\Psi}{\phi}
+        \end{align*}
+      \end{exmp}
+
+     \subsection{Tutorial 5}
+
+       Rememeber the axioms.
+
+        \begin{itemize}
+        \item Axiom 0. Systems Exist
+        \item Axiom 1. For each preparation device $\mathcal{P}$, there is an associated $\kpsi \in \C^d : \braket{\Psi}{\Psi} = 1$.
+        \item Axiom 2. For each transformation channel $\mathcal{T}$, there is an associated $u \in U(\C^d), \kpsi \rightarrow u\kpsi$
+        \item Axiom 3. For each measurement device $\mathcal{M}$, there is an associated Hermitian $A = A^\dagger$
+      \end{itemize}
+
+      \begin{thrm}
+        Let $A \in \mathcal{M}_d(\C): AA^\dagger = A^\dagger A$, then $\exists \lambda_1, \ldots, \lambda_m \in \C, m \leq d$. Then,
+        \[ \pi_1,\ldots,\pi_m \in \mathcal{M}_d(\C) : \forall r \in \{1,\ldots,m\}, \pi_r^2 = \pi_r \land \forall r \pm s \pi_r\pi_s = 0. \]
+        So,
+        \[ A = \sum_{r=1}^m \lambda_r\pi_r \]
+        where $\lambda_r$ is a unique eigenvalue of $A$ and $\pi_r$ is an eigenprojector where
+        \[ \pi_r = \sum_{s=1}^{\mbox{mult}(\lambda_r)} \ket{\xi_{r_s}{\bra{\xi_{r_s}}}} \]
+        for eigenvectors associated with $\lambda_r$.
+      \end{thrm}
+
+      So a slight generalization to Axiom 3 is \newline
+
+      \textbf{Axiom 3.} For each $\mathcal{M}$, there is an associated $A = A^\dagger$ such that
+      \[ pr(\lambda_r) = \sum_{s=1}^{\mbox{mult}(\lambda_r)} \left| \braket{\Psi}{\xi_{r_s}} \right|^2 \]
+      For input $\kpsi, \kpsi \longrightarrow \f{\pi_r\kpsi}{\bra{\Psi}\pi_r\kpsi}$
+      when outcome $\lambda_r$ is registered.
+
+      There we go. My question is, is this just a special case of the unitary axiom?
+
+      \[ \braket{u\Psi}{u\phi} = \bra{\Psi}u^\dagger u\ket{\phi} = \braket{\Psi}{\phi} \]
+
+      Let $\ket{\Psi_1} = \ket{+_z}$ and $\ket{\Psi_2} = \ket{-_z}$ and $\braket{\Psi_1}{\Psi_2} = 0$ and then
+      \[ A = \mtx{0 & 1 \\ 1 & 0} \mbox{ \ \ \ \ \ \ $x$ measurement} \]
+      Suppose a $+_x$ outcome, then
+
+      \[ \ket{\Psi_1} \rightarrow \ket{+_x}, \ \ \ \ \ket{\Psi_2} \rightarrow \ket{+_x} \ \ \ \braket{+_x}{+_x} = 1 \]
+
+      Let's do an example. Consider the situation in the figure at the bottom:
+
+      Find the values mentioned on the board at the different parts of the experiment. I'm not going to do it but essentially all you need to do is apply the function in the transformation to the input state to get the first one, then given the $+$ outcome occurs the new state just tacks off the $-$ component and is then normalized. Next, do the transformation again and normalize and getting the probability after that is just the same old way of getting probabilities from states. For more of a challenge instead of just measuring twice, say we are measuring $n$ times. This leads to the Quantum Zeno effect becuase we'll notice that as we keep observing the state of system over the course the experiment, we nullify the experiment.
+
+      \begin{figure}[b!]
+            \centering
+            \includegraphics[width=0.8\textwidth]{axiom3_exmp.jpg}
+            \caption{Example}
+      \end{figure}
+
+      \subsection{Last Tutorial?}
+
+        \begin{thrm}
+          If $\forall x: V(x) = V(-x)$ then the energy eigenfunctions have definite parity.
+        \end{thrm}
+
+        Consider some well that goes from $-a/2$ to $a/2$; inside we have
+
+        \[ V(x) = \piecewise{0}{$-a/2 < x < a/2$}{\infty}{otherwise} \]
+
+        Then in the inside region $II$ we have the wavefunction $\psi_{II}(x) = \psi(x)$, in the other two regions we have $\psi_{I} = 0$ and $\psi_{III}(x) = 0$. They are 0 because you can't be there when there's infinite energy. Note also that
+        \[ \pr{\psi(x)} dx \]
+        is the probability of being found in $dx$. Now, to find $\psi(x)$ we need to solve the Shroedinger Equation as usual,
+
+        \[ \f{-\hbar^2}{2m} \f{d^2}{dx^2} \psi(x) = E\psi(x) \implies \f{d^2}{dx^2} \psi(x) = -k^2\psi(x)\]
+
+        The solutions involve complex exponentials;
+
+        \[ \psi(x) = A\cos kx + B\sin kx \]
+
+        We break it up into conditions. The first is that we have an even function, then
+
+        \[ \psi(x) = A\cos kx \]
+
+        Then we \textbf{demand} that
+
+        \[ \int_{-\infty}^{\infty} \pr{\psi_{TOTAL}} dx = |A|^2 \int_{-a/2}^{a/2}\cos^2 (kx) dx = \f{|A|^2}{2} \left[ \int_{-a/2}^{a/2} dx + \int_{-a/2}^{a/2}\cos (2kx) dx \right] \]
+
+        So that means
+
+        \[ 1 = \f{|A|^2}{2} a \implies A = \sqrt{\f{2}{a}} \]
+
+        We also require that at $x = +a/2$ that
+
+        \[ \psi_{III}(a/2) = \psi(a/2) = \sqrt{\f{2}{a}}\cos \left( \f{ka}{2} \right) \implies k = \f{n\pi}{a} \]
+
+        For $n = 1, 3,5,\ldots$. So,
+
+        \[ \boxed{\psi(x) = \sqrt{\f{2}{a}}\cos \left( \f{n\pi x}{a} \right)  \ \ \ \ \ \ E_n = \f{n^2\pi^2\hbar^2}{2ma^2} \ \ \ \ \ n \mbox{ is odd}} \]
+
+        Similarly for the odd case,
+
+        \[ \boxed{\psi(x) = \sqrt{\f{2}{a}}\sin \left( \f{n\pi x}{a} \right)  \ \ \ \ \ \ E_n = \f{n^2\pi^2\hbar^2}{2ma^2} \ \ \ \ \ n \mbox{ is even}} \]
+
+        Symmetric. Infinite Potential Well of length $L$,
+
+        \[ \psi_n^L(x) \ \ \ \ \mbox{$n$-th energy eigenfunction for well of length $L$} \]
+
+        For example,
+
+        \[ \psi_3^a = \sqrt{\f{2}{a}} \cos \left( \f{3\pi x}{a} \right)\]
+
+        \begin{exmp}
+          Consider some initial state
+          \[ \ket{\psi_1^a(x)} \]
+          Then, instantaneously, the well expands by a factor of 2. At the start we have a well from $-a/2$ to $a/2$ and then \textit{all of a sudden}, the bounds are $-a$ and $a$. After expansion of the well, what is the probability to measure the system to be in the \textit{now} ground energy eigenstate $\ket{\psi_1^{2a}}$?
+        \end{exmp}
+
+        \begin{defn}[Born Rule]\label{Born Rule}
+        \[ H = H^\dagger = \sum_{n=1}^{\infty} \ket{E_n^{\mbox{now}}}E_n\bra{E_n^{\mbox{now}}} \]
+        \end{defn}
+
+        So we have
+
+        \[ pr(\mbox{measure new ground state}|\psi_1^a) = \pr{\braket{\psi_1^{2a}}{\psi_1^a}} \]
+
+        Then,
+
+        \[ \braket{\psi_1^{2a}}{\psi_1^a} = \braket{\psi_1^{2a}}{\mathbb{1}\psi_1^a} \ \ \ \ \ \mbox{and} \ \ \ \ \ \mathbb{1} = \int_{-\infty}^{\infty} \ket{x}\bra{x} dx \]
+
+        So,
+
+        \begin{align*}
+          \braket{\psi_1^{2a}}{\psi_1^a} & = \braket{\psi_1^{2a}}{\mathbb{1}\psi_1^a} \\
+          & = \int_{-\infty}^{\infty} \braket{\psi_1^{2a}}{x}\braket{x}{\psi_1^a} dx \\
+          & = \int_{-\infty}^{\infty}\psi_1^{2a}(x)\psi_1^a(x) dx \\
+          & = \int_{-a/2}^{a/2} \sqrt{\f{1}{a}} \cos \left( \f{\pi x}{2a} \right) \sqrt{\f{2}{a}} \cos \left( \f{\pi x}{2} \right) dx \\
+          & = \f{\sqrt{2}}{a} \int_{-a/2}^{a/2} \cos \left( \f{\pi x}{2a} \right) \cos \left( \f{\pi x}{a} \right) dx \\
+          & = \f{8}{3\pi}
+        \end{align*}
+
+        (Solve that). Next, for
+
+        \[ pr \left( \mbox{measuring }\psi_m^{2a} | \mbox{initial }\psi_n^a \right) \ \ \ \ \ m \mbox{ is even}, n \mbox{ is odd} \]
+
+
+
+  \end{document}

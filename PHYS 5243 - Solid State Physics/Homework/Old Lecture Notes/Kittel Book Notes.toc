@@ -1,0 +1,6 @@
+\select@language {english}
+\contentsline {section}{Chapter 8 - Semiconductor Crystals}{ii}
+\contentsline {subsection}{Band Gap}{ii}
+\contentsline {subsection}{Equations of Motion}{ii}
+\contentsline {subsection}{Holes}{iii}
+\contentsline {subsection}{Effective mass}{iii}

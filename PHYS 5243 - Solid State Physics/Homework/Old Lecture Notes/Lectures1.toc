@@ -1,0 +1,8 @@
+\select@language {english}
+\contentsline {section}{Chapter 1 - About Condesned Matter Physics - (2015-01-09)}{ii}
+\contentsline {subsection}{Syllabus}{ii}
+\contentsline {subsection}{Class Notes}{ii}
+\contentsline {subsection}{Book Notes}{iii}
+\contentsline {subsubsection}{1.1 - What is Condensed Matter Physics?}{iii}
+\contentsline {subsubsection}{1.2 - Why study Condensed Matter Physics?}{iii}
+\contentsline {subsubsection}{1.3 - Why Solid State?}{iii}

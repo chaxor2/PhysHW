@@ -1,0 +1,178 @@
+\documentclass{article}
+
+\usepackage{fancyhdr}
+\usepackage{extramarks}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{pgfplotstable}
+
+%
+% Basic Document Settings
+%
+
+\topmargin=-0.45in
+\evensidemargin=0in
+\oddsidemargin=0in
+\textwidth=6.5in
+\textheight=9.0in
+\headsep=0.25in
+
+\linespread{1.1}
+
+\pagestyle{fancy}
+\lhead{\hmwkAuthorName}
+\chead{\hmwkClass\ : \hmwkTitle}
+\rhead{\firstxmark}
+\lfoot{\lastxmark}
+\cfoot{\thepage}
+
+\renewcommand\headrulewidth{0.4pt}
+\renewcommand\footrulewidth{0.4pt}
+
+\setlength\parindent{0pt}
+
+%
+% Create Problem Sections
+%
+
+\newcommand{\enterProblemHeader}[1]{
+    \nobreak\extramarks{}{Problem \arabic{#1} continued on next page\ldots}\nobreak{}
+    \nobreak\extramarks{Problem \arabic{#1} (continued)}{Problem \arabic{#1} continued on next page\ldots}\nobreak{}
+}
+
+\newcommand{\exitProblemHeader}[1]{
+    \nobreak\extramarks{Problem \arabic{#1} (continued)}{Problem \arabic{#1} continued on next page\ldots}\nobreak{}
+    \stepcounter{#1}
+    \nobreak\extramarks{Problem \arabic{#1}}{}\nobreak{}
+}
+
+\setcounter{secnumdepth}{0}
+\newcounter{partCounter}
+\newcounter{homeworkProblemCounter}
+\setcounter{homeworkProblemCounter}{1}
+\nobreak\extramarks{Problem \arabic{homeworkProblemCounter}}{}\nobreak{}
+
+%
+% Homework Problem Environment
+%
+% This environment takes an optional argument. When given, it will adjust the
+% problem counter. This is useful for when the problems given for your
+% assignment aren't sequential. See the last 3 problems of this template for an
+% example.
+%
+\newenvironment{homeworkProblem}[1][-1]{
+    \ifnum#1>0
+        \setcounter{homeworkProblemCounter}{#1}
+    \fi
+    \section{Problem \arabic{homeworkProblemCounter}}
+    \setcounter{partCounter}{1}
+    \enterProblemHeader{homeworkProblemCounter}
+}{
+    \exitProblemHeader{homeworkProblemCounter}
+}
+
+%
+% Homework Details
+%   - Title
+%   - Due date
+%   - Class
+%   - Section/Time
+%   - Instructor
+%   - Author
+%
+
+\newcommand{\hmwkTitle}{Homework\ \#4}
+\newcommand{\hmwkDueDate}{February 16, 2015}
+\newcommand{\hmwkClass}{PHYS 5243 - Solid State Physics}
+\newcommand{\hmwkClassInstructor}{Professor Sheena Murphy}
+\newcommand{\hmwkAuthorName}{Chase Brown}
+
+
+\begin{document}
+	\begin{homeworkProblem}
+		Calculate the lattice constant and binding energy of NaCl ions if the ions are doubly ionized (q=2 instead of 1).
+
+		\textbf{Solution}\\
+			We know from Charles Kitell's Introduction to Solid State physics equation 3.18 that:
+			\begin{equation*}
+				U_{tot} = N(z\lambda e^{-\frac{R}{\rho}}-\frac{\alpha q^2}{R})
+			\end{equation*}
+		Now to solve for the equilibrium position $R_o$, we find the minimum of the energy with respect to $R$, $\frac{dU}{dR}=0$:
+			\begin{equation*}
+				R_o^2 e^{-\frac{R_o}{\rho}} = \frac{\rho \alpha q^2}{z \lambda}
+			\end{equation*}
+		 Using the values $z \lambda =  1.05 \times 10^{-8} ergs = 1.05 \times 10^{-15}$ J \AA \ and $\rho = 0.321$\AA \ and $\alpha = 1.747565$, and substituting $q^2$ for $\frac{q^2}{4 \pi \epsilon_o}$ we find that:
+			\begin{equation*}
+				\frac{q^2}{4 \pi \epsilon_o}\Big|_{q=1} = 2.307077 \times 10^{-18} J \AA
+			\end{equation*}
+			\begin{equation*}
+				\frac{q^2}{4 \pi \epsilon_o}\Big|_{q=2} = 9.228309 \times 10^{-18} J \AA
+			\end{equation*}
+		Therefore we obtain:
+			\begin{equation*}
+				R_o^2 e^{-\frac{R_o}{0.321 \AA}}\Big|_{q=1} = \frac{0.321 \AA (1.747565)(2.307077 \times 10^{-18} J \AA)}{1.05 \times 10^{-15} J \AA } = 0.00123256 \AA^2
+			\end{equation*}
+			\begin{equation*}
+				R_o^2 e^{-\frac{R_o}{0.321 \AA}}\Big|_{q=2} = \frac{0.321 \AA (1.747565)(9.228309 \times 10^{-18} J \AA)}{1.05 \times 10^{-15} J \AA } = 0.00493026 \AA^2
+			\end{equation*}
+
+		Solving for $R_o$ yeilds:
+			\begin{equation*}
+				\boxed{R_o \Big|_{q=1} = 2.81463 \AA}
+			\end{equation*}
+			\begin{equation*}
+				\boxed{R_o \Big|_{q=2} = 2.21616 \AA}
+			\end{equation*}
+
+		The binding energy per atom is given by:
+			\begin{equation*}
+				\frac{U_{tot}}{N} = - \frac{\alpha q^2}{R_o} ( 1 - \frac{\rho}{R_o})
+			\end{equation*}
+		Therefore we find:
+			\begin{equation*}
+				\frac{U_{tot}}{N}\Big|_{q=1} = - \frac{1.747565 (2.307077 \times 10^{-18} J \AA)}{2.81463 \AA} (1-\frac{0.321 \AA}{2.81463 \AA})
+			\end{equation*}
+			\begin{equation*}
+				\frac{U_{tot}}{N}\Big|_{q=2} = - \frac{1.747565 (9.228309 \times 10^{-18} J \AA)}{2.21616 \AA} (1-\frac{0.321 \AA}{2.21616 \AA})
+			\end{equation*}
+			\begin{equation*}
+				\boxed{\frac{U_{tot}}{N}\Big|_{q=1} = -7.92 eV}
+			\end{equation*}
+			\begin{equation*}
+				\boxed{\frac{U_{tot}}{N}\Big|_{q=2} = -38.8 eV}
+			\end{equation*}
+			
+	\end{homeworkProblem}
+		
+	\pagebreak
+
+
+	\begin{homeworkProblem}
+		Suppose you were abe to permeate space between ions in an ionic crystal with a dielectric ($\epsilon = 81$ like in water). This reduces the Coulomb interaction by $\frac{1}{\epsilon}$.  Calculate the lattice constant and binding energy of NaCl in ths situation.  Compare the binding energy per atom with the approximate thermal energy ($kT$) at room temperature.
+
+		\textbf{Solution}\\
+			Similar to before, we have the values $z \lambda =  1.05 \times 10^{-8} ergs = 1.05 \times 10^{-15}$ J \AA \ and $\rho = 0.321$\AA \ and $\alpha = 1.747565$, and substituting $q^2$ for $\frac{q^2}{4 \pi \epsilon_o}$ we find that:
+			\begin{equation*}
+				\frac{q^2}{4 \pi \epsilon_o \epsilon}\Big|_{q=1} = 2.848244 \times 10^{-20} J \AA
+			\end{equation*}
+		Therefore we obtain:
+			\begin{equation*}
+				R_o^2 e^{-\frac{R_o}{0.321 \AA}}\Big|_{q=1} = \frac{0.321 \AA (1.747565)(2.848244 \times 10^{-20} J \AA)}{1.05 \times 10^{-15} J \AA } = 0.000015216 \AA^2
+			\end{equation*}
+
+		Solving for $R_o$ yeilds:
+			\begin{equation*}
+				\boxed{R_o \Big|_{q=1} = 4.5309 \AA}
+			\end{equation*}
+
+		The binding energy per atom is given by:
+			\begin{equation*}
+				\frac{U_{tot}}{N} = - \frac{\alpha q^2}{R_o} ( 1 - \frac{\rho}{R_o})
+			\end{equation*}
+
+
+	\end{homeworkProblem}
+
+
+\end{document}

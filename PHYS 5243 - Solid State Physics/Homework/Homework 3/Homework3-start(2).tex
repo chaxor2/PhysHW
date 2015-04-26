@@ -1,0 +1,242 @@
+\documentclass{article}
+
+\usepackage{fancyhdr}
+\usepackage{extramarks}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{pgfplotstable}
+
+%
+% Basic Document Settings
+%
+
+\topmargin=-0.45in
+\evensidemargin=0in
+\oddsidemargin=0in
+\textwidth=6.5in
+\textheight=9.0in
+\headsep=0.25in
+
+\linespread{1.1}
+
+\pagestyle{fancy}
+\lhead{\hmwkAuthorName}
+\chead{\hmwkClass\ : \hmwkTitle}
+\rhead{\firstxmark}
+\lfoot{\lastxmark}
+\cfoot{\thepage}
+
+\renewcommand\headrulewidth{0.4pt}
+\renewcommand\footrulewidth{0.4pt}
+
+\setlength\parindent{0pt}
+
+%
+% Create Problem Sections
+%
+
+\newcommand{\enterProblemHeader}[1]{
+    \nobreak\extramarks{}{Problem \arabic{#1} continued on next page\ldots}\nobreak{}
+    \nobreak\extramarks{Problem \arabic{#1} (continued)}{Problem \arabic{#1} continued on next page\ldots}\nobreak{}
+}
+
+\newcommand{\exitProblemHeader}[1]{
+    \nobreak\extramarks{Problem \arabic{#1} (continued)}{Problem \arabic{#1} continued on next page\ldots}\nobreak{}
+    \stepcounter{#1}
+    \nobreak\extramarks{Problem \arabic{#1}}{}\nobreak{}
+}
+
+\setcounter{secnumdepth}{0}
+\newcounter{partCounter}
+\newcounter{homeworkProblemCounter}
+\setcounter{homeworkProblemCounter}{1}
+\nobreak\extramarks{Problem \arabic{homeworkProblemCounter}}{}\nobreak{}
+
+%
+% Homework Problem Environment
+%
+% This environment takes an optional argument. When given, it will adjust the
+% problem counter. This is useful for when the problems given for your
+% assignment aren't sequential. See the last 3 problems of this template for an
+% example.
+%
+\newenvironment{homeworkProblem}[1][-1]{
+    \ifnum#1>0
+        \setcounter{homeworkProblemCounter}{#1}
+    \fi
+    \section{Problem \arabic{homeworkProblemCounter}}
+    \setcounter{partCounter}{1}
+    \enterProblemHeader{homeworkProblemCounter}
+}{
+    \exitProblemHeader{homeworkProblemCounter}
+}
+
+%
+% Homework Details
+%   - Title
+%   - Due date
+%   - Class
+%   - Section/Time
+%   - Instructor
+%   - Author
+%
+
+\newcommand{\hmwkTitle}{Homework\ \#3}
+\newcommand{\hmwkDueDate}{January 4, 2015}
+\newcommand{\hmwkClass}{PHYS 5243 - Solid State Physics}
+\newcommand{\hmwkClassInstructor}{Professor Sheena Murphy}
+\newcommand{\hmwkAuthorName}{Chase Brown}
+
+
+\begin{document}
+	\begin{homeworkProblem}
+		Using the following equations in Simon's Solid State Basics:
+		\begin{description}
+			\item[\textbf{Equation 4.3:}] \hfill
+			\begin{equation*}
+				N=2\sum\limits_{k}^{} n_F(\beta(\epsilon(\textbf{k})-\mu))=2\frac{V}{(2\pi)^3}\int \textbf{dk}  n_F(\beta(\epsilon(\textbf{k})-\mu))
+			\end{equation*}			
+	
+			\item[\textbf{Equation 4.6:}]\hfill
+			\begin{equation*}
+				N=2\frac{V}{(2\pi)^3}(\frac{4}{3}\pi k_F^3)
+			\end{equation*}
+
+			\item[\textbf{Equation 4.7:}]\hfill
+			\begin{equation*}
+				E_F=\frac{\hbar^2(3\pi^2n)^{\frac{2}{3}}}{2m}
+			\end{equation*}
+
+			\item[\textbf{Equation 4.7:}]\hfill
+			\begin{equation*}
+				g(\epsilon)d\epsilon = \frac{(2m)^{\frac{3}{2}}}{2\pi^2\hbar^3}\epsilon^{\frac{1}{2}}d\epsilon
+			\end{equation*}
+				
+		\end{description}
+
+	    \hfill
+	    
+	    \begin{description}
+		\item[\textbf{a)}] Provide the 1D and 2D analogues of these equations.
+		\item[\textbf{b)}] Sketch the Density of States in 1D, 2D, and 3D.
+	    \end{description}
+
+
+	    \textbf{Solution} \hfill
+	    
+	    \begin{description}
+                \item[\textbf{a)}] 
+               		\begin{description}
+                	        \item[\textbf{Equation 4.3:}] \hfill
+
+					N $\equiv$ The total number of electrons within the system. \\
+					There are 2 possible spin states for electrons (fermions), Therefore we have a prefector of 2. \\
+                        		Due to the spacing between points in k-space $(\frac{2\pi}{L})$, the sum over all \textbf{k} is replaced by an integral multiplied by the spacing: 
+					\begin{description}
+						\item[\textbf{1D:} ] 
+							\begin{equation*}
+								\sum\limits_{k}^{} \rightarrow \frac{L}{2\pi} \int \textbf{dk}
+							\end{equation*}	
+					
+						\item[\textbf{2D:} ] 
+							\begin{equation*}
+								\sum\limits_{k}^{} \rightarrow \frac{L^2}{(2\pi)^2} \int \textbf{dk} = \frac{A}{(2\pi)^3} \int \textbf{dk}
+							\end{equation*}
+
+						\item[\textbf{3D:} ] 
+							\begin{equation*}
+								\sum\limits_{k}^{} \rightarrow \frac{L^3}{(2\pi)^3} \int \textbf{dk} = \frac{V}{(2\pi)^3} \int \textbf{dk}
+							\end{equation*}
+
+					\end{description}
+
+					Therefore, the total number of electrons for each dimensional system is given by:
+
+					\begin{description}
+						\item[\textbf{1D:} ] 
+							\begin{equation*}
+								\boxed{N_{1D} = 2\frac{L}{2\pi}\int \textbf{dk}  n_F(\beta(\epsilon(\textbf{k})-\mu))}
+							\end{equation*}	
+					
+						\item[\textbf{2D:} ] 
+							\begin{equation*}
+								\boxed{N_{2D} = 2\frac{A}{(2\pi)^2}\int \textbf{dk}  n_F(\beta(\epsilon(\textbf{k})-\mu))}
+							\end{equation*}
+
+					\end{description}
+
+                       		\item[\textbf{Equation 4.6:}]\hfill
+
+					Solving the integral provides the solution of a sphere (for 3D) of radius $k_F$. \\
+					Likewise, a circle (2D) and a line (1D) can be used with a radius or length of $k_F$.
+					\begin{description}
+						\item[\textbf{1D:} ] 
+							
+							\begin{equation*}
+								N=2\frac{L}{2\pi}(k_F) = \frac{L}{\pi} k_F \\
+								\Rightarrow \boxed{N_{1D}=\frac{L}{\pi} k_F}
+							\end{equation*}	
+					
+						\item[\textbf{2D:} ] 
+							\begin{equation*}
+								N=2\frac{A}{(2\pi)^2}(\pi k_F^2) = \frac{A}{2\pi}k_F^2 \\
+								\Rightarrow \boxed{N_{2D}=\frac{A}{2\pi}k_F^2}
+							\end{equation*}
+
+					\end{description}
+
+
+                       		\item[\textbf{Equation 4.7:}]\hfill
+
+					The Fermi energy $(E_F)$ is then found by substituting the electron density $n=\frac{N}{V}$, solving for $k_F$ and using Equation 4.4 ($E_F = \frac{\hbar^2 k_F^2}{2m}$):
+					\begin{description}
+						\item[\textbf{1D:} ] 
+							
+							\begin{equation*}
+								N/L=n=\frac{k_{F,1D}}{\pi} \Rightarrow k_{F,1D} = n\pi \\
+								\therefore \boxed{E_{F,1D} = \frac{\hbar^2 n^2 \pi^2}{2m}}
+							\end{equation*}	
+					
+						\item[\textbf{2D:} ] 
+							\begin{equation*}
+								N/A=n=\frac{\frac{2}{(2\pi)^2}\pi k_{F,2D}^2}{\pi} \Rightarrow k_{F,2D}^2 = \frac{n(2\pi)^2}{2\pi} = 2\pi n \\
+								\Rightarrow k_{F,2D} = \sqrt{2n\pi}
+								\therefore \boxed{E_{F,2D} = \frac{\hbar^2 n \pi}{m}}
+							\end{equation*}
+
+					\end{description}
+
+
+                       		\item[\textbf{Equation 4.10:}]\hfill
+
+					
+					\begin{description}
+						\item[\textbf{1D:} ] 
+							
+							\begin{equation*}
+								g_{1D}(\epsilon)d\epsilon=\frac{2}{2\pi}(1) dk \\
+								\Rightarrow g_{1D}(\epsilon)d\epsilon = \frac{dk}{\pi} \\
+								\because k = \sqrt{\frac{2\epsilon m}{\hbar^2}} \\
+								\Rightarrow dk = \sqrt{\frac{m}{2\epsilon\hbar^2}} \\
+								\because E_{F,1D} = \frac{\hbar^2 n^2 \pi^2}{2m} \\
+								\Rightarrow \sqrt{\frac{m}{2\epsilon\hbar^2} = \sqrt{\frac{1}{4 E_{F,1D} \epsilon}} n \pi \\
+								\therefore \boxed{g_{1D}(\epsilon)d\epsilon = n\sqrt{\frac{1}{4 E_{F,1D} \epsilon}}}}
+							\end{equation*}	
+					
+						\item[\textbf{2D:} ] 
+
+
+					\end{description}
+
+
+                	\end{description}
+
+			
+		\item[\textbf{b)}] Sketch the Density of States in 1D, 2D, and 3D.
+            \end{description}
+	    
+
+	\end{homeworkProblem}
+
+\end{document}

@@ -1,0 +1,15 @@
+\documentclass{article}
+
+\usepackage{tikz}
+\usetikzlibrary{calc}
+
+\begin{document}
+
+\title{Tight Binding calculations for single and multi layer Graphene: Comparison with ARPES data}
+
+\section{Single Layer Tight Binding Calculations}
+To begin, we start with the Brillouin Zone of Graphene, shown below.
+Now  we know
+
+
+\end{document}
