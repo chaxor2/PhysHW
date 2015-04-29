@@ -16,16 +16,16 @@ a_2 = a_cc/2 * np.array([3, -np.sqrt(3)])
 b_1 = 2*np.pi/(3*a_cc) * np.array([1, np.sqrt(3)]) 
 b_2 = 2*np.pi/(3*a_cc) * np.array([1, -np.sqrt(3)]) 
 
-K = 2*np.pi/(3*a_cc) * np.array([1, 1/np.sqrt(3)]) 
+K = 2*np.pi/(3*a_cc) * np.array([1, 1/np.sqrt(3)])
 K_prime = 2*np.pi/(3*a_cc) * np.array([1, -1/np.sqrt(3)]) 
 
 def E(k_x, k_y):
 	t = 2.8 #* ureg.electron_volt
-	t_prime = 0#0.2 * t
-	return np.array([t*np.sqrt(3+f(k_x, k_y))-t_prime*f(k_x, k_y), -t*np.sqrt(3+f(k_x, k_y))-t_prime*f(k_x, k_y)])
+	return np.array([t*np.sqrt(3+f(k_x, k_y)), -t*np.sqrt(3+f(k_x, k_y))])
 
 def f(k_x, k_y):
-	return 2*np.cos(np.sqrt(3)*k_y*a_cc)+4*np.cos(np.sqrt(3)/2*k_y*a_cc)*np.cos(3/2*k_x*a_cc)
+	return 2*np.cos(np.sqrt(3)*k_y*a_cc)+ \
+               4*np.cos(np.sqrt(3)/2*k_y*a_cc)*np.cos(3/2*k_x*a_cc)
 
 k_x = np.arange(-27, 27, dk_3d)
 k_y = np.arange(-24, 24, dk_3d)
@@ -44,18 +44,13 @@ plt.xlabel(r'k_x ($\frac{1}{nm}$)')
 plt.ylabel(r'k_y ($\frac{1}{nm}$)')
 ax.set_zlabel('Energy (eV)')
 
-
 plt.savefig('BZ_TightBinding.png')
-
 
 fig = plt.figure()
 
-#im = plt.imread('Arpes0crop.png')
-#implot = plt.imshow(im)
-
-k_x = np.linspace(-K[0], K[0], dk_1d) 
+k_x = np.arange(-K[0], K[0], dk_1d)
 k_y = np.ones(len(k_x)) * np.sqrt(K[0]**2+K[1]**2)
-plt.plot(k_x, E(k_x, k_y)[0,:], 'k', k_x, E(k_x, k_y)[1,:], 'k')
+plt.plot(k_x, E(k_x, k_y)[0,:], 'r', k_x, E(k_x, k_y)[1,:], 'k')
 plt.title('Graphene Tight Binding Brillouin Zone Band Structure')
 plt.xlabel(r'k_x ($\frac{1}{nm}$)')
 plt.ylabel(r'Energy (eV)')
