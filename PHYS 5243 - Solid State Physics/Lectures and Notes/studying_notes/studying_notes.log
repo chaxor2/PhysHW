@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.1.31)  29 APR 2015 23:51
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.1.31)  30 APR 2015 21:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**"Homework 10.tex"
-(./Homework 10.tex
+**studying_notes.tex
+(./studying_notes.tex
 LaTeX2e <2011/06/27>
 Babel <3.9h> and hyphenation patterns for 78 languages loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
@@ -606,37 +606,34 @@ Package caption Info: listings package is loaded.
 \sf@top=\skip60
 \sf@bottom=\skip61
 )
-\c@partCounter=\count146
-\c@homeworkProblemCounter=\count147
+(./studying_notes.aux)
+\openout1 = `studying_notes.aux'.
 
-(./Homework 10.aux)
-\openout1 = `"Homework 10.aux"'.
-
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 94.
-LaTeX Font Info:    ... okay on input line 94.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 94.
-LaTeX Font Info:    ... okay on input line 94.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 94.
-LaTeX Font Info:    ... okay on input line 94.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 94.
-LaTeX Font Info:    ... okay on input line 94.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 94.
-LaTeX Font Info:    ... okay on input line 94.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 94.
-LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count148
+\scratchcounter=\count146
 \scratchdimen=\dimen186
 \scratchbox=\box45
-\nofMPsegments=\count149
-\nofMParguments=\count150
+\nofMPsegments=\count147
+\nofMParguments=\count148
 \everyMPshowfont=\toks42
-\MPscratchCnt=\count151
+\MPscratchCnt=\count149
 \MPscratchDim=\dimen187
-\MPnumerator=\count152
-\makeMPintoPDFobject=\count153
+\MPnumerator=\count150
+\makeMPintoPDFobject=\count151
 \everyMPtoPDFconversion=\toks43
 ) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
@@ -691,110 +688,48 @@ ABD: EveryShipout initializing macros
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
 ick labels; missing features). Consider writing \pgfplotsset{compat=1.9} into y
 our preamble.
- on input line 94.
+ on input line 39.
 
-\c@lstlisting=\count154
+\c@lstlisting=\count152
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: End \AtBeginDocument code.
-<BZ_Graphene.jpg, id=4, 144.54pt x 86.9649pt>
-File: BZ_Graphene.jpg Graphic file (type jpg)
- <use BZ_Graphene.jpg>
-Package pdftex.def Info: BZ_Graphene.jpg used on input line 104.
-(pdftex.def)             Requested size: 289.07925pt x 173.92935pt.
-LaTeX Font Info:    Try loading font information for U+msa on input line 109.
-
+LaTeX Font Info:    Try loading font information for U+msa on input line 41.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 109.
+LaTeX Font Info:    Try loading font information for U+msb on input line 41.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
-
- <./BZ_Graphene.jpg>]
-(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2013/08/26 1.5b listings language file
-) [2]
-(./TightBindingGraphene.py
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 7.
-
-(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 7.
-LaTeX Font Info:    Font shape `OMS/cmr/m/it' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 12.
- [3]) [4]
-Underfull \hbox (badness 10000) in paragraph at lines 179--180
-
+Overfull \hbox (6.40279pt too wide) in paragraph at lines 41--41
+[]\OT1/cmr/bx/n/14.4 Solve Graphene/-Graphite Diffrac-tion Scat-ter-ing, Con-st
+ruct Bril-
  []
 
-<BZ_TightBinding.png, id=33, 578.16pt x 433.62pt>
-File: BZ_TightBinding.png Graphic file (type png)
- <use BZ_TightBinding.png>
-Package pdftex.def Info: BZ_TightBinding.png used on input line 185.
-(pdftex.def)             Requested size: 231.2599pt x 173.44492pt.
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
-<Kpoint_TightBinding.png, id=35, 578.16pt x 433.62pt>
-File: Kpoint_TightBinding.png Graphic file (type png)
-
-<use Kpoint_TightBinding.png>
-Package pdftex.def Info: Kpoint_TightBinding.png used on input line 189.
-(pdftex.def)             Requested size: 231.2599pt x 173.44492pt.
-
-Overfull \hbox (6.09813pt too wide) in paragraph at lines 185--190
-[][][] 
- []
-
-<ARPESpaper.png, id=36, 472.26437pt x 174.15062pt>
-File: ARPESpaper.png Graphic file (type png)
- <use ARPESpaper.png>
-Package pdftex.def Info: ARPESpaper.png used on input line 200.
-(pdftex.def)             Requested size: 330.5828pt x 121.9046pt.
-
-<TBvsARPES46Bicent.png, id=37, 578.16pt x 433.62pt>
-File: TBvsARPES46Bicent.png Graphic file (type png)
-
-<use TBvsARPES46Bicent.png>
-Package pdftex.def Info: TBvsARPES46Bicent.png used on input line 206.
-(pdftex.def)             Requested size: 256.06737pt x 426.81056pt.
- [5 <./BZ_TightBinding.png> <./Kpoint_TightBinding.png> <./ARPESpaper.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 211--213
-
- []
-
-[6 <./TBvsARPES46Bicent.png>] (./Homework 10.bbl) [7] (./Homework 10.aux) ) 
+] (./studying_notes.aux) ) 
 Here is how much of TeX's memory you used:
- 21403 strings out of 493304
- 492241 string characters out of 6139871
- 650502 words of memory out of 5000000
- 24418 multiletter control sequences out of 15000+600000
- 10252 words of font info for 38 fonts, out of 8000000 for 9000
+ 21115 strings out of 493304
+ 489288 string characters out of 6139871
+ 692093 words of memory out of 5000000
+ 24160 multiletter control sequences out of 15000+600000
+ 8104 words of font info for 32 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 70i,12n,76p,929b,1748s stack positions out of 5000i,500n,10000p,200000b,80000s
-</us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
-cmextra/cmmib7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.
-pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on "Homework 10.pdf" (7 pages, 523567 bytes).
+ 70i,11n,76p,732b,647s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmm
+i10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on studying_notes.pdf (1 page, 87162 bytes).
 PDF statistics:
- 104 PDF objects out of 1000 (max. 8388607)
- 70 compressed objects within 1 object stream
+ 39 PDF objects out of 1000 (max. 8388607)
+ 28 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 38 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
